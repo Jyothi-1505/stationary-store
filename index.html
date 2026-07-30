@@ -48,9 +48,13 @@
       <input type="checkbox" id="nav-toggle-state" />
       <div class="header__inner">
         <a href="index.html" class="brand" aria-label="Scholar Stationery home">
-          <span class="brand__logo" aria-hidden="true">
+          <span class="brand__logo">
+    <img src="https://www.svgrepo.com/show/492785/book-and-person-summer.svg" alt="Scholar Stationery Logo">
+</span>
+          <!-- <span class="brand__logo" aria-hidden="true">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-          </span>
+            
+          </span> -->
           <span class="brand__name">Scholar<span>Stationery</span></span>
         </a>
 
@@ -58,11 +62,11 @@
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
         </label>
 
-        <nav class="nav" id="primary-nav" aria-label="Primary">
+        <!-- <nav class="nav" id="primary-nav" aria-label="Primary">
           <ul class="nav__list">
             <li><a class="nav__link" href="index.html" aria-current="page">Home</a></li>
             <li class="nav__item">
-              <a class="nav__link" href="services.html">Shop
+              <a class="nav__link" href="services.html">Services
                 <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
               </a>
               <div class="nav__dropdown">
@@ -76,8 +80,59 @@
             <li><a class="nav__link" href="faq.html">FAQ</a></li>
             <li><a class="nav__link" href="contact.html">Contact</a></li>
           </ul>
-        </nav>
+        </nav> -->
+        <nav class="nav" id="primary-nav" aria-label="Primary">
+    <ul class="nav__list">
 
+        <!-- Home Dropdown -->
+        <li class="nav__item">
+            <a class="nav__link" href="index.html" aria-current="page">
+                Home
+                <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </a>
+
+            <div class="nav__dropdown">
+                <a href="index.html">Home 1</a>
+                <a href="home2.html">Home 2</a>
+            </div>
+        </li>
+
+        <!-- Services Dropdown -->
+        <li class="nav__item">
+            <a class="nav__link" href="services.html">
+                Services
+                <!-- <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg> -->
+            </a>
+
+            <!-- <div class="nav__dropdown">
+                <a href="services.html">All Products</a>
+                <a href="service-details.html">Textbook Details</a>
+                <a href="pricing.html">Bulk Pricing</a>
+            </div> -->
+        </li>
+
+        <li>
+            <a class="nav__link" href="about.html">About</a>
+        </li>
+
+        <li>
+            <a class="nav__link" href="blog.html">Blog</a>
+        </li>
+
+        <li>
+            <a class="nav__link" href="pricing.html">Pricing</a>
+        </li>
+
+        <li>
+            <a class="nav__link" href="contact.html">Contact</a>
+        </li>
+
+    </ul>
+</nav>
         <div class="header__actions">
           <button class="icon-btn desktop-only" aria-label="Search">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
@@ -119,7 +174,7 @@
           </div>
 
           <div class="hero__media reveal reveal-2">
-            <img class="hero__img-main" src="https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Stack of colorful textbooks and notebooks on a desk" width="900" height="700" loading="eager" />
+            <img class="hero__img-main" src="https://images.unsplash.com/photo-1779684998897-ce5de594a5ac?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Stack of colorful textbooks and notebooks on a desk" width="900" height="700" loading="eager" />
             <div class="hero__badge-float hero__badge-float--tl">
               <span class="ic" style="background:rgba(43,108,176,.14);color:var(--color-primary)">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
@@ -147,51 +202,164 @@
         </div>
 
         <div class="row row-tight">
-          <div class="col-sm-6 col-lg-3 reveal reveal-1">
-            <a class="cat-card" href="services.html">
-              <img src="https://images.pexels.com/photos/895136/pexels-photo-895136.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Kindergarten crayons and coloring supplies" width="500" height="650" loading="lazy" srcset="https://images.pexels.com/photos/895136/pexels-photo-895136.jpeg?auto=compress&cs=tinysrgb&w=300 300w, https://images.pexels.com/photos/895136/pexels-photo-895136.jpeg?auto=compress&cs=tinysrgb&w=500 500w" sizes="(max-width:575px) 50vw, 25vw" />
-              <span class="cat-card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-              <span class="cat-card__overlay">
-                <span>Pre-K &amp; K</span>
+
+    <!-- Kindergarten -->
+    <div class="col-sm-6 col-md-4 reveal reveal-1">
+        <a class="cat-card" href="services.html">
+            <img src="https://images.pexels.com/photos/895136/pexels-photo-895136.jpeg?auto=compress&cs=tinysrgb&w=500"
+                alt="Kindergarten crayons and coloring supplies"
+                width="500"
+                height="650"
+                loading="lazy"
+                srcset="https://images.pexels.com/photos/895136/pexels-photo-895136.jpeg?auto=compress&cs=tinysrgb&w=300 300w,
+                        https://images.pexels.com/photos/895136/pexels-photo-895136.jpeg?auto=compress&cs=tinysrgb&w=500 500w"
+                sizes="(max-width:575px) 50vw, 16.66vw">
+
+            <span class="cat-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
+                </svg>
+            </span>
+
+            <span class="cat-card__overlay">
+                <span>Up to Grade 1</span>
                 <h3>Kindergarten</h3>
                 <span>Crayons, coloring, safety scissors</span>
-              </span>
-            </a>
-          </div>
-          <div class="col-sm-6 col-lg-3 reveal reveal-2">
-            <a class="cat-card" href="services.html">
-              <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Elementary school pencils and notebooks" width="500" height="650" loading="lazy" srcset="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=300 300w, https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=500 500w" sizes="(max-width:575px) 50vw, 25vw" />
-              <span class="cat-card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-              <span class="cat-card__overlay">
+            </span>
+        </a>
+    </div>
+
+    <!-- Elementary -->
+    <div class="col-sm-6 col-md-4 reveal reveal-1">
+        <a class="cat-card" href="services.html">
+            <img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=500"
+                alt="Elementary school pencils and notebooks"
+                width="500"
+                height="650"
+                loading="lazy"
+                srcset="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=300 300w,
+                        https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=500 500w"
+                sizes="(max-width:575px) 50vw, 16.66vw">
+
+            <span class="cat-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
+                </svg>
+            </span>
+
+            <span class="cat-card__overlay">
                 <span>Grades 1–5</span>
                 <h3>Elementary</h3>
                 <span>Pencils, notebooks, folders</span>
-              </span>
-            </a>
-          </div>
-          <div class="col-sm-6 col-lg-3 reveal reveal-3">
-            <a class="cat-card" href="services.html">
-              <img src="https://images.pexels.com/photos/256651/pexels-photo-256651.jpeg?auto=compress&cs=tinysrgb&w=500" alt="Middle school geometry set and calculator" width="500" height="650" loading="lazy" srcset="https://images.pexels.com/photos/256651/pexels-photo-256651.jpeg?auto=compress&cs=tinysrgb&w=300 300w, https://images.pexels.com/photos/256651/pexels-photo-256651.jpeg?auto=compress&cs=tinysrgb&w=500 500w" sizes="(max-width:575px) 50vw, 25vw" />
-              <span class="cat-card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-              <span class="cat-card__overlay">
+            </span>
+        </a>
+    </div>
+
+    <!-- Middle School -->
+    <div class="col-sm-6 col-md-4 reveal reveal-1">
+        <a class="cat-card" href="services.html">
+            <img src="https://images.pexels.com/photos/256651/pexels-photo-256651.jpeg?auto=compress&cs=tinysrgb&w=500"
+                alt="Middle school geometry set and calculator"
+                width="500"
+                height="650"
+                loading="lazy"
+                srcset="https://images.pexels.com/photos/256651/pexels-photo-256651.jpeg?auto=compress&cs=tinysrgb&w=300 300w,
+                        https://images.pexels.com/photos/256651/pexels-photo-256651.jpeg?auto=compress&cs=tinysrgb&w=500 500w"
+                sizes="(max-width:575px) 50vw, 16.66vw">
+
+            <span class="cat-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
+                </svg>
+            </span>
+
+            <span class="cat-card__overlay">
                 <span>Grades 6–8</span>
                 <h3>Middle School</h3>
                 <span>Geometry sets, calculators</span>
-              </span>
-            </a>
-          </div>
-          <div class="col-sm-6 col-lg-3 reveal reveal-4">
-            <a class="cat-card" href="services.html">
-              <img src="https://images.pexels.com/photos/256431/pexels-photo-256431.jpeg?auto=compress&cs=tinysrgb&w=500" alt="High school textbooks and highlighters" width="500" height="650" loading="lazy" srcset="https://images.pexels.com/photos/256431/pexels-photo-256431.jpeg?auto=compress&cs=tinysrgb&w=300 300w, https://images.pexels.com/photos/256431/pexels-photo-256431.jpeg?auto=compress&cs=tinysrgb&w=500 500w" sizes="(max-width:575px) 50vw, 25vw" />
-              <span class="cat-card__arrow" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></span>
-              <span class="cat-card__overlay">
+            </span>
+        </a>
+    </div>
+
+    <!-- High School -->
+    <div class="col-sm-6 col-md-4 reveal reveal-1">
+        <a class="cat-card" href="services.html">
+            <img src="https://images.pexels.com/photos/256431/pexels-photo-256431.jpeg?auto=compress&cs=tinysrgb&w=500"
+                alt="High school textbooks and highlighters"
+                width="500"
+                height="650"
+                loading="lazy"
+                srcset="https://images.pexels.com/photos/256431/pexels-photo-256431.jpeg?auto=compress&cs=tinysrgb&w=300 300w,
+                        https://images.pexels.com/photos/256431/pexels-photo-256431.jpeg?auto=compress&cs=tinysrgb&w=500 500w"
+                sizes="(max-width:575px) 50vw, 16.66vw">
+
+            <span class="cat-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
+                </svg>
+            </span>
+
+            <span class="cat-card__overlay">
                 <span>Grades 9–12</span>
                 <h3>High School</h3>
-                <span>Textbooks, lab gear, highlights</span>
-              </span>
-            </a>
-          </div>
-        </div>
+                <span>Textbooks, lab gear, highlighters</span>
+            </span>
+        </a>
+    </div>
+
+    <!-- College -->
+    <div class="col-sm-6 col-md-4 reveal reveal-1">
+        <a class="cat-card" href="services.html">
+            <img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=500"
+                alt="College books and stationery"
+                width="500"
+                height="650"
+                loading="lazy">
+
+            <span class="cat-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
+                </svg>
+            </span>
+
+            <span class="cat-card__overlay">
+                <span>College & University</span>
+                <h3>College</h3>
+                <span>Academic books, journals, engineering kits</span>
+            </span>
+        </a>
+    </div>
+
+    <!-- Office Supplies -->
+    <div class="col-sm-6 col-md-4 reveal reveal-1">
+        <a class="cat-card" href="services.html">
+            <img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=500"
+                alt="Office supplies"
+                width="500"
+                height="650"
+                loading="lazy">
+
+            <span class="cat-card__arrow" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <line x1="5" y1="12" x2="19" y2="12"/>
+                    <polyline points="12 5 19 12 12 19"/>
+                </svg>
+            </span>
+
+            <span class="cat-card__overlay">
+                <span>Business Essentials</span>
+                <h3>Office Supplies</h3>
+                <span>Files, printers, pens, organizers & accessories</span>
+            </span>
+        </a>
+    </div>
+
+</div>
       </div>
     </section>
 
@@ -308,71 +476,278 @@
     </section>
 
     <!-- ============== SECTION 5: GRADE-LEVEL PRODUCT SHOWCASE ============== -->
-    <section class="section">
-      <div class="container">
-        <div class="section-head section-head--left reveal" style="max-width:100%">
-          <span class="eyebrow">Curated bundles</span>
-          <h2>Grade-level starter kits</h2>
-          <p>One-click bundles teachers love — every item a student needs to start the term, packed by grade.</p>
+   <section class="section">
+    <div class="container">
+
+        <div class="section-head reveal">
+            <span class="eyebrow">Bulk Orders</span>
+            <h2>Bulk Orders for Schools & Businesses</h2>
+            <p>
+                We provide customized bulk stationery and book supplies for
+                schools, colleges, coaching institutes, offices and corporate
+                organizations with competitive wholesale pricing.
+            </p>
         </div>
 
         <div class="grade-showcase">
-          <article class="grade-card reveal reveal-1">
-            <div class="grade-card__img"><img src="https://images.pexels.com/photos/895136/pexels-photo-895136.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Kindergarten starter kit with crayons and scissors" width="300" height="300" loading="lazy" /></div>
-            <div>
-              <span class="badge badge-primary mb-2">Pre-K &amp; K</span>
-              <h4>Kindergarten Starter Kit</h4>
-              <p class="text-muted mb-0">Safe scissors, jumbo crayons, glue sticks and a drawing pad — everything for little hands.</p>
-              <div class="grade-card__items">
-                <span>12 crayons</span><span>2 glue sticks</span><span>Safety scissors</span><span>Drawing pad</span>
-              </div>
-              <div class="d-flex items-center gap-3 mt-4"><strong class="text-primary">$14.99</strong><a class="btn btn-sm btn-outline" href="service-details.html">View kit</a></div>
-            </div>
-          </article>
 
-          <article class="grade-card reveal reveal-2">
-            <div class="grade-card__img"><img src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Elementary starter kit with pencils and folders" width="300" height="300" loading="lazy" /></div>
-            <div>
-              <span class="badge badge-primary mb-2">Grades 1–5</span>
-              <h4>Elementary Starter Kit</h4>
-              <p class="text-muted mb-0">Pencils, erasers, ruled notebooks, pocket folders and a pencil case to stay organized.</p>
-              <div class="grade-card__items">
-                <span>12 pencils</span><span>3 notebooks</span><span>5 folders</span><span>Pencil case</span>
-              </div>
-              <div class="d-flex items-center gap-3 mt-4"><strong class="text-primary">$19.99</strong><a class="btn btn-sm btn-outline" href="service-details.html">View kit</a></div>
-            </div>
-          </article>
+            <!-- Schools -->
+            <article class="grade-card reveal reveal-1">
+                <div class="grade-card__img">
+                    <img src="https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=500"
+                        alt="School bulk order"
+                        loading="lazy">
+                </div>
 
-          <article class="grade-card reveal reveal-3">
-            <div class="grade-card__img"><img src="https://images.pexels.com/photos/256651/pexels-photo-256651.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Middle school kit with geometry set and calculator" width="300" height="300" loading="lazy" /></div>
-            <div>
-              <span class="badge badge-primary mb-2">Grades 6–8</span>
-              <h4>Middle School Kit</h4>
-              <p class="text-muted mb-0">Geometry set, scientific calculator, graph paper and highlighters for harder coursework.</p>
-              <div class="grade-card__items">
-                <span>Geometry set</span><span>Calculator</span><span>Graph paper</span><span>4 highlighters</span>
-              </div>
-              <div class="d-flex items-center gap-3 mt-4"><strong class="text-primary">$29.99</strong><a class="btn btn-sm btn-outline" href="service-details.html">View kit</a></div>
-            </div>
-          </article>
+                <div>
+                    <span class="badge badge-primary mb-2">Schools</span>
 
-          <article class="grade-card reveal reveal-4">
-            <div class="grade-card__img"><img src="https://images.pexels.com/photos/256431/pexels-photo-256431.jpeg?auto=compress&cs=tinysrgb&w=300" alt="High school kit with textbooks and lab notebook" width="300" height="300" loading="lazy" /></div>
-            <div>
-              <span class="badge badge-primary mb-2">Grades 9–12</span>
-              <h4>High School Kit</h4>
-              <p class="text-muted mb-0">Subject textbooks, lab notebook, index cards and premium pens for exam season.</p>
-              <div class="grade-card__items">
-                <span>Textbooks</span><span>Lab notebook</span><span>Index cards</span><span>Premium pens</span>
-              </div>
-              <div class="d-flex items-center gap-3 mt-4"><strong class="text-primary">$49.99</strong><a class="btn btn-sm btn-outline" href="service-details.html">View kit</a></div>
-            </div>
-          </article>
+                    <h4>School Stationery Packages</h4>
+
+                    <p class="text-muted mb-0">
+                        Complete classroom stationery kits including notebooks,
+                        textbooks, pencils, art supplies and exam materials.
+                    </p>
+
+                    <div class="grade-card__items">
+                        <span>100+ Students</span>
+                        <span>Custom Kits</span>
+                        <span>Free Delivery</span>
+                        <span>Wholesale Prices</span>
+                    </div>
+
+                    <div class="d-flex items-center gap-3 mt-4">
+                        <strong class="text-primary">Request Quote</strong>
+                        <a class="btn btn-sm btn-outline" href="contact.html">
+                            Contact Sales
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Colleges -->
+            <article class="grade-card reveal reveal-2">
+                <div class="grade-card__img">
+                    <img src="https://images.pexels.com/photos/1370295/pexels-photo-1370295.jpeg?auto=compress&cs=tinysrgb&w=500"
+                        alt="College bulk order"
+                        loading="lazy">
+                </div>
+
+                <div>
+                    <span class="badge badge-primary mb-2">Colleges</span>
+
+                    <h4>College Supply Solutions</h4>
+
+                    <p class="text-muted mb-0">
+                        Engineering drawing sheets, laboratory record books,
+                        journals, calculators and academic stationery.
+                    </p>
+
+                    <div class="grade-card__items">
+                        <span>Departments</span>
+                        <span>Semester Kits</span>
+                        <span>Lab Records</span>
+                        <span>Bulk Discounts</span>
+                    </div>
+
+                    <div class="d-flex items-center gap-3 mt-4">
+                        <strong class="text-primary">Custom Pricing</strong>
+                        <a class="btn btn-sm btn-outline" href="contact.html">
+                            Get Quote
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Offices -->
+            <article class="grade-card reveal reveal-3">
+                <div class="grade-card__img">
+                    <img src="https://images.pexels.com/photos/669615/pexels-photo-669615.jpeg?auto=compress&cs=tinysrgb&w=500"
+                        alt="Office supplies"
+                        loading="lazy">
+                </div>
+
+                <div>
+                    <span class="badge badge-primary mb-2">Offices</span>
+
+                    <h4>Office Stationery Supplies</h4>
+
+                    <p class="text-muted mb-0">
+                        Printer paper, files, folders, pens, markers,
+                        desk organizers and office essentials for every team.
+                    </p>
+
+                    <div class="grade-card__items">
+                        <span>Monthly Supply</span>
+                        <span>Corporate Orders</span>
+                        <span>Fast Delivery</span>
+                        <span>GST Invoice</span>
+                    </div>
+
+                    <div class="d-flex items-center gap-3 mt-4">
+                        <strong class="text-primary">Business Orders</strong>
+                        <a class="btn btn-sm btn-outline" href="contact.html">
+                            Contact Us
+                        </a>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Wholesale -->
+            <article class="grade-card reveal reveal-4">
+                <div class="grade-card__img">
+                    <img src="https://images.pexels.com/photos/4483610/pexels-photo-4483610.jpeg?auto=compress&cs=tinysrgb&w=500"
+                        alt="Wholesale stationery"
+                        loading="lazy">
+                </div>
+
+                <div>
+                    <span class="badge badge-primary mb-2">Wholesale</span>
+
+                    <h4>Wholesale Distribution</h4>
+
+                    <p class="text-muted mb-0">
+                        Special pricing for retailers, distributors,
+                        bookstores and institutional buyers across the country.
+                    </p>
+
+                    <div class="grade-card__items">
+                        <span>Large Quantity</span>
+                        <span>Best Pricing</span>
+                        <span>Trusted Brands</span>
+                        <span>Dedicated Support</span>
+                    </div>
+
+                    <div class="d-flex items-center gap-3 mt-4">
+                        <strong class="text-primary">Wholesale Inquiry</strong>
+                        <a class="btn btn-sm btn-outline" href="contact.html">
+                            Enquire Now
+                        </a>
+                    </div>
+                </div>
+            </article>
+
         </div>
-      </div>
-    </section>
+
+    </div>
+</section>
 
     <!-- ============== SECTION 6: TESTIMONIALS / SCHOOLS SERVED ============== -->
+     <section class="section section-alt">
+    <div class="container">
+
+        <div class="section-head reveal">
+            <span class="eyebrow">Why Choose Us</span>
+            <h2>Why Choose EduStore?</h2>
+            <p>
+                We make school, college, office and institutional shopping
+                simple with quality products, trusted brands and exceptional
+                customer service.
+            </p>
+        </div>
+
+        <div class="row">
+
+            <!-- Card 1 -->
+            <div class="col-md-4 reveal reveal-1">
+                <div class="icon-card">
+                    <div class="icon-card__icon">
+                        📚
+                    </div>
+
+                    <h3>Wide Product Collection</h3>
+
+                    <p>
+                        From preschool stationery to college textbooks and office
+                        essentials, everything is available in one place.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 reveal reveal-2">
+                <div class="icon-card">
+                    <div class="icon-card__icon">
+                        💰
+                    </div>
+
+                    <h3>Affordable Pricing</h3>
+
+                    <p>
+                        Competitive prices with exclusive discounts on school,
+                        college and institutional bulk purchases.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4 reveal reveal-3">
+                <div class="icon-card">
+                    <div class="icon-card__icon">
+                        🚚
+                    </div>
+
+                    <h3>Fast Delivery</h3>
+
+                    <p>
+                        Quick and secure delivery with reliable packaging to
+                        ensure your orders arrive safely and on time.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-md-4 reveal reveal-4">
+                <div class="icon-card">
+                    <div class="icon-card__icon">
+                        🏫
+                    </div>
+
+                    <h3>Trusted by Institutions</h3>
+
+                    <p>
+                        Preferred supplier for schools, colleges, coaching
+                        centres and offices across the region.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="col-md-4 reveal reveal-5">
+                <div class="icon-card">
+                    <div class="icon-card__icon">
+                        ⭐
+                    </div>
+
+                    <h3>Premium Quality Brands</h3>
+
+                    <p>
+                        We partner with leading stationery and educational brands
+                        to ensure every product meets high quality standards.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="col-md-4 reveal reveal-6">
+                <div class="icon-card">
+                    <div class="icon-card__icon">
+                        🤝
+                    </div>
+
+                    <h3>Dedicated Customer Support</h3>
+
+                    <p>
+                        Our support team is always ready to help with product
+                        recommendations, order tracking and after-sales service.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
     <section class="section section-alt">
       <div class="container">
         <div class="section-head reveal">
@@ -464,7 +839,9 @@
       <div class="footer__top">
         <div class="footer__brand">
           <a href="index.html" class="brand" aria-label="Scholar Stationery home">
-            <span class="brand__logo" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span>
+            <span class="brand__logo">
+    <img src="https://www.svgrepo.com/show/492785/book-and-person-summer.svg" alt="Scholar Stationery Logo">
+</span>
             <span class="brand__name" style="color:#fff">Scholar<span>Stationery</span></span>
           </a>
           <p class="footer__about">Your neighborhood school supply and book shop since 2009. Quality textbooks, notebooks, pens and art supplies for every grade — with bulk pricing built for schools.</p>
@@ -475,23 +852,23 @@
           </div>
         </div>
         <div>
-          <h4>Shop</h4>
+          <h4>Quick Links</h4>
           <ul class="footer__links">
-            <li><a href="services.html">All Products</a></li>
-            <li><a href="service-details.html">Textbooks</a></li>
-            <li><a href="service-details.html">Notebooks</a></li>
-            <li><a href="service-details.html">Art Supplies</a></li>
-            <li><a href="pricing.html">Bulk Pricing</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contacts</a></li>
           </ul>
         </div>
         <div>
           <h4>Company</h4>
           <ul class="footer__links">
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="blog.html">Blog</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
             <li><a href="faq.html">FAQ</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="coming-soon.html">Careers</a></li>
+            <li><a href="404.html">404 page</a></li>
+            <li><a href="coming-soon.html">Coming Soon</a></li>
           </ul>
         </div>
         <div>

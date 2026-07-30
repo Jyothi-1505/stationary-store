@@ -26,16 +26,28 @@
 
   /* ---- RTL toggle ---- */
   function initRtl() {
-    if (localStorage.getItem("ss-dir") === "rtl") { root.setAttribute("dir", "rtl"); }
-    var btn = document.querySelector("[data-rtl-toggle]");
-    if (btn) {
-      btn.addEventListener("click", function () {
-        var rtl = root.getAttribute("dir") === "rtl";
-        if (rtl) { root.setAttribute("dir", "ltr"); localStorage.setItem("dir", "ltr"); }
-        else { root.setAttribute("dir", "rtl"); localStorage.setItem("ss-dir", "rtl"); }
-      });
+    if (localStorage.getItem("ss-dir") === "rtl") {
+        root.setAttribute("dir", "rtl");
+    } else {
+        root.setAttribute("dir", "ltr");
     }
-  }
+
+    const btn = document.querySelector("[data-rtl-toggle]");
+
+    if (btn) {
+        btn.addEventListener("click", function () {
+            const rtl = root.getAttribute("dir") === "rtl";
+
+            if (rtl) {
+                root.setAttribute("dir", "ltr");
+                localStorage.setItem("ss-dir", "ltr");
+            } else {
+                root.setAttribute("dir", "rtl");
+                localStorage.setItem("ss-dir", "rtl");
+            }
+        });
+    }
+}
 
   document.addEventListener("DOMContentLoaded", function () { initTheme(); initRtl(); });
 })();

@@ -1,0 +1,1446 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scholar Stationery — School Supplies, Textbooks & Book Shop</title>
+  <meta name="description" content="Scholar Stationery stocks textbooks, notebooks, pens and art supplies for every grade. Browse by grade level, unlock bulk-order pricing for schools, and grab seasonal back-to-school offers." />
+  <link rel="canonical" href="https://scholar-stationery.example.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Scholar Stationery — School Supplies & Book Shop" />
+  <meta property="og:description" content="Textbooks, notebooks, pens and art supplies for every grade. Bulk-order pricing for schools and seasonal back-to-school offers." />
+  <meta property="og:url" content="https://scholar-stationery.example.com/" />
+  <meta property="og:image" content="assets/images/og-cover.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/vendor-bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ============== SECTION 1: TOPBAR + NAV ============== -->
+  <div class="topbar">
+    <div class="container">
+      <p class="topbar__promo mb-0">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM8 4a.9.9 0 1 1 0 1.8A.9.9 0 0 1 8 4zm1 7.5H7v-.6h.7V7.6H7V7h2v3.9h.9v.6z"/></svg>
+        Back-to-school sale: up to 40% off textbooks &amp; free delivery on school bulk orders over $250.
+      </p>
+      <ul class="topbar__links">
+        <li><a href="contact.html">Store Locator</a></li>
+        <li><a href="contact.html">Track Order</a></li>
+        <li class="divider">|</li>
+        <li><a href="login.html">Sign In</a></li>
+        <li><a href="register.html">Register</a></li>
+      </ul>
+    </div>
+  </div>
+
+<header class="header">
+    <div class="container">
+      <input type="checkbox" id="nav-toggle-state" />
+      <div class="header__inner">
+        <a href="index.html" class="brand" aria-label="Scholar Stationery home">
+          <span class="brand__logo">
+    <img src="https://www.svgrepo.com/show/492785/book-and-person-summer.svg" alt="Scholar Stationery Logo">
+</span>
+          <!-- <span class="brand__logo" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            
+          </span> -->
+          <span class="brand__name">Scholar<span>Stationery</span></span>
+        </a>
+
+        <label for="nav-toggle-state" class="nav-toggle" aria-label="Open menu" aria-controls="primary-nav">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+        </label>
+
+        <!-- <nav class="nav" id="primary-nav" aria-label="Primary">
+          <ul class="nav__list">
+            <li><a class="nav__link" href="index.html" aria-current="page">Home</a></li>
+            <li class="nav__item">
+              <a class="nav__link" href="services.html">Services
+                <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </a>
+              <div class="nav__dropdown">
+                <a href="services.html">All Products</a>
+                <a href="service-details.html">Textbook Details</a>
+                <a href="pricing.html">Bulk Pricing</a>
+              </div>
+            </li>
+            <li><a class="nav__link" href="about.html">About</a></li>
+            <li><a class="nav__link" href="blog.html">Blog</a></li>
+            <li><a class="nav__link" href="faq.html">FAQ</a></li>
+            <li><a class="nav__link" href="contact.html">Contact</a></li>
+          </ul>
+        </nav> -->
+        <nav class="nav" id="primary-nav" aria-label="Primary">
+    <ul class="nav__list">
+
+        <!-- Home Dropdown -->
+        <li class="nav__item">
+            <a class="nav__link" href="index.html" aria-current="page">
+                Home
+                <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg>
+            </a>
+
+            <div class="nav__dropdown">
+                <a href="index.html">Home 1</a>
+                <a href="home2.html">Home 2</a>
+            </div>
+        </li>
+
+        <!-- Services Dropdown -->
+        <li class="nav__item">
+            <a class="nav__link" href="services.html">
+                Services
+                <!-- <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                </svg> -->
+            </a>
+
+            <!-- <div class="nav__dropdown">
+                <a href="services.html">All Products</a>
+                <a href="service-details.html">Textbook Details</a>
+                <a href="pricing.html">Bulk Pricing</a>
+            </div> -->
+        </li>
+
+        <li>
+            <a class="nav__link" href="about.html">About</a>
+        </li>
+
+        <li>
+            <a class="nav__link" href="blog.html">Blog</a>
+        </li>
+
+        <li>
+            <a class="nav__link" href="pricing.html">Pricing</a>
+        </li>
+
+        <li>
+            <a class="nav__link" href="contact.html">Contact</a>
+        </li>
+
+    </ul>
+</nav>
+        <div class="header__actions">
+          <button class="icon-btn desktop-only" aria-label="Search">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </button>
+          <button class="icon-btn desktop-only" aria-label="Cart">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+          </button>
+          <button class="icon-btn" data-rtl-toggle aria-label="Toggle right-to-left layout" title="RTL / LTR">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
+          </button>
+          <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode" title="Dark / Light">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============== SECTION 2: HERO ============== -->
+    <!-- ============== SECTION 2 : HERO ============== -->
+
+<section class="hero hero--home2">
+  <div class="container">
+
+    <div class="hero__inner">
+
+      <div class="hero__content reveal reveal-1">
+
+        <span class="badge badge-secondary">
+          New Academic Collection 2026
+        </span>
+
+        <h1 class="hero__title">
+          Smart Learning Starts With
+          <span class="highlight">Quality School Supplies</span>
+        </h1>
+
+        <p class="hero__desc">
+          Discover premium textbooks, notebooks, stationery, school bags,
+          geometry boxes, calculators and classroom essentials designed for
+          students, teachers and educational institutions.
+        </p>
+
+        <div class="hero__actions">
+
+          <a href="services.html" class="btn btn-primary">
+            Shop Collection
+          </a>
+
+          <a href="pricing.html" class="btn btn-outline">
+            Bulk Orders
+          </a>
+
+        </div>
+
+        <div class="hero__stats">
+
+          <div class="hero__stat">
+
+            <div class="num">
+              12K+
+            </div>
+
+            <div class="label">
+              Products
+            </div>
+
+          </div>
+
+          <div class="hero__stat">
+
+            <div class="num">
+              3K+
+            </div>
+
+            <div class="label">
+              Happy Students
+            </div>
+
+          </div>
+
+          <div class="hero__stat">
+
+            <div class="num">
+              250+
+            </div>
+
+            <div class="label">
+              Partner Schools
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="hero__media reveal reveal-2">
+
+        <img
+          class="hero__img-main"
+          src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?w=900&auto=format&fit=crop&q=80"
+          alt="Scholar Stationery"
+        >
+
+        <div class="hero__badge-float hero__badge-float--tl">
+
+          <div class="ic badge-primary">
+
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M12 2l3 7h7l-5.5 4.2L18 21l-6-4-6 4 1.5-7.8L2 9h7z"/>
+            </svg>
+
+          </div>
+
+          <div>
+
+            <div class="t">
+              Premium Quality
+            </div>
+
+            <div class="s">
+              Trusted by Schools
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="hero__badge-float hero__badge-float--br">
+
+          <div class="ic badge-accent">
+
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14"/>
+              <path d="M12 5l7 7-7 7"/>
+            </svg>
+
+          </div>
+
+          <div>
+
+            <div class="t">
+              Free Delivery
+            </div>
+
+            <div class="s">
+              Orders Above $250
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+<!-- ============== SECTION 3 : FEATURED CATEGORIES ============== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-head reveal reveal-1">
+
+            <span class="eyebrow">
+                Shop By Category
+            </span>
+
+            <h2>
+                Everything You Need For School
+            </h2>
+
+            <p>
+                Browse our carefully selected collection of educational
+                essentials for every classroom and every student.
+            </p>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-3 col-md-6">
+
+                <a href="service-details.html" class="cat-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=700&auto=format&fit=crop&q=80"
+                        alt="Books"
+                    >
+
+                    <div class="cat-card__overlay">
+
+                        <h3>
+                            Textbooks
+                        </h3>
+
+                        <span>
+                            1,250 Products
+                        </span>
+
+                    </div>
+
+                    <div class="cat-card__arrow">
+
+                        <svg viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2">
+
+                            <path d="M5 12h14"></path>
+                            <path d="M13 5l7 7-7 7"></path>
+
+                        </svg>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <a href="service-details.html" class="cat-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1517842645767-c639042777db?w=700&auto=format&fit=crop&q=80"
+                        alt="Stationery"
+                    >
+
+                    <div class="cat-card__overlay">
+
+                        <h3>
+                            Stationery
+                        </h3>
+
+                        <span>
+                            980 Products
+                        </span>
+
+                    </div>
+
+                    <div class="cat-card__arrow">
+
+                        <svg viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2">
+
+                            <path d="M5 12h14"></path>
+                            <path d="M13 5l7 7-7 7"></path>
+
+                        </svg>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <a href="service-details.html" class="cat-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1455390582262-044cdead277a?w=700&auto=format&fit=crop&q=80"
+                        alt="Art Supplies"
+                    >
+
+                    <div class="cat-card__overlay">
+
+                        <h3>
+                            Art Supplies
+                        </h3>
+
+                        <span>
+                            420 Products
+                        </span>
+
+                    </div>
+
+                    <div class="cat-card__arrow">
+
+                        <svg viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2">
+
+                            <path d="M5 12h14"></path>
+                            <path d="M13 5l7 7-7 7"></path>
+
+                        </svg>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <a href="service-details.html" class="cat-card">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=700&auto=format&fit=crop&q=80"
+                        alt="School Bags"
+                    >
+
+                    <div class="cat-card__overlay">
+
+                        <h3>
+                            School Bags
+                        </h3>
+
+                        <span>
+                            315 Products
+                        </span>
+
+                    </div>
+
+                    <div class="cat-card__arrow">
+
+                        <svg viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2">
+
+                            <path d="M5 12h14"></path>
+                            <path d="M13 5l7 7-7 7"></path>
+
+                        </svg>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ============== SECTION 4 : FEATURED PRODUCTS ============== -->
+
+<section class="section section-alt">
+
+    <div class="container">
+
+        <div class="section-head reveal reveal-1">
+
+            <span class="eyebrow">
+                Best Sellers
+            </span>
+
+            <h2>
+                Featured Products
+            </h2>
+
+            <p>
+                Explore our most popular school essentials selected by
+                students, teachers and institutions.
+            </p>
+
+        </div>
+
+        <div class="row">
+
+            <!-- Product 1 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <article class="card product-card">
+
+                    <div class="card__media">
+
+                        <span class="badge badge-secondary ribbon">
+                            -25%
+                        </span>
+
+                        <img
+                            src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?w=700&auto=format&fit=crop&q=80"
+                            alt="Notebook"
+                        >
+
+                        <div class="product-card__actions">
+
+                            <button class="product-card__action-btn">
+
+                                <svg viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2">
+
+                                    <path d="M12 5v14"></path>
+                                    <path d="M5 12h14"></path>
+
+                                </svg>
+
+                            </button>
+
+                            <button class="product-card__action-btn">
+
+                                <svg viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2">
+
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21l8.84-8.61a5.5 5.5 0 0 0 0-7.78z"/>
+
+                                </svg>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card__body">
+
+                        <span class="badge">
+                            Notebooks
+                        </span>
+
+                        <h3 class="card__title">
+
+                            <a href="service-details.html">
+                                Premium Notebook Set
+                            </a>
+
+                        </h3>
+
+                        <div class="product-price">
+
+                            <span class="now">
+                                $18
+                            </span>
+
+                            <span class="was">
+                                $24
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- Product 2 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <article class="card product-card">
+
+                    <div class="card__media">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1452860606245-08befc0ff44b?w=700&auto=format&fit=crop&q=80"
+                            alt="School Bag"
+                        >
+
+                        <div class="product-card__actions">
+
+                            <button class="product-card__action-btn">
+
+                                <svg viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2">
+
+                                    <path d="M12 5v14"></path>
+                                    <path d="M5 12h14"></path>
+
+                                </svg>
+
+                            </button>
+
+                            <button class="product-card__action-btn">
+
+                                <svg viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2">
+
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21l8.84-8.61a5.5 5.5 0 0 0 0-7.78z"/>
+
+                                </svg>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card__body">
+
+                        <span class="badge">
+                            Bags
+                        </span>
+
+                        <h3 class="card__title">
+
+                            <a href="service-details.html">
+                                Student Backpack
+                            </a>
+
+                        </h3>
+
+                        <div class="product-price">
+
+                            <span class="now">
+                                $35
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- Product 3 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <article class="card product-card">
+
+                    <div class="card__media">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=700&auto=format&fit=crop&q=80"
+                            alt="Books"
+                        >
+
+                        <div class="product-card__actions">
+
+                            <button class="product-card__action-btn">
+
+                                <svg viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2">
+
+                                    <path d="M12 5v14"></path>
+                                    <path d="M5 12h14"></path>
+
+                                </svg>
+
+                            </button>
+
+                            <button class="product-card__action-btn">
+
+                                <svg viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2">
+
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21l8.84-8.61a5.5 5.5 0 0 0 0-7.78z"/>
+
+                                </svg>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card__body">
+
+                        <span class="badge">
+                            Books
+                        </span>
+
+                        <h3 class="card__title">
+
+                            <a href="service-details.html">
+                                Science Textbook
+                            </a>
+
+                        </h3>
+
+                        <div class="product-price">
+
+                            <span class="now">
+                                $22
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- Product 4 -->
+
+            <div class="col-lg-3 col-md-6">
+
+                <article class="card product-card">
+
+                    <div class="card__media">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1456735190827-d1262f71b8a3?w=700&auto=format&fit=crop&q=80"
+                            alt="Stationery"
+                        >
+
+                        <div class="product-card__actions">
+
+                            <button class="product-card__action-btn">
+
+                                <svg viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2">
+
+                                    <path d="M12 5v14"></path>
+                                    <path d="M5 12h14"></path>
+
+                                </svg>
+
+                            </button>
+
+                            <button class="product-card__action-btn">
+
+                                <svg viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-width="2">
+
+                                    <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 1 0-7.78 7.78L12 21l8.84-8.61a5.5 5.5 0 0 0 0-7.78z"/>
+
+                                </svg>
+
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                    <div class="card__body">
+
+                        <span class="badge">
+                            Stationery
+                        </span>
+
+                        <h3 class="card__title">
+
+                            <a href="service-details.html">
+                                Complete Geometry Kit
+                            </a>
+
+                        </h3>
+
+                        <div class="product-price">
+
+                            <span class="now">
+                                $16
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ============== SECTION 5 : WHY CHOOSE US ============== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="section-head reveal reveal-1">
+
+            <span class="eyebrow">
+                Why Choose Scholar Stationery
+            </span>
+
+            <h2>
+                Everything Students Need Under One Roof
+            </h2>
+
+            <p>
+                We make learning easier with quality products, affordable
+                prices and reliable service for schools and families.
+            </p>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-lg-3 col-md-6">
+
+                <article class="icon-card reveal reveal-1">
+
+                    <div class="icon-card__icon">
+
+                        <svg viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2">
+
+                            <path d="M12 2L3 7l9 5 9-5-9-5z"/>
+                            <path d="M3 17l9 5 9-5"/>
+                            <path d="M3 12l9 5 9-5"/>
+
+                        </svg>
+
+                    </div>
+
+                    <h3>
+                        Premium Quality
+                    </h3>
+
+                    <p>
+                        Carefully selected books, stationery and classroom
+                        essentials from trusted brands.
+                    </p>
+
+                </article>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <article class="icon-card reveal reveal-2">
+
+                    <div class="icon-card__icon">
+
+                        <svg viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2">
+
+                            <path d="M3 12h18"/>
+                            <path d="M12 3l9 9-9 9"/>
+
+                        </svg>
+
+                    </div>
+
+                    <h3>
+                        Fast Delivery
+                    </h3>
+
+                    <p>
+                        Quick and secure delivery for homes, schools and
+                        educational institutions.
+                    </p>
+
+                </article>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <article class="icon-card reveal reveal-3">
+
+                    <div class="icon-card__icon">
+
+                        <svg viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2">
+
+                            <path d="M20 6L9 17l-5-5"/>
+
+                        </svg>
+
+                    </div>
+
+                    <h3>
+                        Best Pricing
+                    </h3>
+
+                    <p>
+                        Affordable prices with exclusive discounts for
+                        schools and bulk purchases.
+                    </p>
+
+                </article>
+
+            </div>
+
+            <div class="col-lg-3 col-md-6">
+
+                <article class="icon-card reveal reveal-4">
+
+                    <div class="icon-card__icon">
+
+                        <svg viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2">
+
+                            <circle cx="12" cy="12" r="10"/>
+                            <path d="M12 6v6l4 2"/>
+
+                        </svg>
+
+                    </div>
+
+                    <h3>
+                        Customer Support
+                    </h3>
+
+                    <p>
+                        Friendly assistance before and after every purchase
+                        to ensure complete satisfaction.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </div>
+
+        <div class="bulk-notice mt-5 reveal reveal-4">
+
+            <div class="bulk-notice__icon">
+
+                <svg viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2">
+
+                    <path d="M20 6L9 17l-5-5"/>
+
+                </svg>
+
+            </div>
+
+            <div>
+
+                <h4>
+                    Bulk Orders for Schools
+                </h4>
+
+                <p>
+                    Save more with customized pricing for schools,
+                    colleges, coaching centers and educational
+                    organizations. Contact our team for a personalized
+                    quotation.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ============== SECTION 6 : BACK TO SCHOOL OFFERS ============== -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="cta reveal reveal-1">
+
+            <div class="cta__inner">
+
+                <span class="badge badge-secondary">
+                    Limited Time Offer
+                </span>
+
+                <h2>
+                    Back To School Mega Sale
+                </h2>
+
+                <p>
+                    Get everything your child needs for the new academic year.
+                    Save up to <strong>40% OFF</strong> on textbooks,
+                    notebooks, stationery, backpacks and classroom essentials.
+                </p>
+
+                <div class="hero__actions">
+
+                    <a href="services.html" class="btn btn-primary">
+                        Shop Now
+                    </a>
+
+                    <a href="pricing.html" class="btn btn-outline">
+                        Bulk Orders
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="row" style="margin-top:3rem;">
+
+            <!-- Offer 1 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <article class="card reveal reveal-1">
+
+                    <div class="card__body">
+
+                        <span class="badge badge-danger">
+                            Save 40%
+                        </span>
+
+                        <h3 class="card__title">
+                            School Starter Bundle
+                        </h3>
+
+                        <p class="card__text">
+                            Includes notebooks, pencils, erasers,
+                            sharpeners, ruler, crayons and school
+                            accessories for all primary students.
+                        </p>
+
+                        <a href="service-details.html"
+                           class="btn btn-primary btn-sm">
+                            View Bundle
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- Offer 2 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <article class="card reveal reveal-2">
+
+                    <div class="card__body">
+
+                        <span class="badge badge-success">
+                            Free Delivery
+                        </span>
+
+                        <h3 class="card__title">
+                            Bulk School Orders
+                        </h3>
+
+                        <p class="card__text">
+                            Schools and colleges receive exclusive
+                            pricing, priority support and free delivery
+                            on orders above <strong>$250</strong>.
+                        </p>
+
+                        <a href="pricing.html"
+                           class="btn btn-primary btn-sm">
+                            Get Quote
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- Offer 3 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <article class="card reveal reveal-3">
+
+                    <div class="card__body">
+
+                        <span class="badge badge-warning">
+                            New Arrival
+                        </span>
+
+                        <h3 class="card__title">
+                            Premium Student Kit
+                        </h3>
+
+                        <p class="card__text">
+                            Premium backpack, lunch box, water bottle,
+                            geometry kit and stationery combo at a
+                            special seasonal price.
+                        </p>
+
+                        <a href="services.html"
+                           class="btn btn-primary btn-sm">
+                            Shop Kit
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ============== SECTION 6 : CUSTOMER TESTIMONIALS ============== -->
+
+<section class="section section-alt">
+
+    <div class="container">
+
+        <div class="section-head reveal reveal-1">
+
+            <span class="eyebrow">
+                Testimonials
+            </span>
+
+            <h2>
+                Trusted By Students, Parents & Schools
+            </h2>
+
+            <p>
+                Thousands of happy customers rely on Scholar Stationery
+                for premium quality educational supplies every year.
+            </p>
+
+        </div>
+
+        <div class="row">
+
+            <!-- Testimonial 1 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <article class="testimonial reveal reveal-1">
+
+                    <div class="testimonial__quote">
+                        "
+                    </div>
+
+                    <div class="testimonial__stars">
+
+                        ★★★★★
+
+                    </div>
+
+                    <p class="testimonial__text">
+                        Scholar Stationery always delivers quality books
+                        and stationery before the school session begins.
+                        Their customer service is outstanding.
+                    </p>
+
+                    <div class="testimonial__author">
+
+                        <img
+                            class="testimonial__avatar"
+                            src="https://randomuser.me/api/portraits/women/45.jpg"
+                            alt="Sarah Wilson"
+                        >
+
+                        <div>
+
+                            <div class="name">
+                                Sarah Wilson
+                            </div>
+
+                            <div class="role">
+                                Parent
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- Testimonial 2 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <article class="testimonial reveal reveal-2">
+
+                    <div class="testimonial__quote">
+                        "
+                    </div>
+
+                    <div class="testimonial__stars">
+
+                        ★★★★★
+
+                    </div>
+
+                    <p class="testimonial__text">
+                        We purchase classroom supplies in bulk every year.
+                        Excellent pricing, fast delivery and premium
+                        quality products.
+                    </p>
+
+                    <div class="testimonial__author">
+
+                        <img
+                            class="testimonial__avatar"
+                            src="https://randomuser.me/api/portraits/men/32.jpg"
+                            alt="David Johnson"
+                        >
+
+                        <div>
+
+                            <div class="name">
+                                David Johnson
+                            </div>
+
+                            <div class="role">
+                                School Principal
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+            <!-- Testimonial 3 -->
+
+            <div class="col-lg-4 col-md-6">
+
+                <article class="testimonial reveal reveal-3">
+
+                    <div class="testimonial__quote">
+                        "
+                    </div>
+
+                    <div class="testimonial__stars">
+
+                        ★★★★★
+
+                    </div>
+
+                    <p class="testimonial__text">
+                        Everything I need for college is available here.
+                        The notebooks, calculators and backpacks are of
+                        excellent quality.
+                    </p>
+
+                    <div class="testimonial__author">
+
+                        <img
+                            class="testimonial__avatar"
+                            src="https://randomuser.me/api/portraits/women/68.jpg"
+                            alt="Emily Clark"
+                        >
+
+                        <div>
+
+                            <div class="name">
+                                Emily Clark
+                            </div>
+
+                            <div class="role">
+                                College Student
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ============== FINAL CTA SECTION ============== -->
+
+<!-- ============== FINAL CTA SECTION ============== -->
+
+<section class="section section-alt">
+
+    <div class="container">
+
+        <div class="cta cta--newsletter reveal reveal-1">
+
+            <div class="cta__content">
+
+                <span class="badge badge-secondary">
+                    Exclusive Offers
+                </span>
+
+                <h2>
+                    Stay Ahead This School Year
+                </h2>
+
+                <p>
+                    Subscribe to receive exclusive discounts, back-to-school
+                    offers, new arrivals, educational resources and premium
+                    school essentials delivered straight to your inbox. Be the
+                    first to know about seasonal sales and special promotions.
+                </p>
+
+            </div>
+
+            <form class="newsletter-form">
+
+                <div class="newsletter-form__group">
+
+                    <input
+                        type="email"
+                        class="form-control"
+                        placeholder="Enter your email address"
+                        required
+                    >
+
+                    <button
+                        type="submit"
+                        class="btn btn-primary">
+
+                        Subscribe Now
+
+                    </button>
+
+                </div>
+
+                <small>
+                    Get exclusive member-only offers. No spam, ever. You can
+                    unsubscribe at any time.
+                </small>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+  </main>
+
+  <!-- ============== FOOTER ============== -->
+    <footer class="footer">
+    <div class="container">
+      <div class="footer__top">
+        <div class="footer__brand">
+          <a href="index.html" class="brand" aria-label="Scholar Stationery home">
+            <span class="brand__logo">
+    <img src="https://www.svgrepo.com/show/492785/book-and-person-summer.svg" alt="Scholar Stationery Logo">
+</span>
+            <span class="brand__name" style="color:#fff">Scholar<span>Stationery</span></span>
+          </a>
+          <p class="footer__about">Your neighborhood school supply and book shop since 2009. Quality textbooks, notebooks, pens and art supplies for every grade — with bulk pricing built for schools.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></a>
+            <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h3l-7 8 8 12h-6l-5-7-6 7H2l8-9L2 2h6l4 6z"/></svg></a>
+          </div>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul class="footer__links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="contact.html">Contacts</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Company</h4>
+          <ul class="footer__links">
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="terms.html">Terms</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="404.html">404 page</a></li>
+            <li><a href="coming-soon.html">Coming Soon</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Reach us</h4>
+          <ul class="footer__contact">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 42 Maple Avenue, Riverton</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (555) 018-2200</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> hello@scholarstationery.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p class="mb-0">&copy; 2025 Scholar Stationery. All rights reserved.</p>
+        <ul class="footer__bottom-links">
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms &amp; Conditions</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+  <script src="assets/js/toggles.js" defer></script>
+</body>
+</html>
