@@ -1,0 +1,673 @@
+/*==================================================
+CSS VARIABLES
+==================================================*/
+
+:root{
+
+--color-primary:#2563eb;
+--color-secondary:#f59e0b;
+--color-accent:#3b82f6;
+
+--color-background:#f5f7fb;
+--color-surface:#ffffff;
+--color-surface-alt:#f8fafc;
+
+--color-heading:#111827;
+--color-text:#374151;
+--color-text-muted:#6b7280;
+
+--color-border:#dbe3ec;
+
+--color-success:#22c55e;
+--color-warning:#f59e0b;
+--color-danger:#ef4444;
+
+--shadow-small:0 2px 8px rgba(0,0,0,.05);
+--shadow-medium:0 12px 30px rgba(0,0,0,.08);
+--shadow-large:0 20px 50px rgba(0,0,0,.15);
+
+--border-radius-small:10px;
+--border-radius-medium:16px;
+--border-radius-large:22px;
+
+--transition-fast:.2s ease;
+--transition-normal:.3s ease;
+--transition-slow:.45s ease;
+
+--font-family:"Inter",sans-serif;
+--font-display:"Inter",sans-serif;
+
+}
+
+/*==================================================
+RESET
+==================================================*/
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+font-size:16px;
+scroll-behavior:smooth;
+}
+
+body{
+font-family:var(--font-family);
+background:var(--color-background);
+color:var(--color-heading);
+/* overflow:hidden; */
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+button,
+input{
+font-family:inherit;
+outline:none;
+}
+
+/* img{
+display:block;
+max-width:100%;
+} */
+
+/*==================================================
+REGISTER PAGE
+==================================================*/
+
+.register-page{
+display:flex;
+align-items:center;
+justify-content:center;
+padding:20px;
+/* background:var(--color-background); */
+z-index: 1;
+}
+
+/*==================================================
+BACKGROUND
+==================================================*/
+
+.register-page::before{
+content: "";
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    background: url(https://images.unsplash.com/photo-1611758498818-bfdeec6dc3de?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+background-repeat:no-repeat;
+background-size: cover;
+filter: blur(2px);
+z-index: -1;
+}
+
+/*==================================================
+REGISTER CARD
+==================================================*/
+
+.register-card{
+height: 595px;
+width:100%;
+max-width:450px;
+background:var(--color-surface);
+border:1px solid rgba(0,0,0,.06);
+border-radius:22px;
+padding:15px 30px;
+box-shadow:
+0 12px 30px rgba(0,0,0,.08),
+0 2px 8px rgba(0,0,0,.04);
+animation:cardFade .45s ease;
+}
+
+/*==================================================
+TOP
+==================================================*/
+
+.card-actions{
+display:flex;
+justify-content:flex-end;
+gap:10px;
+/* margin-bottom:18px; */
+}
+
+.circle-button{
+width:38px;
+height:38px;
+border:none;
+border-radius:50%;
+background:var(--color-surface-alt);
+display:flex;
+align-items:center;
+justify-content:center;
+cursor:pointer;
+font-size:14px;
+transition:.3s;
+}
+
+.circle-button:hover{
+background:var(--color-primary);
+color:#fff;
+transform:translateY(-2px);
+}
+
+/*==================================================
+BRAND
+==================================================*/
+
+.brand{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+/* margin-bottom:20px; */
+}
+
+.brand__logo{
+width:48px;
+height:48px;
+flex-shrink:0;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:12px;
+overflow:hidden;
+}
+
+.brand__logo img{
+width:100%;
+height:100%;
+object-fit:contain;
+}
+
+.brand__name{
+display:flex;
+align-items:center;
+font-size:24px;
+font-weight:700;
+line-height:1;
+white-space:nowrap;
+}
+
+.brand__name span{
+margin-left:2px;
+color:var(--color-secondary);
+}
+
+/*==================================================
+HEADER
+==================================================*/
+
+.register-title{
+text-align:center;
+/* font-size:32px;
+font-weight:800; */
+margin-bottom:8px;
+}
+
+.register-description{
+text-align:center;
+justify-content: center;
+font-size:14px;
+line-height:1.6;
+color:var(--color-text-muted);
+max-width:300px;
+margin:5px auto ;
+
+}
+
+/* .register-form{
+margin-top:26px;
+} */
+/*==================================================
+FORM
+==================================================*/
+
+.form-field{
+margin-bottom:5px;
+display: flex;
+flex-direction: row;
+align-items: center;
+}
+
+.form-field label{
+display:block;
+width: 130px;
+font-size:14px;
+font-weight:600;
+/* margin-bottom:8px; */
+color:var(--color-heading);
+}
+
+/*==================================================
+INPUTS
+==================================================*/
+
+.form-field input{
+/* margin: 10px; */
+/* width:100%; */
+height:35px;
+padding:0 16px;
+border:1px solid var(--color-border);
+border-radius:12px;
+background:var(--color-surface);
+color:var(--color-heading);
+font-size:14px;
+/* font-weight:500; */
+transition:all .3s ease;
+}
+
+.form-field input::placeholder{
+color:var(--color-text-muted);
+}
+
+.form-field input:hover{
+border-color:rgba(0, 0, 0, 0.836);
+}
+
+.form-field input:focus{
+border-color:var(--color-primary);
+box-shadow:0 0 0 4px rgba(37,99,235,.12);
+}
+
+/*==================================================
+PASSWORD
+==================================================*/
+
+.password-wrapper{
+position:relative;
+display:flex;
+align-items:center;
+}
+
+/* .password-wrapper input{
+padding-right:54px;
+} */
+
+.password-button{
+position:absolute;
+top:50%;
+right:12px;
+transform:translateY(-50%);
+width:28px;
+height:28px;
+border:none;
+background:transparent;
+display:flex;
+align-items:center;
+justify-content:center;
+cursor:pointer;
+font-size:16px;
+color:var(--color-text-muted);
+transition:.3s;
+}
+
+.password-button:hover{
+color:var(--color-primary);
+}
+
+/*==================================================
+TERMS
+==================================================*/
+
+.terms-wrapper{
+margin:10px 0 15px;
+}
+
+.terms-checkbox{
+display:flex;
+align-items:flex-start;
+gap:10px;
+cursor:pointer;
+}
+
+.terms-checkbox input{
+width:18px;
+height:18px;
+margin-top:2px;
+accent-color:var(--color-primary);
+cursor:pointer;
+flex-shrink:0;
+}
+
+.terms-checkbox span{
+font-size:13px;
+line-height:1.7;
+color:var(--color-text-muted);
+}
+
+.terms-checkbox a{
+font-weight:600;
+color:var(--color-primary);
+transition:var(--transition-normal);
+}
+
+.terms-checkbox a:hover{
+text-decoration:underline;
+}
+
+/*==================================================
+REGISTER BUTTON
+==================================================*/
+
+.register-button{
+width:100%;
+height:50px;
+border:none;
+border-radius:12px;
+border: 1px solid #9ca3af;
+background:var(--color-primary);
+/* color:#ffffff; */
+font-size:15px;
+font-weight:600;
+display:flex;
+align-items:center;
+justify-content:center;
+gap:10px;
+cursor:pointer;
+transition:all .3s ease;
+}
+
+.register-button:hover{
+transform:translateY(-2px);
+box-shadow:0 12px 24px rgba(0,0,0,.15);
+}
+
+.register-button:active{
+transform:translateY(0);
+}
+
+.button-arrow{
+transition:transform .3s ease;
+}
+
+.register-button:hover .button-arrow{
+transform:translateX(5px);
+}
+/*==================================================
+DIVIDER
+==================================================*/
+
+.divider{
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+margin:20px 0;
+}
+
+.divider::before{
+content:"";
+position:absolute;
+left:0;
+width:36%;
+height:1px;
+background:var(--color-border);
+}
+
+.divider::after{
+content:"";
+position:absolute;
+right:0;
+width:36%;
+height:1px;
+background:var(--color-border);
+}
+
+.divider span{
+padding:0 14px;
+background:rgba(255,255,255,.96);
+font-size:13px;
+font-weight:500;
+color:var(--color-text-muted);
+position:relative;
+z-index:1;
+}
+
+/*==================================================
+SOCIAL LOGIN
+==================================================*/
+
+.social-login{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:12px;
+margin-bottom:20px;
+}
+
+.social-button{
+height:48px;
+border:1px solid var(--color-border);
+border-radius:12px;
+background:var(--color-surface);
+display:flex;
+align-items:center;
+justify-content:center;
+gap:8px;
+font-size:13px;
+font-weight:600;
+color:var(--color-heading);
+transition:.3s ease;
+}
+
+.social-button img{
+width:18px;
+height:18px;
+object-fit:contain;
+}
+
+.social-button:hover{
+border-color:var(--color-primary);
+background:rgba(37,99,235,.05);
+transform:translateY(-2px);
+}
+
+/*==================================================
+SIGN IN LINK
+==================================================*/
+
+.signin-link{
+text-align:center;
+}
+
+.signin-link p{
+font-size:14px;
+color:var(--color-text-muted);
+}
+
+.signin-link a{
+margin-left:4px;
+font-weight:700;
+color:var(--color-primary);
+transition:var(--transition-normal);
+}
+
+.signin-link a:hover{
+text-decoration:underline;
+}
+
+/*==================================================
+CARD ANIMATION
+==================================================*/
+
+@keyframes cardFade{
+
+0%{
+opacity:0;
+transform:translateY(24px) scale(.98);
+}
+
+100%{
+opacity:1;
+transform:translateY(0) scale(1);
+}
+}
+
+/*==================================================
+RESPONSIVE
+==================================================*/
+
+@media(max-width:768px){
+
+.register-page{
+padding:20px;
+}
+
+.register-card{
+max-width:430px;
+padding:26px;
+}
+
+.brand__name{
+font-size:26px;
+}
+
+.register-title{
+font-size:30px;
+}
+
+}
+
+@media(max-width:576px){
+
+body{
+overflow:auto;
+}
+
+.register-page{
+height:auto;
+min-height:100vh;
+padding:18px;
+}
+
+.register-card{
+max-width:100%;
+padding:22px;
+border-radius:18px;
+}
+
+.brand{
+gap:10px;
+}
+
+.brand__logo{
+width:42px;
+height:42px;
+}
+
+.brand__name{
+font-size:24px;
+}
+
+.register-title{
+font-size:28px;
+}
+
+.register-description{
+font-size:13px;
+}
+
+.social-login{
+grid-template-columns:1fr;
+}
+
+.social-button{
+height:46px;
+}
+
+}
+
+/*==================================================
+DARK MODE
+==================================================*/
+
+body.dark-mode{
+background:#0f172a;
+}
+
+body.dark-mode .register-page::after{
+background:rgba(15,23,42,.65);
+}
+
+body.dark-mode .register-card{
+background:#111827;
+border-color:#374151;
+}
+
+body.dark-mode .brand__name{
+color:#ffffff;
+}
+
+body.dark-mode .register-title{
+color:#ffffff;
+}
+
+body.dark-mode .register-description{
+color:#cbd5e1;
+}
+
+body.dark-mode .form-field label{
+color:#ffffff;
+}
+
+body.dark-mode .form-field input{
+background:#1f2937;
+border-color:#374151;
+color:#ffffff;
+}
+
+body.dark-mode .form-field input::placeholder{
+color:#94a3b8;
+}
+
+body.dark-mode .circle-button{
+background:#1f2937;
+color:#ffffff;
+}
+
+body.dark-mode .social-button{
+background:#1f2937;
+border-color:#374151;
+color:#ffffff;
+}
+
+body.dark-mode .divider span{
+background:#111827;
+color:#cbd5e1;
+}
+
+body.dark-mode .signin-link p{
+color:#cbd5e1;
+}
+
+/*==================================================
+RTL
+==================================================*/
+
+html[dir="rtl"] .password-button{
+right:auto;
+left:14px;
+}
+
+html[dir="rtl"] .password-wrapper input{
+padding-right:18px;
+padding-left:54px;
+}
+
+html[dir="rtl"] .button-arrow{
+transform:rotate(180deg);
+}
+
+html[dir="rtl"] .register-button:hover .button-arrow{
+transform:rotate(180deg) translateX(-5px);
+}
+
+html[dir="rtl"] .signin-link a{
+margin-left:0;
+margin-right:4px;
+}

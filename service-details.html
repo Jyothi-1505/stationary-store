@@ -18,115 +18,141 @@
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <div class="topbar"><div class="container"><p class="topbar__promo mb-0"><svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 1.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13zM8 4a.9.9 0 1 1 0 1.8A.9.9 0 0 1 8 4zm1 7.5H7v-.6h.7V7.6H7V7h2v3.9h.9v.6z"/></svg> Back-to-school sale: up to 40% off textbooks &amp; free delivery on school bulk orders over $250.</p><ul class="topbar__links"><li><a href="contact.html">Store Locator</a></li><li><a href="contact.html">Track Order</a></li><li class="divider">|</li><li><a href="login.html">Sign In</a></li><li><a href="register.html">Register</a></li></ul></div></div>
-
 <header class="header">
     <div class="container">
-      <input type="checkbox" id="nav-toggle-state" />
-      <div class="header__inner">
-        <a href="index.html" class="brand" aria-label="Scholar Stationery home">
-          <span class="brand__logo">
-    <img src="https://www.svgrepo.com/show/492785/book-and-person-summer.svg" alt="Scholar Stationery Logo">
-</span>
-          <!-- <span class="brand__logo" aria-hidden="true">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
-            
-          </span> -->
-          <span class="brand__name">Scholar<span>Stationery</span></span>
-        </a>
-
-        <label for="nav-toggle-state" class="nav-toggle" aria-label="Open menu" aria-controls="primary-nav">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-        </label>
-
-        <!-- <nav class="nav" id="primary-nav" aria-label="Primary">
-          <ul class="nav__list">
-            <li><a class="nav__link" href="index.html" aria-current="page">Home</a></li>
-            <li class="nav__item">
-              <a class="nav__link" href="services.html">Services
-                <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
-              </a>
-              <div class="nav__dropdown">
-                <a href="services.html">All Products</a>
-                <a href="service-details.html">Textbook Details</a>
-                <a href="pricing.html">Bulk Pricing</a>
-              </div>
-            </li>
-            <li><a class="nav__link" href="about.html">About</a></li>
-            <li><a class="nav__link" href="blog.html">Blog</a></li>
-            <li><a class="nav__link" href="faq.html">FAQ</a></li>
-            <li><a class="nav__link" href="contact.html">Contact</a></li>
-          </ul>
-        </nav> -->
-        <nav class="nav" id="primary-nav" aria-label="Primary">
-    <ul class="nav__list">
-
-        <!-- Home Dropdown -->
-        <li class="nav__item">
-            <a class="nav__link" href="index.html" aria-current="page">
-                Home
-                <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                </svg>
+        <div class="header__inner">
+            <!-- ================= Logo ================= -->
+            <a href="index.html" class="brand" aria-label="Scholar Stationery Home">
+                <span class="brand__logo">
+                    <img src="https://www.svgrepo.com/show/492785/book-and-person-summer.svg"
+                         alt="Scholar Stationery Logo">
+                </span>
+                <span class="brand__name">
+                    Scholar<span>Stationery</span>
+                </span>
             </a>
-
-            <div class="nav__dropdown">
-                <a href="index.html">Home 1</a>
-                <a href="home2.html">Home 2</a>
-            </div>
-        </li>
-
-        <!-- Services Dropdown -->
-        <li class="nav__item">
-            <a class="nav__link" href="services.html">
-                Services
-                <!-- <svg class="caret" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                </svg> -->
-            </a>
-
-            <!-- <div class="nav__dropdown">
-                <a href="services.html">All Products</a>
-                <a href="service-details.html">Textbook Details</a>
-                <a href="pricing.html">Bulk Pricing</a>
-            </div> -->
-        </li>
-
-        <li>
-            <a class="nav__link" href="about.html">About</a>
-        </li>
-
-        <li>
-            <a class="nav__link" href="blog.html">Blog</a>
-        </li>
-
-        <li>
-            <a class="nav__link" href="pricing.html">Pricing</a>
-        </li>
-
-        <li>
-            <a class="nav__link" href="contact.html">Contact</a>
-        </li>
-
-    </ul>
-</nav>
-        <div class="header__actions">
-          <button class="icon-btn desktop-only" aria-label="Search">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
-          </button>
-          <button class="icon-btn desktop-only" aria-label="Cart">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
-          </button>
-          <button class="icon-btn" data-rtl-toggle aria-label="Toggle right-to-left layout" title="RTL / LTR">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="17 1 21 5 17 9"/><path d="M3 11V9a4 4 0 0 1 4-4h14"/><polyline points="7 23 3 19 7 15"/><path d="M21 13v2a4 4 0 0 1-4 4H3"/></svg>
-          </button>
-          <button class="icon-btn" data-theme-toggle aria-label="Toggle dark mode" title="Dark / Light">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-          </button>
-        </div>
-      </div>
+            <!-- ================= Navigation ================= -->
+            <nav class="nav" id="primary-nav">
+                <ul class="nav__list">
+                    <!-- Home Dropdown -->
+                    <li class="nav__item mobile-dropdown">
+    <a class="nav__link" href="index.html">
+                            Home
+                        </a>
+    <div class="nav__dropdown">
+        <a href="index.html">Home 1</a>
+        <a href="home2.html">Home 2</a>
     </div>
-  </header>
+</li>
+                    <li>
+                        <a class="nav__link" href="services.html" aria-current="page">
+                            Services
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="about.html">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="blog.html">
+                            Blog
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="pricing.html">
+                            Pricing
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav__link" href="contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- ================= Right Side ================= -->
+<nav class="nav">
+            <div class="header__actions">
+                <!-- <button class="icon-btn desktop-only" aria-label="Search">
+                    <svg viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2">
+
+                        <circle cx="11" cy="11" r="8"></circle>
+
+                        <line x1="21"
+                              y1="21"
+                              x2="16.65"
+                              y2="16.65"></line>
+
+                    </svg>
+
+                </button>
+
+                <button class="icon-btn desktop-only" aria-label="Cart">
+
+                    <svg viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2">
+
+                        <circle cx="9" cy="21" r="1"></circle>
+
+                        <circle cx="20" cy="21" r="1"></circle>
+
+                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+
+                    </svg>
+
+                </button> -->
+                <button
+                    class="icon-btn"
+                    data-rtl-toggle
+                    aria-label="RTL / LTR">
+                    <svg viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2">
+                        <polyline points="17 1 21 5 17 9"></polyline>
+                        <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
+                        <polyline points="7 23 3 19 7 15"></polyline>
+                        <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
+                    </svg>
+                </button>
+                <button
+                    class="icon-btn"
+                    data-theme-toggle
+                    aria-label="Dark Mode">
+                    <svg viewBox="0 0 24 24"
+                         fill="none"
+                         stroke="currentColor"
+                         stroke-width="2">
+
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79"></path>
+                    </svg>
+                </button>
+                <!-- <nav class="login"> -->
+            <a href="login.html" class="login-button">Login</a>
+        </nav>
+            </div>
+            <!-- ================= Mobile Menu Button ================= -->
+            <button
+                class="nav-toggle"
+                id="mobile-menu-toggle"
+                aria-label="Open Menu"
+                aria-controls="primary-nav"
+                aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </div>
+    <!-- Overlay -->
+    <div class="mobile-overlay"></div>
+</header>
 
   <main id="main">
     <!-- 1. Breadcrumb + Product hero -->
@@ -135,7 +161,7 @@
         <nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li><a href="services.html">Shop</a></li><li aria-current="page">Classpack Wooden Pencils</li></ol></nav>
         <div class="hero__inner">
           <div class="hero__media reveal">
-            <img class="hero__img-main" src="https://images.pexels.com/photos/267350/pexels-photo-267350.jpeg?auto=compress&cs=tinysrgb&w=900" alt="Classpack of 24 wooden pencils" width="900" height="700" loading="eager" />
+            <img class="hero__img-main" src="https://m.media-amazon.com/images/I/71Pijmy-iXL._AC_UF894,1000_QL80_.jpg" alt="Classpack of 24 wooden pencils" width="900" height="700" loading="eager" />
             <div class="hero__badge-float hero__badge-float--tl"><span class="ic" style="background:rgba(220,38,38,.14);color:var(--color-danger)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg></span><span><span class="t d-block">-30% Off</span><span class="s d-block">Back-to-school</span></span></div>
           </div>
           <div class="hero__content reveal reveal-2">
@@ -199,10 +225,10 @@
       <div class="container">
         <div class="section-head section-head--left reveal" style="max-width:100%"><h2>You might also like</h2></div>
         <div class="row row-tight">
-          <div class="col-sm-6 col-lg-3 reveal reveal-1"><article class="card product-card"><div class="card__media"><img src="https://images.pexels.com/photos/256541/pexels-photo-256541.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Ruled notebooks bundle" width="400" height="400" loading="lazy" /><div class="product-card__actions"><button class="product-card__action-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button></div></div><div class="card__body"><h3 class="card__title"><a href="service-details.html">Ruled Notebooks — Bundle of 4</a></h3><div class="product-price"><span class="now">$11.50</span></div></div></article></div>
-          <div class="col-sm-6 col-lg-3 reveal reveal-2"><article class="card product-card"><div class="card__media"><img src="https://images.pexels.com/photos/256651/pexels-photo-256651.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Geometry set" width="400" height="400" loading="lazy" /><div class="product-card__actions"><button class="product-card__action-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button></div></div><div class="card__body"><h3 class="card__title"><a href="service-details.html">Geometry Set (8 pieces)</a></h3><div class="product-price"><span class="now">$7.49</span></div></div></article></div>
-          <div class="col-sm-6 col-lg-3 reveal reveal-3"><article class="card product-card"><div class="card__media"><img src="https://images.pexels.com/photos/256431/pexels-photo-256431.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Gel pen variety pack" width="400" height="400" loading="lazy" /><div class="product-card__actions"><button class="product-card__action-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button></div></div><div class="card__body"><h3 class="card__title"><a href="service-details.html">Gel Pen Variety Pack (12)</a></h3><div class="product-price"><span class="now">$9.99</span></div></div></article></div>
-          <div class="col-sm-6 col-lg-3 reveal reveal-4"><article class="card product-card"><div class="card__media"><img src="https://images.pexels.com/photos/895136/pexels-photo-895136.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Jumbo crayons" width="400" height="400" loading="lazy" /><div class="product-card__actions"><button class="product-card__action-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button></div></div><div class="card__body"><h3 class="card__title"><a href="service-details.html">Jumbo Crayons (24)</a></h3><div class="product-price"><span class="now">$5.49</span></div></div></article></div>
+          <div class="col-sm-6 col-lg-3 reveal reveal-1"><article class="card product-card"><div class="card__media"><img src="https://m.media-amazon.com/images/I/61e7EIaqZ1L._AC_UF1000,1000_QL80_.jpg" alt="Ruled notebooks bundle" width="400" height="400" loading="lazy" /><div class="product-card__actions"><button class="product-card__action-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button></div></div><div class="card__body"><h3 class="card__title"><a href="service-details.html">Ruled Notebooks — Bundle of 4</a></h3><div class="product-price"><span class="now">$11.50</span></div></div></article></div>
+          <div class="col-sm-6 col-lg-3 reveal reveal-2"><article class="card product-card"><div class="card__media"><img src="https://images-cdn.ubuy.co.in/697550b9c052cdd0450b3da8-elentge-10-pieces-geometry-set-maths.jpg" alt="Geometry set" width="400" height="400" loading="lazy" /><div class="product-card__actions"><button class="product-card__action-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button></div></div><div class="card__body"><h3 class="card__title"><a href="service-details.html">Geometry Set (8 pieces)</a></h3><div class="product-price"><span class="now">$7.49</span></div></div></article></div>
+          <div class="col-sm-6 col-lg-3 reveal reveal-3"><article class="card product-card"><div class="card__media"><img src="https://images.pexels.com/photos/32474662/pexels-photo-32474662.jpeg" alt="Gel pen variety pack" width="400" height="400" loading="lazy" /><div class="product-card__actions"><button class="product-card__action-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button></div></div><div class="card__body"><h3 class="card__title"><a href="service-details.html">Gel Pen Variety Pack (12)</a></h3><div class="product-price"><span class="now">$9.99</span></div></div></article></div>
+          <div class="col-sm-6 col-lg-3 reveal reveal-4"><article class="card product-card"><div class="card__media"><img src="https://images.pexels.com/photos/8593813/pexels-photo-8593813.jpeg" alt="Jumbo crayons" width="400" height="400" loading="lazy" /><div class="product-card__actions"><button class="product-card__action-btn" aria-label="Add to cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg></button></div></div><div class="card__body"><h3 class="card__title"><a href="service-details.html">Jumbo Crayons (24)</a></h3><div class="product-price"><span class="now">$5.49</span></div></div></article></div>
         </div>
       </div>
     </section>
@@ -288,6 +314,14 @@
       </div>
     </div>
   </footer>
+  <!-- Back To Top Button -->
+<button id="backToTop" class="back-to-top" aria-label="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M12 19V5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M6 11L12 5L18 11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</button>
+  <script src="assets/js/main.js"></script>
   <script src="assets/js/toggles.js" defer></script>
 </body>
 </html>
