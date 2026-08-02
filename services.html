@@ -155,36 +155,307 @@
 </header>
   <main id="main">
     <!-- 1. Hero / breadcrumb -->
-    <section class="hero">
-      <div class="container">
-        <nav aria-label="Breadcrumb"><ol class="breadcrumb"><li><a href="index.html">Home</a></li><li aria-current="page">Shop</li></ol></nav>
+    <section class="services-hero">
+      <!-- <div class="container"> -->
         <div class="hero__inner" style="grid-template-columns:1fr;min-height:auto;padding-block:var(--space-7)">
           <div class="hero__content reveal" style="text-align:center;max-width:760px;margin-inline:auto">
             <span class="eyebrow">The full catalog</span>
-            <h1 class="hero__title" style="font-size:clamp(2rem,4vw,var(--fs-3xl))">Shop all school supplies</h1>
+            <h1 class="hero__title" style="font-size:clamp(2rem,4vw,var(--fs-3xl))">Shop all school supplies,<br>educational materials, and<br>creative kits</h1>
             <p class="hero__desc lead mx-auto">Filter by category, grade and price to find exactly what you need. Bulk pricing unlocks automatically on qualifying quantities.</p>
             <form class="search-bar mx-auto" style="max-width:540px" role="search"><label class="visually-hidden" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)" for="q">Search products</label><input class="form-control" id="q" type="search" placeholder="Search textbooks, pens, art supplies..." /><button class="btn btn-primary" type="submit">Search</button></form>
           </div>
         </div>
-      </div>
+      <!-- </div> -->
     </section>
     <!-- 2. Category quick links -->
-    <section class="section-tight">
-      <div class="container">
-        <div class="row row-tight">
-          <div class="col-sm-6 col-lg-2 reveal reveal-1"><a class="icon-card" href="#grid"><span class="icon-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg></span><h4>Textbooks</h4></a></div>
-          <div class="col-sm-6 col-lg-2 reveal reveal-2"><a class="icon-card" href="#grid"><span class="icon-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></span><h4>Notebooks</h4></a></div>
-          <div class="col-sm-6 col-lg-2 reveal reveal-3"><a class="icon-card" href="#grid"><span class="icon-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18z"/></svg></span><h4>Pens</h4></a></div>
-          <div class="col-sm-6 col-lg-2 reveal reveal-1"><a class="icon-card" href="#grid"><span class="icon-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="17.5" cy="10.5" r="2.5"/><circle cx="8.5" cy="7.5" r="2.5"/><circle cx="6.5" cy="12.5" r="2.5"/><path d="M12 22a10 10 0 1 1 0-20"/></svg></span><h4>Art Supplies</h4></a></div>
-          <div class="col-sm-6 col-lg-2 reveal reveal-2"><a class="icon-card" href="#grid"><span class="icon-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg></span><h4>Math &amp; Lab</h4></a></div>
-          <div class="col-sm-6 col-lg-2 reveal reveal-3"><a class="icon-card" href="#grid"><span class="icon-card__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></span><h4>Bundles</h4></a></div>
-        </div>
-      </div>
-    </section>
+    <!--==================================
+SHOP BY CATEGORY
+===================================-->
+
+<section class="section category-section">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="eyebrow">
+Everything You Need, Organized by Category
+</span>
+
+<h2>
+Shop By Category
+</h2>
+
+<p>
+Explore thousands of school essentials carefully organized to help students,
+parents and schools find exactly what they need.
+</p>
+
+</div>
+
+<div class="row g-4">
+
+<!--========== TEXTBOOKS ==========-->
+
+<div class="col-md-6 col-lg-4 reveal reveal-1">
+
+<a href="#grid" class="category-card">
+
+<img
+src="https://media.istockphoto.com/id/133307824/photo/books-on-black.jpg?s=1024x1024&w=is&k=20&c=rtN6sG0_sNfOAWWnRn3H8nQ3mTerGtG06EU2H9ihSCM="
+alt="Textbooks">
+
+<div class="category-overlay">
+
+<span class="category-count">
+
+450+ Products
+
+</span>
+
+<h3>
+
+Textbooks
+
+</h3>
+
+<p>
+
+School • College • Competitive Exams
+
+</p>
+
+<div class="category-button">
+
+Shop Now →
+
+</div>
+
+</div>
+
+</a>
+
+</div>
+
+<!--========== NOTEBOOKS ==========-->
+
+<div class="col-md-6 col-lg-4 reveal reveal-2">
+
+<a href="#grid" class="category-card">
+
+<img
+src="https://images.unsplash.com/photo-1531346878377-a5be20888e57?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+alt="Notebooks">
+
+<div class="category-overlay">
+
+<span class="category-count">
+
+320+ Products
+
+</span>
+
+<h3>
+
+Notebooks
+
+</h3>
+
+<p>
+
+Spiral • Ruled • Plain • Practical
+
+</p>
+
+<div class="category-button">
+
+Shop Now →
+
+</div>
+
+</div>
+
+</a>
+
+</div>
+
+<!--========== PENS ==========-->
+
+<div class="col-md-6 col-lg-4 reveal reveal-3">
+
+<a href="#grid" class="category-card">
+
+<img
+src="https://3.imimg.com/data3/BA/NE/MY-10940945/colour-ball-pens-and-pencils-500x500.jpg"
+alt="Pens">
+
+<div class="category-overlay">
+
+<span class="category-count">
+
+280+ Products
+
+</span>
+
+<h3>
+
+Pens & Pencils
+
+</h3>
+
+<p>
+
+Gel • Ball • Fountain • Mechanical
+
+</p>
+
+<div class="category-button">
+
+Shop Now →
+
+</div>
+
+</div>
+
+</a>
+
+</div>
+<!--========== ART SUPPLIES ==========-->
+
+<div class="col-md-6 col-lg-4 reveal reveal-1">
+
+<a href="#grid" class="category-card">
+
+<img
+src="https://m.media-amazon.com/images/I/81YyKibmSiL.jpg"
+alt="Art Supplies">
+
+<div class="category-overlay">
+
+<span class="category-count">
+
+190+ Products
+
+</span>
+
+<h3>
+
+Art Supplies
+
+</h3>
+
+<p>
+
+Colors • Paints • Brushes • Craft Kits
+
+</p>
+
+<div class="category-button">
+
+Shop Now →
+
+</div>
+
+</div>
+
+</a>
+
+</div>
+
+<!--========== MATH & LAB ==========-->
+
+<div class="col-md-6 col-lg-4 reveal reveal-2">
+
+<a href="services.html" class="category-card">
+
+<img
+src="https://scienceshop.vascsc.org/wp-content/uploads/2018/06/Maths-Secondary.jpg"
+alt="Math and Lab">
+
+<div class="category-overlay">
+
+<span class="category-count">
+
+140+ Products
+
+</span>
+
+<h3>
+
+Math & Lab
+
+</h3>
+
+<p>
+
+Geometry • Scientific • Measuring Tools
+
+</p>
+
+<div class="category-button">
+
+Shop Now →
+
+</div>
+
+</div>
+
+</a>
+
+</div>
+
+<!--========== SCHOOL KITS ==========-->
+
+<div class="col-md-6 col-lg-4 reveal reveal-3">
+
+<a href="#grid" class="category-card">
+
+<img
+src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9OXCxg-J0yZhVeW0efaOrNrAfcvw-suT9VXXdPrTaGA&s"
+alt="School Kits">
+
+<div class="category-overlay">
+
+<span class="category-count">
+
+95+ Products
+
+</span>
+
+<h3>
+
+School Kits
+
+</h3>
+
+<p>
+
+Complete Back-to-School Bundles
+
+</p>
+
+<div class="category-button">
+
+Shop Now →
+
+</div>
+
+</div>
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
     <!-- 3. Filter sidebar + product grid -->
     <section class="section section-alt" id="grid">
       <div class="container">
         <div class="row" style="align-items:flex-start">
+          <span class="eyebrow">Explore our Best Sellers</span>
           <!-- Sidebar -->
           <aside class="col-lg-3" style="margin-bottom:var(--space-5)">
             <div class="filter-sidebar reveal">
