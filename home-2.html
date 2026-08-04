@@ -1,0 +1,952 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduMart — School Supplies, Textbooks & Book Shop</title>
+  <meta name="description" content="EduMart stocks textbooks, notebooks, pens and art supplies for every grade. Browse by grade level, unlock bulk-order pricing for schools, and grab seasonal back-to-school offers." />
+  <link rel="canonical" href="https://scholar-stationery.example.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="EduMart — School Supplies & Book Shop" />
+  <meta property="og:description" content="Textbooks, notebooks, pens and art supplies for every grade. Bulk-order pricing for schools and seasonal back-to-school offers." />
+  <meta property="og:url" content="https://scholar-stationery.example.com/" />
+  <meta property="og:image" content="assets/images/og-cover.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="assets/css/vendor-bootstrap.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+  <!-- <a class="skip-link" href="#main">Skip to main content</a> -->
+  <!-- header -->
+<header class="header">
+
+<div class="container">
+
+<div class="header__inner">
+
+<a href="index.html" class="brand">
+
+<div class="brand__logo">
+<img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/edu-smart-logos-design-template-23b6de7d02972a120e8ad62879fb66f4_screen.jpg?ts=1661512030" alt="EduMart Logo">
+</div>
+
+<div class="brand__text">
+<h2>Edu<span>Mart</span></h2>
+<p>Books & School Supplies</p>
+</div>
+
+</a>
+
+<nav class="navigation" id="navigation">
+
+<ul class="navigation__list">
+
+<li class="navigation__item navigation__item--dropdown">
+
+<button class="navigation__link navigation__dropdown-toggle">
+
+<span>Home</span>
+
+<svg class="navigation__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<polyline points="6 9 12 15 18 9"></polyline>
+</svg>
+
+</button>
+
+<ul class="navigation__dropdown">
+
+<li>
+<a href="index.html">Home 01</a>
+</li>
+
+<li>
+<a href="home-2.html">Home 02</a>
+</li>
+
+</ul>
+
+</li>
+
+<li class="navigation__item">
+<a href="about.html" class="navigation__link">About</a>
+</li>
+
+<li class="navigation__item">
+<a href="shop.html" class="navigation__link">Shop</a>
+</li>
+
+<li class="navigation__item">
+<a href="services.html" class="navigation__link">Services</a>
+</li>
+
+<li class="navigation__item">
+<a href="blog.html" class="navigation__link">Blog</a>
+</li>
+
+<li class="navigation__item">
+<a href="contact.html" class="navigation__link">Contact</a>
+</li>
+
+</ul>
+
+</nav>
+
+<div class="header__actions">
+
+<button class="header-icon-button rtl-toggle" title="RTL Mode">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+<path d="M21 5H10"></path>
+
+<path d="M21 12H7"></path>
+
+<path d="M21 19H10"></path>
+
+<path d="M7 5L3 9L7 13"></path>
+
+</svg>
+
+</button>
+
+<button class="header-icon-button theme-toggle" title="Dark Mode">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+<path d="M21 12.79A9 9 0 1 1 11.21 3A7 7 0 0 0 21 12.79Z"></path>
+
+</svg>
+
+</button>
+
+<a href="login.html" class="login-button">
+
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+<path d="M20 21V19A4 4 0 0 0 16 15H8A4 4 0 0 0 4 19V21"></path>
+
+<circle cx="12" cy="7" r="4"></circle>
+
+</svg>
+
+<span>Login</span>
+
+</a>
+
+<button class="mobile-menu-button" id="mobileMenuButton">
+
+<span></span>
+
+<span></span>
+
+<span></span>
+
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</header>
+  <main id="main">
+    <!-- ============== SECTION 2: HERO ============== -->
+<!-- <section class="showcase-hero">
+<div class="showcase-hero__background">
+<div class="showcase-hero__blob showcase-hero__blob--one"></div>
+<div class="showcase-hero__blob showcase-hero__blob--two"></div>
+<div class="showcase-hero__blob showcase-hero__blob--three"></div>
+</div>
+<div class="container">
+<div class="showcase-hero__wrapper">
+<div class="showcase-hero__gallery reveal">
+<div class="showcase-card showcase-card--large">
+<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=1200&auto=format&fit=crop" alt="Books Collection">
+<div class="showcase-card__overlay">
+<span class="showcase-card__badge">New Collection</span>
+<h3>Premium Books</h3>
+<a href="shop.html">Explore Collection</a>
+</div>
+</div>
+<div class="showcase-card showcase-card--small showcase-card--top">
+<img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=900&auto=format&fit=crop" alt="Notebook Collection">
+<div class="showcase-card__overlay">
+<h4>Creative Journals</h4>
+</div>
+</div>
+<div class="showcase-card showcase-card--small showcase-card--bottom">
+<img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?q=80&w=900&auto=format&fit=crop" alt="Stationery Collection">
+<div class="showcase-card__overlay">
+<h4>School Essentials</h4>
+</div>
+</div>
+</div>
+<div class="showcase-hero__details reveal">
+<span class="showcase-hero__eyebrow">Designed For Every Learner</span>
+<p class="showcase-hero__intro">Discover thoughtfully selected books, premium stationery, creative supplies and classroom essentials crafted to inspire learning, creativity and everyday success.</p>
+<div class="showcase-hero__actions">
+<a href="shop.html" class="button button-primary">Shop Collection</a>
+<a href="about.html" class="button button-outline">Discover More</a>
+</div>
+<div class="showcase-hero__floating showcase-hero__floating--one">
+<div class="showcase-hero__floating-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M2 3H8A4 4 0 0 1 12 7V21A3 3 0 0 0 9 18H2Z"></path>
+<path d="M22 3H16A4 4 0 0 0 12 7V21A3 3 0 0 1 15 18H22Z"></path>
+</svg>
+</div>
+<div class="showcase-hero__floating-content">
+<h5>12,000+</h5>
+<p>Books Available</p>
+</div>
+</div>
+<div class="showcase-hero__floating showcase-hero__floating--two">
+<div class="showcase-hero__floating-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M5 12L10 17L20 7"></path>
+</svg>
+</div>
+<div class="showcase-hero__floating-content">
+<h5>Premium</h5>
+<p>Quality Assured</p>
+</div>
+</div>
+<div class="showcase-hero__floating showcase-hero__floating--three">
+<div class="showcase-hero__floating-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M12 2L15 8L22 9L17 14L18 21L12 18L6 21L7 14L2 9L9 8L12 2"></path>
+</svg>
+</div>
+<div class="showcase-hero__floating-content">
+<h5>Top Rated</h5>
+<p>Trusted By Schools</p>
+</div>
+</div>
+</div>
+</div>
+</section> -->
+  <section class="education-hero-section">
+<div class="education-hero-background">
+<img src="https://images.unsplash.com/photo-1779684998897-ce5de594a5ac?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Edu Mart Hero Background" class="education-hero-background-image">
+<div class="education-hero-overlay"></div>
+</div>
+<div class="container">
+<div class="education-hero-content reveal reveal-up">
+<span class="education-hero-subtitle">WELCOME TO EDU MART</span>
+<h1 class="education-hero-title">
+<span class="education-hero-title-light">Where Learning Meets</span>
+<span class="education-hero-title-highlight">Endless Possibilities</span>
+</h1>
+<p class="education-hero-description">Discover premium books, school stationery, backpacks, office supplies and classroom essentials carefully selected for students, teachers and educational institutions.</p>
+<div class="education-hero-buttons">
+<a href="shop.html" class="button button-primary">Shop Collection</a>
+<a href="contact.html" class="button button-outline-light">Bulk Orders</a>
+</div>
+</div>
+<div class="education-hero-features">
+<div class="education-feature-item reveal reveal-up">
+<div class="education-feature-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M2 3H8A4 4 0 0 1 12 7V21A3 3 0 0 0 9 18H2Z"></path>
+<path d="M22 3H16A4 4 0 0 0 12 7V21A3 3 0 0 1 15 18H22Z"></path>
+</svg>
+</div>
+<div class="education-feature-content">
+<h4>15,000+ Books</h4>
+<p>Academic, reference and competitive exam books.</p>
+</div>
+</div>
+<div class="education-feature-item reveal reveal-up">
+<div class="education-feature-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M3 21L21 3"></path>
+<path d="M15 3H21V9"></path>
+</svg>
+</div>
+<div class="education-feature-content">
+<h4>Premium Stationery</h4>
+<p>Trusted brands for everyday learning and creativity.</p>
+</div>
+</div>
+<div class="education-feature-item reveal reveal-up">
+<div class="education-feature-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M5 12H19"></path>
+<path d="M12 5L19 12L12 19"></path>
+</svg>
+</div>
+<div class="education-feature-content">
+<h4>Fast Delivery</h4>
+<p>Quick delivery for schools, colleges and students.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ==========trnding collection=========== -->
+<section class="trending-collections-section">
+<div class="container">
+<div class="section-heading text-center reveal reveal-up">
+<span class="eyebrow">Trending Collections</span>
+<h2>Find Everything For Every Learning Stage</h2>
+<p>Carefully curated collections designed to support students, teachers and educational institutions throughout the academic year.</p>
+</div>
+<div class="trending-collections-grid">
+<div class="trending-collection-card reveal reveal-up">
+<div class="trending-collection-card-image">
+<img src="https://tiimg.tistatic.com/fp/1/006/814/educational-books-for-school-741.jpg" alt="Books">
+<span class="trending-collection-tag">Best Seller</span>
+</div>
+<div class="trending-collection-card-content">
+<h3>Academic Books</h3>
+<p>Textbooks, reference books and competitive exam preparation materials.</p>
+<a href="shop.html" class="text-button">Explore Collection</a>
+</div>
+</div>
+<div class="trending-collection-card reveal reveal-up">
+<div class="trending-collection-card-image">
+<img src="https://miro.medium.com/1*FeGu7FIyE-5zKqCqVUG41w.jpeg" alt="Stationery">
+<span class="trending-collection-tag">Popular</span>
+</div>
+<div class="trending-collection-card-content">
+<h3>Office supplies</h3>
+<p>High-quality notebooks, pens, organizers and classroom essentials.</p>
+<a href="shop.html" class="text-button">Explore Collection</a>
+</div>
+</div>
+<div class="trending-collection-card reveal reveal-up">
+<div class="trending-collection-card-image">
+<img src="https://plus.unsplash.com/premium_photo-1663127729829-de7f295c2987?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Art Supplies">
+<span class="trending-collection-tag">New Arrival</span>
+</div>
+<div class="trending-collection-card-content">
+<h3>Art & Craft</h3>
+<p>Creative supplies including colors, sketchbooks and craft materials.</p>
+<a href="shop.html" class="text-button">Explore Collection</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ========Academic Offers=========== -->
+<section class="academic-offer-section">
+<div class="container">
+<div class="academic-offer-banner reveal reveal-up">
+<div class="academic-offer-content">
+<span class="academic-offer-tag">Limited Time Offer</span>
+<h2>Back To School Festival Sale</h2>
+<p>Save more on textbooks, notebooks, stationery and classroom essentials. Perfect for students, teachers and educational institutions.</p>
+<div class="academic-offer-highlights">
+<div class="academic-offer-highlight">
+<h3>40%</h3>
+<span>OFF School Kits</span>
+</div>
+<div class="academic-offer-highlight">
+<h3>Buy 2</h3>
+<span>Get 1 Free</span>
+</div>
+<div class="academic-offer-highlight">
+<h3>Free</h3>
+<span>Delivery Above ₹999</span>
+</div>
+</div>
+<div class="academic-offer-buttons">
+<a href="shop.html" class="button button-primary">Shop Now</a>
+<a href="contact.html" class="button button-outline">Bulk Orders</a>
+</div>
+</div>
+<div class="academic-offer-image">
+<img src="https://images.unsplash.com/photo-1725801731069-baa524d6bd4c?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Back To School Offer">
+</div>
+</div>
+</div>
+</section>
+<!-- =======Bulk Orders======== -->
+ <section class="bulk-orders-section">
+<div class="container">
+<div class="bulk-orders-header reveal reveal-up">
+<span class="eyebrow">Bulk Supply Solutions</span>
+<h2>Empowering Schools With Smarter Procurement</h2>
+<p>EduMart partners with schools, colleges, coaching centers and educational institutions to provide customized supply solutions, competitive pricing and dependable nationwide delivery.</p>
+</div>
+<div class="bulk-orders-process">
+<div class="bulk-process-card reveal reveal-up">
+<div class="bulk-process-number">01</div>
+<div class="bulk-process-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M21 15V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V15"></path>
+<path d="M7 10L12 15L17 10"></path>
+<path d="M12 15V3"></path>
+</svg>
+</div>
+<h3>Request A Quote</h3>
+<p>Share your school requirements and receive a personalized quotation.</p>
+</div>
+<div class="bulk-process-card reveal reveal-up">
+<div class="bulk-process-number">02</div>
+<div class="bulk-process-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M20 6L9 17L4 12"></path>
+</svg>
+</div>
+<h3>Customize Your Kit</h3>
+<p>Select books, stationery and supplies tailored to every classroom.</p>
+</div>
+<div class="bulk-process-card reveal reveal-up">
+<div class="bulk-process-number">03</div>
+<div class="bulk-process-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M5 12H19"></path>
+<path d="M12 5L19 12L12 19"></path>
+</svg>
+</div>
+<h3>Fast Delivery</h3>
+<p>Receive secure nationwide delivery with dedicated customer support.</p>
+</div>
+</div>
+<div class="bulk-orders-statistics reveal reveal-up">
+<div class="bulk-statistic">
+<h3 class="counter" data-target="500" data-suffix="+">0</h3>
+<p>Schools Served</p>
+</div>
+<div class="bulk-statistic">
+<h3 class="counter" data-target="50" data-suffix="K+">0</h3>
+<p>Products Delivered</p>
+</div>
+<div class="bulk-statistic">
+<h3 class="counter" data-target="15">0</h3>
+<span class="counter-symbol"></span>
+<p>Years Experience</p>
+</div>
+<div class="bulk-statistic">
+<h3 class="counter" data-target="98" data-suffix="%">0</h3>
+<p>Client Satisfaction</p>
+</div>
+</div>
+<div class="bulk-orders-call-to-action reveal reveal-up">
+<h3>Ready To Partner With EduMart?</h3>
+<p>Let's simplify your institution's purchasing process with customized educational supply solutions.</p>
+<div class="bulk-orders-buttons">
+<a href="contact.html" class="button button-primary">Request Quotation</a>
+<a href="contact.html" class="button button-outline">Contact Sales</a>
+</div>
+</div>
+</div>
+</section>
+<!-- ======grade-level categories====== -->
+<section class="grade-level-section">
+<div class="container">
+<div class="section-heading text-center reveal reveal-up">
+<span class="eyebrow">Shop By Grade</span>
+<h2>Everything You Need For Every Learning Stage</h2>
+<p>From kindergarten classrooms to professional workplaces, discover carefully curated collections designed for every stage of learning and productivity.</p>
+</div>
+<div class="grade-level-grid">
+<a href="shop.html" class="grade-level-card reveal reveal-up">
+<div class="grade-level-icon">🧸</div>
+<h3>Kindergarten</h3>
+<p>Learning toys, crayons, drawing books and early education essentials.</p>
+<span class="grade-level-link">Explore Collection</span>
+</a>
+<a href="shop.html" class="grade-level-card reveal reveal-up">
+<div class="grade-level-icon">📚</div>
+<h3>Primary</h3>
+<p>School bags, notebooks, pencils and everyday classroom supplies.</p>
+<span class="grade-level-link">Explore Collection</span>
+</a>
+<a href="shop.html" class="grade-level-card reveal reveal-up">
+<div class="grade-level-icon">🎓</div>
+<h3>High School</h3>
+<p>Reference books, geometry boxes, calculators and exam materials.</p>
+<span class="grade-level-link">Explore Collection</span>
+</a>
+<a href="shop.html" class="grade-level-card reveal reveal-up">
+<div class="grade-level-icon">🎒</div>
+<h3>College</h3>
+<p>Journals, planners, premium pens, files and project essentials.</p>
+<span class="grade-level-link">Explore Collection</span>
+</a>
+<a href="shop.html" class="grade-level-card reveal reveal-up">
+<div class="grade-level-icon">💼</div>
+<h3>Office</h3>
+<p>Professional stationery, organizers, office supplies and accessories.</p>
+<span class="grade-level-link">Explore Collection</span>
+</a>
+</div>
+</div>
+</section>
+<!-- <section class="featured-products-section">
+<div class="container">
+<div class="section-heading text-center reveal reveal-up">
+<span class="section-eyebrow">Featured Products</span>
+<h2>Our Best Selling Essentials</h2>
+<p>Explore our most popular books, stationery and educational products trusted by thousands of students and schools.</p>
+</div>
+<div class="featured-products-grid">
+<div class="featured-product-card reveal reveal-up">
+<div class="featured-product-image">
+<img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=900&auto=format&fit=crop" alt="School Textbooks">
+<span class="featured-product-label">Best Seller</span>
+<div class="featured-product-actions">
+<a href="shop.html" aria-label="View Product">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M1 12S5 5 12 5s11 7 11 7-4 7-11 7S1 12 1 12Z"></path>
+<circle cx="12" cy="12" r="3"></circle>
+</svg>
+</a>
+<a href="cart.html" aria-label="Add To Cart">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<circle cx="9" cy="21" r="1"></circle>
+<circle cx="20" cy="21" r="1"></circle>
+<path d="M1 1H5L7.7 14.4A2 2 0 0 0 9.7 16H19.4A2 2 0 0 0 21.3 14.5L23 6H6"></path>
+</svg>
+</a>
+</div>
+</div>
+<div class="featured-product-content">
+<div class="featured-product-rating">★★★★★</div>
+<h3>School Textbooks</h3>
+<p>Complete syllabus books for every academic level.</p>
+<div class="featured-product-footer">
+<span class="featured-product-price">₹399</span>
+<a href="shop.html" class="featured-product-link">View Details</a>
+</div>
+</div>
+</div>
+<div class="featured-product-card reveal reveal-up">
+<div class="featured-product-image">
+<img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=900&auto=format&fit=crop" alt="Premium Notebooks">
+<span class="featured-product-label">Popular</span>
+<div class="featured-product-actions">
+<a href="shop.html" aria-label="View Product">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M1 12S5 5 12 5s11 7 11 7-4 7-11 7S1 12 1 12Z"></path>
+<circle cx="12" cy="12" r="3"></circle>
+</svg>
+</a>
+<a href="cart.html" aria-label="Add To Cart">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<circle cx="9" cy="21" r="1"></circle>
+<circle cx="20" cy="21" r="1"></circle>
+<path d="M1 1H5L7.7 14.4A2 2 0 0 0 9.7 16H19.4A2 2 0 0 0 21.3 14.5L23 6H6"></path>
+</svg>
+</a>
+</div>
+</div>
+<div class="featured-product-content">
+<div class="featured-product-rating">★★★★★</div>
+<h3>Premium Notebooks</h3>
+<p>Elegant notebooks for students, teachers and professionals.</p>
+<div class="featured-product-footer">
+<span class="featured-product-price">₹249</span>
+<a href="shop.html" class="featured-product-link">View Details</a>
+</div>
+</div>
+</div>
+
+<div class="featured-product-card reveal reveal-up">
+<div class="featured-product-image">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=900&auto=format&fit=crop" alt="School Backpack">
+<span class="featured-product-label">New Arrival</span>
+<div class="featured-product-actions">
+<a href="shop.html" aria-label="View Product">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M1 12S5 5 12 5s11 7 11 7-4 7-11 7S1 12 1 12Z"></path>
+<circle cx="12" cy="12" r="3"></circle>
+</svg>
+</a>
+<a href="cart.html" aria-label="Add To Cart">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<circle cx="9" cy="21" r="1"></circle>
+<circle cx="20" cy="21" r="1"></circle>
+<path d="M1 1H5L7.7 14.4A2 2 0 0 0 9.7 16H19.4A2 2 0 0 0 21.3 14.5L23 6H6"></path>
+</svg>
+</a>
+</div>
+</div>
+<div class="featured-product-content">
+<div class="featured-product-rating">★★★★★</div>
+<h3>School Backpack</h3>
+<p>Durable backpacks designed for everyday school life.</p>
+<div class="featured-product-footer">
+<span class="featured-product-price">₹899</span>
+<a href="shop.html" class="featured-product-link">View Details</a>
+</div>
+</div>
+</div>
+
+<div class="featured-product-card reveal reveal-up">
+<div class="featured-product-image">
+<img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=900&auto=format&fit=crop" alt="Creative Art Kit">
+<span class="featured-product-label">Trending</span>
+<div class="featured-product-actions">
+<a href="shop.html" aria-label="View Product">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M1 12S5 5 12 5s11 7 11 7-4 7-11 7S1 12 1 12Z"></path>
+<circle cx="12" cy="12" r="3"></circle>
+</svg>
+</a>
+<a href="cart.html" aria-label="Add To Cart">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<circle cx="9" cy="21" r="1"></circle>
+<circle cx="20" cy="21" r="1"></circle>
+<path d="M1 1H5L7.7 14.4A2 2 0 0 0 9.7 16H19.4A2 2 0 0 0 21.3 14.5L23 6H6"></path>
+</svg>
+</a>
+</div>
+</div>
+<div class="featured-product-content">
+<div class="featured-product-rating">★★★★★</div>
+<h3>Creative Art Kit</h3>
+<p>Colors, brushes and drawing essentials for creative minds.</p>
+<div class="featured-product-footer">
+<span class="featured-product-price">₹699</span>
+<a href="shop.html" class="featured-product-link">View Details</a>
+</div>
+</div>
+</div>
+</div>
+<div class="section-button text-center reveal reveal-up">
+<a href="shop.html" class="button button-primary">View All Products</a>
+</div>
+</div>
+</section> -->
+<!-- =======why Edumart========= -->
+ <section class="shop-category-section">
+<div class="container">
+<div class="section-heading text-center reveal reveal-up">
+<span class="section-eyebrow">Shop By Category</span>
+<h2>Everything You Need, All In One Place</h2>
+<p>Discover carefully curated collections designed for students, teachers, professionals and educational institutions.</p>
+</div>
+
+<div class="shop-category-grid">
+
+<div class="shop-category-card shop-category-card-large reveal reveal-left">
+<div class="shop-category-image">
+<img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=1200&auto=format&fit=crop" alt="Books">
+</div>
+<div class="shop-category-content">
+<div class="shop-category-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M2 4H9C11.2 4 13 5.8 13 8V20C12.2 18.8 10.8 18 9 18H2Z"></path>
+<path d="M22 4H15C12.8 4 11 5.8 11 8V20C11.8 18.8 13.2 18 15 18H22Z"></path>
+</svg>
+</div>
+<h3>Books</h3>
+<p>Academic books, novels, children's books, dictionaries and competitive exam materials.</p>
+<a href="shop.html" class="text-button">Explore Collection</a>
+</div>
+</div>
+
+<div class="shop-category-card shop-category-card-large reveal reveal-right">
+<div class="shop-category-image">
+<img src="https://images.unsplash.com/photo-1455390582262-044cdead277a?q=80&w=1200&auto=format&fit=crop" alt="Stationery">
+</div>
+<div class="shop-category-content">
+<div class="shop-category-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M12 2L20 10L12 22L4 10Z"></path>
+</svg>
+</div>
+<h3>Stationery</h3>
+<p>Premium notebooks, journals, pens, planners and writing essentials.</p>
+<a href="shop.html" class="text-button">Explore Collection</a>
+</div>
+</div>
+
+<div class="shop-category-card reveal reveal-up">
+<div class="shop-category-image">
+<img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=900&auto=format&fit=crop" alt="Art & Craft">
+</div>
+<div class="shop-category-content">
+<div class="shop-category-icon shop-category-green">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<circle cx="12" cy="12" r="3"></circle>
+<path d="M12 2V5"></path>
+<path d="M12 19V22"></path>
+<path d="M2 12H5"></path>
+<path d="M19 12H22"></path>
+</svg>
+</div>
+<h3>Art & Craft</h3>
+<a href="shop.html" class="text-button">Explore Collection</a>
+</div>
+</div>
+
+<div class="shop-category-card reveal reveal-up">
+<div class="shop-category-image">
+<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=900&auto=format&fit=crop" alt="School Essentials">
+</div>
+<div class="shop-category-content">
+<div class="shop-category-icon shop-category-orange">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M6 7L12 2L18 7"></path>
+<path d="M6 7V21H18V7"></path>
+</svg>
+</div>
+<h3>School Essentials</h3>
+<a href="shop.html" class="text-button">Explore Collection</a>
+</div>
+</div>
+
+<div class="shop-category-card reveal reveal-up">
+<div class="shop-category-image">
+<img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=900&auto=format&fit=crop" alt="Office Supplies">
+</div>
+<div class="shop-category-content">
+<div class="shop-category-icon shop-category-purple">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<rect x="3" y="7" width="18" height="13" rx="2"></rect>
+<path d="M8 7V5C8 3.9 8.9 3 10 3H14C15.1 3 16 3.9 16 5V7"></path>
+</svg>
+</div>
+<h3>Office Supplies</h3>
+<a href="shop.html" class="text-button">Explore Collection</a>
+</div>
+</div>
+
+</div>
+
+<div class="shop-category-features reveal reveal-up">
+
+<div class="shop-feature-item">
+<div class="shop-feature-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M20 6L9 17L4 12"></path>
+</svg>
+</div>
+<h4>100%</h4>
+<span>Premium Quality</span>
+</div>
+
+<div class="shop-feature-item">
+<div class="shop-feature-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M1 12H15"></path>
+<path d="M9 6L15 12L9 18"></path>
+</svg>
+</div>
+<h4>24H</h4>
+<span>Fast Dispatch</span>
+</div>
+
+<div class="shop-feature-item">
+<div class="shop-feature-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M3 12A9 9 0 0 1 18 5L21 8"></path>
+<path d="M21 3V8H16"></path>
+</svg>
+</div>
+<h4>7 Days</h4>
+<span>Easy Returns</span>
+</div>
+
+<div class="shop-feature-item">
+<div class="shop-feature-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M18 8A6 6 0 0 0 6 8"></path>
+<path d="M4 9V17H8V13H16V17H20V9"></path>
+</svg>
+</div>
+<h4>24/7</h4>
+<span>Customer Support</span>
+</div>
+
+</div>
+
+</div>
+</section>
+</main>
+  <!-- ============== FOOTER ============== -->
+<footer class="footer">
+
+<div class="footer__shape footer__shape--one"></div>
+<div class="footer__shape footer__shape--two"></div>
+<div class="container">
+<div class="footer__top">
+<div class="footer__brand reveal reveal-left">
+<a href="index.html" class="footer-brand">
+<div class="footer-brand__logo">
+<img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/edu-smart-logos-design-template-23b6de7d02972a120e8ad62879fb66f4_screen.jpg?ts=1661512030" alt="Edu Mart Logo">
+</div>
+<div class="footer-brand__text">
+<h2>Edu<span>Mart</span></h2>
+<p>Books & School Supplies</p>
+</div>
+</a>
+<p class="footer__description">
+Edu Mart is your trusted destination for premium books, stationery, backpacks, office supplies and educational essentials. We proudly serve students, parents, teachers and institutions with quality products at affordable prices.
+</p>
+<div class="footer__social">
+<a href="#" aria-label="Facebook">
+<svg viewBox="0 0 24 24" fill="currentColor">
+<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+</svg>
+</a>
+<a href="#" aria-label="Instagram">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<rect x="2" y="2" width="20" height="20" rx="5"></rect>
+<circle cx="12" cy="12" r="4"></circle>
+<circle cx="17.5" cy="6.5" r="1"></circle>
+</svg>
+</a>
+<a href="#" aria-label="X">
+<svg viewBox="0 0 24 24" fill="currentColor">
+<path d="M18 2H22L14 11L23 22H16L10.5 15.3L4.8 22H1L9.5 12L1 2H8L13 8.3L18 2Z"></path>
+</svg>
+</a>
+<a href="#" aria-label="LinkedIn">
+<svg viewBox="0 0 24 24" fill="currentColor">
+<path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5S1.12 1 2.48 1S4.98 2.12 4.98 3.5ZM0 8H5V24H0V8ZM8 8H12.8V10.2H12.9C13.6 8.9 15.3 7.6 17.9 7.6C23.1 7.6 24 10.9 24 15.2V24H19V16.1C19 14.2 19 11.7 16.3 11.7C13.5 11.7 13.1 13.8 13.1 15.9V24H8V8Z"/>
+</svg>
+</a>
+</div>
+</div>
+<div class="footer__links-column reveal reveal-up">
+<h3>Quick Links</h3>
+<ul class="footer__links">
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="shop.html">Shop</a></li>
+<li><a href="services.html">Services</a></li>
+<li><a href="blog.html">Blog</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+<div class="footer__links-column reveal reveal-right">
+<h3>Support</h3>
+<ul class="footer__links">
+<li><a href="faq.html">FAQ</a></li>
+<li><a href="privacy.html">Privacy Policy</a></li>
+<li><a href="terms.html">Terms & Conditions</a></li>
+<li><a href="login.html">Login</a></li>
+<li><a href="register.html">Register</a></li>
+<li><a href="forgot-password.html">Forgot Password</a></li>
+</ul>
+</div>
+<div class="footer__contact-column reveal reveal-right">
+<h3>Contact Info</h3>
+<ul class="footer__contact">
+<li>
+<div class="footer__contact-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M21 10C21 16 12 22 12 22S3 16 3 10A9 9 0 1 1 21 10Z"></path>
+<circle cx="12" cy="10" r="3"></circle>
+</svg>
+</div>
+<div>
+<h4>Address</h4>
+<p>Hyderabad, Telangana, India</p>
+</div>
+</li>
+<li>
+<div class="footer__contact-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M22 16.92V19.92A2 2 0 0 1 20 22A19.86 19.86 0 0 1 2 4A2 2 0 0 1 4 2H7A2 2 0 0 1 9 3.72L10 8A2 2 0 0 1 9.45 9.91L8.09 11.27A16 16 0 0 0 12.73 15.91L14.09 14.55A2 2 0 0 1 16 14L20.28 15A2 2 0 0 1 22 16.92Z"></path>
+</svg>
+</div>
+<div>
+<h4>Phone</h4>
+<p>+91 98765 43210</p>
+</div>
+</li>
+<li>
+<div class="footer__contact-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M4 4H20V20H4Z"></path>
+<path d="M22 6L12 13L2 6"></path>
+</svg>
+</div>
+<div>
+<h4>Email</h4>
+<p>support@edumart.com</p>
+</div>
+</li>
+<li>
+<div class="footer__contact-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<circle cx="12" cy="12" r="10"></circle>
+<polyline points="12 6 12 12 16 14"></polyline>
+</svg>
+</div>
+<div>
+<h4>Working Hours</h4>
+<p>Mon - Sat : 9:00 AM - 8:00 PM</p>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="footer__bottom">
+<div class="footer__copyright">
+<p>
+&copy; <span id="currentYear">2026</span> Edu Mart. All Rights Reserved.
+</p>
+</div>
+<ul class="footer__bottom-links">
+<li>
+<a href="privacy.html">Privacy Policy</a>
+</li>
+<li>
+<a href="terms.html">Terms & Conditions</a>
+</li>
+<li>
+<a href="faq.html">FAQ</a>
+</li>
+</ul>
+<div class="footer__payments">
+<span>Secure Payments</span>
+<div class="footer__payment-icons">
+<div class="footer__payment-card">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<rect x="2" y="5" width="20" height="14" rx="2"></rect>
+<line x1="2" y1="10" x2="22" y2="10"></line>
+</svg>
+</div>
+<div class="footer__payment-card">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<circle cx="9" cy="12" r="4"></circle>
+<circle cx="15" cy="12" r="4"></circle>
+</svg>
+</div>
+<div class="footer__payment-card">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M2 12H22"></path>
+<path d="M12 2V22"></path>
+<circle cx="12" cy="12" r="9"></circle>
+</svg>
+</div>
+</div>
+</div>
+</div>
+<button class="scroll-top-button" id="scrollTopButton" aria-label="Back To Top">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<polyline points="18 15 12 9 6 15"></polyline>
+</svg>
+</button>
+</div>
+</footer>
+  <!-- Back To Top Button -->
+<button id="backToTop" class="back-to-top" aria-label="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path d="M12 19V5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+        <path d="M6 11L12 5L18 11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+</button>
+  <script src="assets/js/toggles.js" defer></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/animations.js"></script>
+  <script src="assets/js/counter.js"></script>
+</body>
+</html>
