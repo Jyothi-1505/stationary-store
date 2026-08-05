@@ -788,7 +788,7 @@ MAIN HERO
 .main-hero{
 position:relative;
 min-height:calc(100vh - var(--header-h));
-padding:20px 0;
+padding:50px 0;
 overflow:hidden;
 background:linear-gradient(135deg,#f8fbff 0%,#eef5ff 45%,#fff9ef 100%);
 }
@@ -1383,7 +1383,7 @@ CATEGORIES SECTION
 
 .categories-section{
 position:relative;
-padding:110px 0;
+padding:50px 0;
 background:linear-gradient(180deg,#ffffff 0%,#f8fbff 100%);
 overflow:hidden;
 }
@@ -1831,7 +1831,7 @@ FEATURED PRODUCTS
 
 .featured-products-section{
 position:relative;
-padding:110px 0;
+padding:20px 0;
 background:linear-gradient(180deg,#ffffff 0%,#f8fbff 100%);
 overflow:hidden;
 }
@@ -2279,7 +2279,7 @@ WHY CHOOSE SECTION
 
 .why-choose-section{
 position:relative;
-padding:110px 0;
+padding:30px 0;
 background:linear-gradient(180deg,#ffffff 0%,#f8fbff 100%);
 overflow:hidden;
 }
@@ -2605,7 +2605,7 @@ BULK ORDER SECTION
 
 .bulk-order-section{
 position:relative;
-padding:110px 0;
+padding:30px 0;
 background:linear-gradient(180deg,#f8fbff 0%,#ffffff 100%);
 overflow:hidden;
 }
@@ -3004,7 +3004,7 @@ TESTIMONIALS SECTION
 
 .testimonials-section{
 position:relative;
-padding:110px 0;
+padding:30px 0;
 background:linear-gradient(180deg,#ffffff 0%,#f8fbff 100%);
 overflow:hidden;
 }
@@ -3345,7 +3345,7 @@ CONTACT CTA SECTION
 
 .contact-cta-section{
 position:relative;
-padding:110px 0;
+padding:30px 0;
 background:linear-gradient(180deg,#ffffff 0%,#f8fbff 100%);
 overflow:hidden;
 }
@@ -3659,7 +3659,7 @@ NEWSLETTER SECTION
 
 .newsletter-section{
 position:relative;
-padding:110px 0;
+padding:30px 0;
 overflow:hidden;
 background:linear-gradient(135deg,#2b6cb0 0%,#3b82f6 55%,#d97706 100%);
 }
@@ -4026,7 +4026,7 @@ FOOTER
 .footer{
 position:relative;
 overflow:hidden;
-padding:90px 0 0;
+padding:50px 0 0;
 background:#0f172a;
 }
 
@@ -4883,7 +4883,7 @@ TRENDING COLLECTIONS SECTION
 
 .trending-collections-section{
 position:relative;
-padding:50px 0;
+padding:30px 0;
 background:linear-gradient(180deg,#ffffff,#f7faff);
 overflow:hidden;
 }
@@ -5168,7 +5168,7 @@ ACADEMIC OFFER SECTION
 ==================================================*/
 
 .academic-offer-section{
-padding:50px 0;
+padding:30px 0;
 background:#ffffff;
 }
 
@@ -5311,7 +5311,7 @@ BULK ORDERS SECTION
 
 .bulk-orders-section{
 position:relative;
-padding:50px 0;
+padding:30px 0;
 background:linear-gradient(180deg,#ffffff,#f7faff);
 overflow:hidden;
 }
@@ -5581,7 +5581,7 @@ GRADE LEVEL SECTION
 
 .grade-level-section{
 position:relative;
-padding:120px 0;
+padding:30px 0;
 background:linear-gradient(180deg,#ffffff 0%,#f7faff 100%);
 overflow:hidden;
 }
@@ -5779,7 +5779,7 @@ SHOP CATEGORY SECTION
 
 .shop-category-section{
 position:relative;
-padding:120px 0;
+padding:30px 0;
 background:linear-gradient(180deg,#ffffff 0%,#f7faff 100%);
 overflow:hidden;
 }
@@ -6259,7 +6259,7 @@ FEATURED PRODUCTS SECTION
 
 .featured-products-section{
 position:relative;
-padding:120px 0;
+padding:30px 0;
 background:linear-gradient(180deg,#ffffff 0%,#f8fbff 100%);
 overflow:hidden;
 }
