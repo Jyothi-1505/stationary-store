@@ -25,25 +25,13 @@
     <main class="login-page">
       <div class="login-card">
         <div class="card-top">
-          <div class="card-actions">
-
-            <button class="header-icon-button rtl-toggle" title="RTL Mode">
-              RTL
-
-              <!-- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-
-<path d="M21 5H10"></path>
-
-<path d="M21 12H7"></path>
-
-<path d="M21 19H10"></path>
-
-<path d="M7 5L3 9L7 13"></path>
-
-</svg> -->
-            </button>
-            <button class="header-icon-button theme-toggle" title="Dark Mode">
-              <svg
+           <div class="card-actions">
+            <button
+              class="circle-button"
+              id="darkModeButton"
+              aria-label="Dark Mode"
+            >
+            <svg
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -54,17 +42,25 @@
                 ></path>
               </svg>
             </button>
+
+            <button class="circle-button" id="rtlButton" aria-label="RTL">
+              RTL
+            </button>
           </div>
 
-          <a href="index.html" class="brand" aria-label="Scholar Stationery Home">
-                <span class="brand__logo">
-                    <img src="https://www.svgrepo.com/show/492785/book-and-person-summer.svg"
-                         alt="Scholar Stationery Logo">
-                </span>
-                <span class="brand__name">
-                    Scholar<span>Stationery</span>
-                </span>
-            </a>
+          <a href="index.html" class="brand">
+            <div class="brand__logo">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/edu-smart-logos-design-template-23b6de7d02972a120e8ad62879fb66f4_screen.jpg?ts=1661512030"
+                alt="EduMart Logo"
+              />
+            </div>
+
+            <div class="brand__text">
+              <h2>Edu<span>Mart</span></h2>
+              <p>Books & School Supplies</p>
+            </div>
+          </a>
 
           <h2 class="login-title">Welcome Back</h2>
 

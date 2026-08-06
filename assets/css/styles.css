@@ -4049,7 +4049,7 @@ FOOTER
 .footer{
 position:relative;
 overflow:hidden;
-padding:50px 0 0;
+padding:30px 0 0;
 background:#0f172a;
 }
 
@@ -4109,10 +4109,12 @@ z-index:2;
 }
 
 .footer__top{
-display:grid;
-grid-template-columns:1.3fr .8fr .8fr .9fr;
-gap:60px;
-padding-bottom:70px;
+display:flex;
+/* grid-template-columns:1.3fr .8fr .8fr .9fr; */
+gap:200px;
+align-items: center;
+justify-content: center;
+padding-bottom:50px;
 border-bottom:1px solid rgba(255,255,255,.08);
 }
 
