@@ -1942,6 +1942,28 @@ transition:transform .7s ease;
 .product-card:hover .product-card__image img{
 transform:scale(1.12);
 }
+.product-card__actions{
+margin-top:22px;
+}
+
+.product-order-button{
+display:flex;
+align-items:center;
+justify-content:center;
+width:100%;
+height:48px;
+border-radius:14px;
+background:var(--color-primary);
+color:#ffffff;
+font-weight:600;
+text-decoration:none;
+transition:.3s;
+}
+
+.product-order-button:hover{
+background:var(--color-secondary);
+transform:translateY(-3px);
+}
 /*==================================================
 BADGES
 ==================================================*/
@@ -2027,7 +2049,8 @@ color:#f59e0b;
 }
 
 .product-card__content h3{
-margin-bottom:10px;
+/* margin-bottom:10px; */
+height: 50px;
 font-size:22px;
 font-weight:600;
 line-height:1.3;
@@ -4555,7 +4578,7 @@ flex-direction:column;
 justify-content:center;
 align-items:center;
 text-align:center;
-padding-top:90px;
+padding-top:60px;
 padding-bottom:230px;
 }
 
@@ -4576,7 +4599,7 @@ color:rgba(255,255,255,.85);
 }
 
 .education-hero-title{
-margin-bottom:10px;
+/* margin-bottom:10px; */
 font-weight:500;
 /* line-height:1.15; */
 }
@@ -4584,8 +4607,8 @@ font-weight:500;
 .education-hero-title-light{
 display:block;
 /* font-size:clamp(3rem,5vw,4.8rem); */
-line-height:1.1;
-letter-spacing:-1px;
+/* line-height:1.1; */
+/* letter-spacing:-1px; */
 /* font-weight:700; */
 /* font-size:clamp(1.5rem,4vw,3.5rem); */
 font-family:var(--font-heading);
@@ -4595,9 +4618,9 @@ color:#ffffff;
 .education-hero-title-highlight{
 display:block;
 /* font-size:clamp(2.8rem,4.5vw,4.2rem); */
-margin-top:6px;
+/* margin-top:6px; */
 font-weight:600;
-letter-spacing:-1px;
+/* letter-spacing:-1px; */
 font-family:var(--font-heading);
 font-style:italic;
 color:var(--color-secondary);
@@ -4606,8 +4629,8 @@ color:var(--color-secondary);
 .education-hero-description{
 max-width:620px;
 /* font-size:18px; */
-line-height:1.8;
-margin:25px auto 40px;
+/* line-height:1.8; */
+margin:20px auto 20px;
 color:rgba(255,255,255,.88);
 }
 
@@ -4628,7 +4651,7 @@ align-items:center;
 justify-content:center;
 border-radius:999px;
 transition:all .35s ease;
-padding:18px 40px;
+padding:15px 30px;
 min-width:210px;
 font-size:15px;
 font-weight:600;
@@ -4918,7 +4941,7 @@ z-index:2;
 display:grid;
 grid-template-columns:repeat(3,1fr);
 gap:32px;
-margin-top:70px;
+margin-top:50px;
 }
 
 .trending-collection-card{
@@ -4940,7 +4963,7 @@ box-shadow:0 35px 80px rgba(15,23,42,.16);
 
 .trending-collection-card-image{
 position:relative;
-height:280px;
+height:200px;
 overflow:hidden;
 background:#eef3f8;
 }
@@ -5343,14 +5366,14 @@ animation:bulkBlobTwo 18s ease-in-out infinite;
 .bulk-orders-header{
 position:relative;
 z-index:2;
-max-width:760px;
-margin:0 auto 70px;
+/* max-width:760px; */
+margin:0 auto 50px;
 text-align:center;
 }
 
 .bulk-orders-header h2{
 margin:18px 0 22px;
-font-size:clamp(2.8rem,5vw,4.2rem);
+/* font-size:clamp(2.8rem,5vw,4.2rem); */
 font-weight:600;
 line-height:1.2;
 color:var(--color-heading);
@@ -5463,7 +5486,7 @@ margin-bottom:70px;
 }
 
 .bulk-statistic{
-padding:35px 20px;
+padding:30px 20px;
 text-align:center;
 background:#ffffff;
 border-radius:24px;
@@ -5520,6 +5543,7 @@ color:#ffffff;
 box-shadow:0 30px 80px rgba(15,23,42,.20);
 position:relative;
 overflow:hidden;
+margin: 25px;
 }
 
 .bulk-orders-call-to-action::before{
@@ -5582,7 +5606,7 @@ GRADE LEVEL SECTION
 .grade-level-section{
 position:relative;
 padding:30px 0;
-background:linear-gradient(180deg,#ffffff 0%,#f7faff 100%);
+background:linear-gradient(180deg,#ecf3fc 0%,#d9e6fc 100%);
 overflow:hidden;
 }
 
@@ -5616,7 +5640,7 @@ z-index:2;
 display:grid;
 grid-template-columns:repeat(6,1fr);
 gap:32px;
-margin-top:70px;
+margin-top:35px;
 }
 
 .grade-level-card{
@@ -5625,7 +5649,7 @@ display:flex;
 flex-direction:column;
 align-items:center;
 text-align:center;
-padding:45px 35px;
+padding:20px 25px;
 border-radius:32px;
 background:#ffffff;
 border:1px solid rgba(15,23,42,.06);
@@ -5707,11 +5731,11 @@ transition:.45s ease;
 margin-bottom:18px;
 font-size:30px;
 font-weight:600;
-line-height:1.2;
+/* line-height:1.2; */
 }
 
 .grade-level-card p{
-max-width:260px;
+max-width:250px;
 margin:0 auto 30px;
 font-size:16px;
 line-height:1.9;
@@ -5780,7 +5804,7 @@ SHOP CATEGORY SECTION
 .shop-category-section{
 position:relative;
 padding:30px 0;
-background:linear-gradient(180deg,#ffffff 0%,#f7faff 100%);
+background:linear-gradient(180deg,#f4f7fd 0%,#dbe6fa 100%);
 overflow:hidden;
 }
 
@@ -5814,7 +5838,7 @@ z-index:2;
 display:grid;
 grid-template-columns:repeat(6,1fr);
 gap:28px;
-margin-top:70px;
+margin-top:50px;
 }
 
 .shop-category-card-large{
@@ -5965,7 +5989,7 @@ transform:translateY(-6px) rotate(-8deg) scale(1.08);
 
 .shop-category-content h3{
 margin-bottom:16px;
-font-size:36px;
+font-size:30px;
 font-weight:700;
 line-height:1.15;
 color:var(--color-heading);

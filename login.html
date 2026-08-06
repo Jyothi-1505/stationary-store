@@ -26,16 +26,33 @@
       <div class="login-card">
         <div class="card-top">
           <div class="card-actions">
-            <button
-              class="circle-button"
-              id="darkModeButton"
-              aria-label="Dark Mode"
-            >
-              🌙
-            </button>
 
-            <button class="circle-button" id="rtlButton" aria-label="RTL">
+            <button class="header-icon-button rtl-toggle" title="RTL Mode">
               RTL
+
+              <!-- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+<path d="M21 5H10"></path>
+
+<path d="M21 12H7"></path>
+
+<path d="M21 19H10"></path>
+
+<path d="M7 5L3 9L7 13"></path>
+
+</svg> -->
+            </button>
+            <button class="header-icon-button theme-toggle" title="Dark Mode">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M21 12.79A9 9 0 1 1 11.21 3A7 7 0 0 0 21 12.79Z"
+                ></path>
+              </svg>
             </button>
           </div>
 
@@ -51,9 +68,9 @@
 
           <h2 class="login-title">Welcome Back</h2>
 
-          <p class="login-description">
+          <!-- <p class="login-description">
             Sign in to access your account and continue shopping.
-          </p>
+          </p> -->
         </div>
 
         <form class="login-form">

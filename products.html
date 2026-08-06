@@ -1,0 +1,1056 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduMart — School Supplies, Textbooks & Book Shop</title>
+    <meta
+      name="description"
+      content="EduMart stocks textbooks, notebooks, pens and art supplies for every grade. Browse by grade level, unlock bulk-order pricing for schools, and grab seasonal back-to-school offers."
+    />
+    <link rel="canonical" href="https://scholar-stationery.example.com/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="EduMart — School Supplies & Book Shop" />
+    <meta
+      property="og:description"
+      content="Textbooks, notebooks, pens and art supplies for every grade. Bulk-order pricing for schools and seasonal back-to-school offers."
+    />
+    <meta property="og:url" content="https://scholar-stationery.example.com/" />
+    <meta property="og:image" content="assets/images/og-cover.jpg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/vendor-bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+    <link rel="stylesheet" href="assets/css/products.css"/>
+  </head>
+  <body>
+    <!-- <a class="skip-link" href="#main">Skip to main content</a> -->
+    <!-- header -->
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="index.html" class="brand">
+            <div class="brand__logo">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/edu-smart-logos-design-template-23b6de7d02972a120e8ad62879fb66f4_screen.jpg?ts=1661512030"
+                alt="EduMart Logo"
+              />
+            </div>
+
+            <div class="brand__text">
+              <h2>Edu<span>Mart</span></h2>
+              <p>Books & School Supplies</p>
+            </div>
+          </a>
+
+          <nav class="navigation" id="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item navigation__item--dropdown">
+                <button class="navigation__link navigation__dropdown-toggle">
+                  <span
+                    ><a
+                      href="index.html"
+                      class="navigation__link"
+                      aria-current="page"
+                      >Home</a
+                    ></span
+                  >
+
+                  <svg
+                    class="navigation__arrow"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+
+                <ul class="navigation__dropdown">
+                  <li>
+                    <a href="index.html">Home 01</a>
+                  </li>
+
+                  <li>
+                    <a href="home-2.html">Home 02</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navigation__item">
+                <a href="about.html" class="navigation__link">About</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="products.html" class="navigation__link">Products</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="services.html" class="navigation__link">Services</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="blog.html" class="navigation__link">Blog</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="contact.html" class="navigation__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__actions">
+            <button class="header-icon-button rtl-toggle" title="RTL Mode">
+              RTL
+
+              <!-- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+<path d="M21 5H10"></path>
+
+<path d="M21 12H7"></path>
+
+<path d="M21 19H10"></path>
+
+<path d="M7 5L3 9L7 13"></path>
+
+</svg> -->
+            </button>
+
+            <button class="header-icon-button theme-toggle" title="Dark Mode">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M21 12.79A9 9 0 1 1 11.21 3A7 7 0 0 0 21 12.79Z"
+                ></path>
+              </svg>
+            </button>
+
+            <a href="login.html" class="login-button">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M20 21V19A4 4 0 0 0 16 15H8A4 4 0 0 0 4 19V21"></path>
+
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+
+              <span>Login</span>
+            </a>
+
+            <button class="mobile-menu-button" id="mobileMenuButton">
+              <span></span>
+
+              <span></span>
+
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="main">
+
+
+    <!-- ====hero section==== -->
+
+<section class="products-hero">
+
+<div class="container">
+
+<div class="products-hero-header reveal">
+
+<span class="products-hero-tag">Our Products</span>
+
+<h1>Premium Educational Products For Every Learning Journey</h1>
+
+<p>Explore our wide range of books, stationery, office supplies, art materials and school essentials carefully selected for students, teachers and educational institutions.</p>
+
+</div>
+
+<!-- <div class="products-showcase-grid">
+
+<div class="products-featured-image reveal reveal-left">
+
+<img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?q=80&w=1400&auto=format&fit=crop" alt="Educational Products">
+
+<div class="products-featured-content">
+
+<span>Featured Collection</span>
+
+<h2>Everything You Need Under One Roof</h2>
+
+<p>Quality products designed to inspire learning and creativity every day.</p>
+
+<a href="#products-grid" class="button button-primary">Browse Products</a>
+
+</div>
+
+</div>
+
+<div class="products-category-grid">
+
+<div class="products-category-card reveal reveal-right">
+
+<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=700&auto=format&fit=crop" alt="Books">
+
+<div class="products-category-content">
+
+<h3>Books</h3>
+
+<p>Academic & Reference</p>
+
+</div>
+
+</div>
+
+<div class="products-category-card reveal reveal-right">
+
+<img src="https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=700&auto=format&fit=crop" alt="Stationery">
+
+<div class="products-category-content">
+
+<h3>Stationery</h3>
+
+<p>Daily Essentials</p>
+
+</div>
+
+</div>
+
+<div class="products-category-card reveal reveal-right">
+
+<img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=700&auto=format&fit=crop" alt="Art">
+
+<div class="products-category-content">
+
+<h3>Art & Craft</h3>
+
+<p>Creative Supplies</p>
+
+</div>
+
+</div>
+
+<div class="products-category-card reveal reveal-right">
+
+<img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?q=80&w=700&auto=format&fit=crop" alt="Office">
+
+<div class="products-category-content">
+
+<h3>Office</h3>
+
+<p>Professional Supplies</p>
+
+</div>
+
+</div>
+
+</div>
+
+</div> -->
+
+</div>
+
+</section>
+<!-- ====filter section==== -->
+<!-- <section class="products-filter-section">
+
+<div class="container">
+
+<div class="products-filter-wrapper reveal">
+
+<button class="products-filter-button active">All Products</button>
+
+<button class="products-filter-button">Books</button>
+
+<button class="products-filter-button">Stationery</button>
+
+<button class="products-filter-button">Office Supplies</button>
+
+<button class="products-filter-button">Art & Craft</button>
+
+<button class="products-filter-button">School Kits</button>
+
+<button class="products-filter-button">Accessories</button>
+
+</div>
+
+</div>
+
+</section> -->
+
+<!-- <section class="products-grid-section" id="products-grid">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<span class="eyebrow">Our Collection</span>
+
+<h2>Explore Our Premium Products</h2>
+
+<p>Browse our collection of quality educational products carefully selected for schools, colleges, offices and creative professionals.</p>
+
+</div>
+
+<div class="products-grid">
+    <article class="product-card reveal">
+
+<div class="product-image">
+
+<img src="https://images.unsplash.com/photo-1544717305-2782549b5136?q=80&w=900&auto=format&fit=crop" alt="Premium Spiral Notebook">
+
+<span class="product-category">Stationery</span>
+
+</div>
+
+<div class="product-content">
+
+<div class="product-rating">
+
+<span class="product-stars">
+
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+
+</span>
+
+<span class="product-rating-text">4.9 (128)</span>
+
+</div>
+
+<h3>Premium Spiral Notebook</h3>
+
+<p>200 Pages • A4 Size • Premium 120 GSM Paper</p>
+
+<div class="product-footer">
+
+<div class="product-price">
+
+₹249
+
+</div>
+
+<a href="contact.html" class="button button-primary">
+
+Order
+
+</a>
+
+</div>
+
+</div>
+
+</article>
+<article class="product-card reveal">
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?q=80&w=900&auto=format&fit=crop" alt="Academic Textbook">
+<span class="product-category">Books</span>
+</div>
+<div class="product-content">
+<div class="product-rating">
+<span class="product-stars">
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+</span>
+<span class="product-rating-text">4.8 (214)</span>
+</div>
+<h3>Academic Textbook</h3>
+<p>Latest edition curriculum textbook for school and college students.</p>
+<div class="product-footer">
+<div class="product-price">₹499</div>
+<a href="contact.html" class="button button-primary">Order</a>
+</div>
+</div>
+</article>
+
+<article class="product-card reveal">
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?q=80&w=900&auto=format&fit=crop" alt="Art Kit">
+<span class="product-category">Art</span>
+</div>
+<div class="product-content">
+<div class="product-rating">
+<span class="product-stars">
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+</span>
+<span class="product-rating-text">5.0 (98)</span>
+</div>
+<h3>Art & Craft Kit</h3>
+<p>Premium paints, brushes, sketchbook and creative accessories.</p>
+<div class="product-footer">
+<div class="product-price">₹899</div>
+<a href="contact.html" class="button button-primary">Order</a>
+</div>
+</div>
+</article>
+
+<article class="product-card reveal">
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=900&auto=format&fit=crop" alt="School Backpack">
+<span class="product-category">School</span>
+</div>
+<div class="product-content">
+<div class="product-rating">
+<span class="product-stars">
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+</span>
+<span class="product-rating-text">4.9 (173)</span>
+</div>
+<h3>School Backpack</h3>
+<p>Comfortable, durable backpack with spacious compartments.</p>
+<div class="product-footer">
+<div class="product-price">₹1,199</div>
+<a href="contact.html" class="button button-primary">Order</a>
+</div>
+</div>
+</article>
+
+<article class="product-card reveal">
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?q=80&w=900&auto=format&fit=crop" alt="Office File">
+<span class="product-category">Office</span>
+</div>
+<div class="product-content">
+<div class="product-rating">
+<span class="product-stars">
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+</span>
+<span class="product-rating-text">4.7 (142)</span>
+</div>
+<h3>Office File Folder</h3>
+<p>Professional document organizer for office and business use.</p>
+<div class="product-footer">
+<div class="product-price">₹199</div>
+<a href="contact.html" class="button button-primary">Order</a>
+</div>
+</div>
+</article>
+
+<article class="product-card reveal">
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1517842645767-c639042777db?q=80&w=900&auto=format&fit=crop" alt="Pen Set">
+<span class="product-category">Stationery</span>
+</div>
+<div class="product-content">
+<div class="product-rating">
+<span class="product-stars">
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6 6.6.5-5 4.3 1.5 6.5L12 16.8 6 19.3l1.5-6.5-5-4.3 6.6-.5z"/></svg>
+</span>
+<span class="product-rating-text">4.9 (267)</span>
+</div>
+<h3>Premium Pen Set</h3>
+<p>Smooth writing ball pens perfect for school, college and office.</p>
+<div class="product-footer">
+<div class="product-price">₹299</div>
+<a href="contact.html" class="button button-primary">Order</a>
+</div>
+</div>
+</article>
+</div>
+
+</div>
+
+</section> -->
+<section class="products-grid-section" id="products-grid">
+<div class="container">
+<div class="section-head reveal">
+<span class="eyebrow">Our Collection</span>
+<h2>Explore Our Premium Products</h2>
+<p>Browse our collection of quality educational products carefully selected for schools, colleges, offices and professionals.</p>
+</div>
+<section class="products-filter-section">
+
+<div class="container">
+
+<div class="products-filter-wrapper reveal">
+
+<button class="products-filter-button active">All Products</button>
+
+<button class="products-filter-button">Books</button>
+
+<button class="products-filter-button">Stationery</button>
+
+<button class="products-filter-button">Office Supplies</button>
+
+<button class="products-filter-button">Art & Craft</button>
+
+<button class="products-filter-button">School Kits</button>
+
+<button class="products-filter-button">Accessories</button>
+
+</div>
+
+</div>
+
+</section>
+<div class="products-grid">
+
+<article class="product-card reveal">
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1544717305-2782549b5136?auto=format&fit=crop&w=700&q=80" alt="Premium Spiral Notebook">
+<span class="product-category">Stationery</span>
+</div>
+<div class="product-content">
+<div class="product-rating">
+<span class="product-stars">
+★★★★★
+</span>
+<span class="product-rating-text">4.9</span>
+</div>
+<h3>Spiral Notebook</h3>
+<div class="product-footer">
+<div class="product-price">₹249</div>
+<a href="contact.html" class="button button-primary">Order</a>
+</div>
+</div>
+</article>
+
+<article class="product-card reveal">
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f?auto=format&fit=crop&w=700&q=80" alt="Long Notebook">
+<span class="product-category">Books</span>
+</div>
+<div class="product-content">
+<div class="product-rating">
+<span class="product-stars">
+★★★★★
+</span>
+<span class="product-rating-text">4.8</span>
+</div>
+<h3>Long Notebook</h3>
+<div class="product-footer">
+<div class="product-price">₹189</div>
+<a href="contact.html" class="button button-primary">Order</a>
+</div>
+</div>
+</article>
+
+<article class="product-card reveal">
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1517842645767-c639042777db?auto=format&fit=crop&w=700&q=80" alt="Hardcover Notebook">
+<span class="product-category">Stationery</span>
+</div>
+<div class="product-content">
+<div class="product-rating">
+<span class="product-stars">
+★★★★★
+</span>
+<span class="product-rating-text">5.0</span>
+</div>
+<h3>Hardcover Notebook</h3>
+<div class="product-footer">
+<div class="product-price">₹349</div>
+<a href="contact.html" class="button button-primary">Order</a>
+</div>
+</div>
+</article>
+
+<article class="product-card reveal">
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1516979187457-637abb4f9353?auto=format&fit=crop&w=700&q=80" alt="Academic Textbook">
+<span class="product-category">Books</span>
+</div>
+<div class="product-content">
+<div class="product-rating">
+<span class="product-stars">
+★★★★★
+</span>
+<span class="product-rating-text">4.9</span>
+</div>
+<h3>Academic Textbook</h3>
+<div class="product-footer">
+<div class="product-price">₹599</div>
+<a href="contact.html" class="button button-primary">Order</a>
+</div>
+</div>
+</article>
+<article class="product-card reveal">
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1583485088034-697b5bc54ccd?auto=format&fit=crop&w=700&q=80" alt="Premium Pen Set">
+<span class="product-category">Stationery</span>
+</div>
+<div class="product-content">
+<div class="product-rating">
+<span class="product-stars">★★★★★</span>
+<span class="product-rating-text">4.9</span>
+</div>
+<h3>Premium Pen Set</h3>
+<div class="product-footer">
+<div class="product-price">₹299</div>
+<a href="contact.html" class="button button-primary">Order</a>
+</div>
+</div>
+</article>
+
+<article class="product-card reveal">
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=700&q=80" alt="Pencil Box">
+<span class="product-category">School</span>
+</div>
+<div class="product-content">
+<div class="product-rating">
+<span class="product-stars">★★★★★</span>
+<span class="product-rating-text">4.8</span>
+</div>
+<h3>Pencil Box</h3>
+<div class="product-footer">
+<div class="product-price">₹199</div>
+<a href="contact.html" class="button button-primary">Order</a>
+</div>
+</div>
+</article>
+
+<article class="product-card reveal">
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1513258496099-48168024aec0?auto=format&fit=crop&w=700&q=80" alt="Geometry Box">
+<span class="product-category">School</span>
+</div>
+<div class="product-content">
+<div class="product-rating">
+<span class="product-stars">★★★★★</span>
+<span class="product-rating-text">5.0</span>
+</div>
+<h3>Geometry Box</h3>
+<div class="product-footer">
+<div class="product-price">₹349</div>
+<a href="contact.html" class="button button-primary">Order</a>
+</div>
+</div>
+</article>
+
+<article class="product-card reveal">
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=700&q=80" alt="Office File Folder">
+<span class="product-category">Office</span>
+</div>
+<div class="product-content">
+<div class="product-rating">
+<span class="product-stars">★★★★★</span>
+<span class="product-rating-text">4.9</span>
+</div>
+<h3>Office File Folder</h3>
+<div class="product-footer">
+<div class="product-price">₹249</div>
+<a href="contact.html" class="button button-primary">Order</a>
+</div>
+</div>
+</article>
+<article class="product-card reveal">
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0?auto=format&fit=crop&w=700&q=80" alt="School Backpack">
+<span class="product-category">School</span>
+</div>
+<div class="product-content">
+<div class="product-rating">
+<span class="product-stars">★★★★★</span>
+<span class="product-rating-text">4.9</span>
+</div>
+<h3>School Backpack</h3>
+<div class="product-footer">
+<div class="product-price">₹1,299</div>
+<a href="contact.html" class="button button-primary">Order</a>
+</div>
+</div>
+</article>
+
+<article class="product-card reveal">
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=700&q=80" alt="Water Bottle">
+<span class="product-category">Accessories</span>
+</div>
+<div class="product-content">
+<div class="product-rating">
+<span class="product-stars">★★★★★</span>
+<span class="product-rating-text">4.8</span>
+</div>
+<h3>Insulated Water Bottle</h3>
+<div class="product-footer">
+<div class="product-price">₹399</div>
+<a href="contact.html" class="button button-primary">Order</a>
+</div>
+</div>
+</article>
+
+<article class="product-card reveal">
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1513364776144-60967b0f800f?auto=format&fit=crop&w=700&q=80" alt="Art & Craft Kit">
+<span class="product-category">Art</span>
+</div>
+<div class="product-content">
+<div class="product-rating">
+<span class="product-stars">★★★★★</span>
+<span class="product-rating-text">5.0</span>
+</div>
+<h3>Art & Craft Kit</h3>
+<div class="product-footer">
+<div class="product-price">₹899</div>
+<a href="contact.html" class="button button-primary">Order</a>
+</div>
+</div>
+</article>
+
+<article class="product-card reveal">
+<div class="product-image">
+<img src="https://images.unsplash.com/photo-1580894908361-967195033215?auto=format&fit=crop&w=700&q=80" alt="Scientific Calculator">
+<span class="product-category">Electronics</span>
+</div>
+<div class="product-content">
+<div class="product-rating">
+<span class="product-stars">★★★★★</span>
+<span class="product-rating-text">4.9</span>
+</div>
+<h3>Scientific Calculator</h3>
+<div class="product-footer">
+<div class="product-price">₹1,499</div>
+<a href="contact.html" class="button button-primary">Order</a>
+</div>
+</div>
+</article>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="products-cta-section">
+
+<div class="container">
+
+<div class="products-cta-box reveal">
+
+<span class="products-cta-tag">Need Bulk Orders?</span>
+
+<h2>Looking For Educational Supplies In Large Quantities?</h2>
+
+<p>Whether you're a school, college, coaching institute or corporate office, EduMart offers reliable bulk supply solutions with quality products and competitive pricing.</p>
+
+<div class="products-cta-buttons">
+
+<a href="contact.html" class="button button-primary">
+
+Request A Quote
+
+</a>
+
+<a href="services.html" class="button button-outline">
+
+Our Services
+
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+    </main>
+    <!-- ============== FOOTER ============== -->
+    <footer class="footer">
+      <div class="footer__shape footer__shape--one"></div>
+      <div class="footer__shape footer__shape--two"></div>
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand reveal reveal-left">
+            <a href="index.html" class="footer-brand">
+              <div class="footer-brand__logo">
+                <img
+                  src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/edu-smart-logos-design-template-23b6de7d02972a120e8ad62879fb66f4_screen.jpg?ts=1661512030"
+                  alt="Edu Mart Logo"
+                />
+              </div>
+              <div class="footer-brand__text">
+                <h2>Edu<span>Mart</span></h2>
+                <p>Books & School Supplies</p>
+              </div>
+            </a>
+            <p class="footer__description">
+              Edu Mart is your trusted destination for premium books,
+              stationery, backpacks, office supplies and educational essentials.
+              We proudly serve students, parents, teachers and institutions with
+              quality products at affordable prices.
+            </p>
+            <div class="footer__social">
+              <a href="#" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <circle cx="17.5" cy="6.5" r="1"></circle>
+                </svg>
+              </a>
+              <a href="#" aria-label="X">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18 2H22L14 11L23 22H16L10.5 15.3L4.8 22H1L9.5 12L1 2H8L13 8.3L18 2Z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5S1.12 1 2.48 1S4.98 2.12 4.98 3.5ZM0 8H5V24H0V8ZM8 8H12.8V10.2H12.9C13.6 8.9 15.3 7.6 17.9 7.6C23.1 7.6 24 10.9 24 15.2V24H19V16.1C19 14.2 19 11.7 16.3 11.7C13.5 11.7 13.1 13.8 13.1 15.9V24H8V8Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__links-column reveal reveal-up">
+            <h3>Quick Links</h3>
+            <ul class="footer__links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="products.html">Producys</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__links-column reveal reveal-right">
+            <h3>Support</h3>
+            <ul class="footer__links">
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms & Conditions</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="forgot-password.html">Forgot Password</a></li>
+            </ul>
+          </div>
+          <div class="footer__contact-column reveal reveal-right">
+            <h3>Contact Info</h3>
+            <ul class="footer__contact">
+              <li>
+                <div class="footer__contact-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M21 10C21 16 12 22 12 22S3 16 3 10A9 9 0 1 1 21 10Z"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Address</h4>
+                  <p>Hyderabad, Telangana, India</p>
+                </div>
+              </li>
+              <li>
+                <div class="footer__contact-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M22 16.92V19.92A2 2 0 0 1 20 22A19.86 19.86 0 0 1 2 4A2 2 0 0 1 4 2H7A2 2 0 0 1 9 3.72L10 8A2 2 0 0 1 9.45 9.91L8.09 11.27A16 16 0 0 0 12.73 15.91L14.09 14.55A2 2 0 0 1 16 14L20.28 15A2 2 0 0 1 22 16.92Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+91 98765 43210</p>
+                </div>
+              </li>
+              <li>
+                <div class="footer__contact-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M4 4H20V20H4Z"></path>
+                    <path d="M22 6L12 13L2 6"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <p>support@edumart.com</p>
+                </div>
+              </li>
+              <li>
+                <div class="footer__contact-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Working Hours</h4>
+                  <p>Mon - Sat : 9:00 AM - 8:00 PM</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__copyright">
+            <p>
+              &copy; <span id="currentYear">2026</span> Edu Mart. All Rights
+              Reserved.
+            </p>
+          </div>
+          <ul class="footer__bottom-links">
+            <li>
+              <a href="privacy.html">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="terms.html">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="faq.html">FAQ</a>
+            </li>
+          </ul>
+          <div class="footer__payments">
+            <span>Secure Payments</span>
+            <div class="footer__payment-icons">
+              <div class="footer__payment-card">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                  <line x1="2" y1="10" x2="22" y2="10"></line>
+                </svg>
+              </div>
+              <div class="footer__payment-card">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="9" cy="12" r="4"></circle>
+                  <circle cx="15" cy="12" r="4"></circle>
+                </svg>
+              </div>
+              <div class="footer__payment-card">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M2 12H22"></path>
+                  <path d="M12 2V22"></path>
+                  <circle cx="12" cy="12" r="9"></circle>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="scroll-top-button"
+          id="scrollTopButton"
+          aria-label="Back To Top"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
+      </div>
+    </footer>
+    <!-- Back To Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M12 19V5"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
+        <path
+          d="M6 11L12 5L18 11"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <script src="assets/js/toggles.js" defer></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/counter.js"></script>
+  </body>
+</html>

@@ -1,321 +1,681 @@
 <!doctype html>
 <html lang="en" dir="ltr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact Us — Scholar Stationery | Store, Hours &amp; School Orders Desk</title>
-  <meta name="description" content="Contact Scholar Stationery: visit our Riverton store, call the school orders desk, or send us a message. Opening hours, map and a quick contact form." />
-  <link rel="canonical" href="https://scholar-stationery.example.com/contact.html" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Contact Scholar Stationery" />
-  <meta property="og:description" content="Store location, hours, school orders desk and contact form." />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="assets/css/vendor-bootstrap.css" />
-  <link rel="stylesheet" href="assets/css/styles.css" />
-</head>
-<body>
-  <a class="skip-link" href="#main">Skip to main content</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EduMart — School Supplies, Textbooks & Book Shop</title>
+    <meta
+      name="description"
+      content="EduMart stocks textbooks, notebooks, pens and art supplies for every grade. Browse by grade level, unlock bulk-order pricing for schools, and grab seasonal back-to-school offers."
+    />
+    <link rel="canonical" href="https://scholar-stationery.example.com/" />
 
-<header class="header">
-    <div class="container">
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="EduMart — School Supplies & Book Shop" />
+    <meta
+      property="og:description"
+      content="Textbooks, notebooks, pens and art supplies for every grade. Bulk-order pricing for schools and seasonal back-to-school offers."
+    />
+    <meta property="og:url" content="https://scholar-stationery.example.com/" />
+    <meta property="og:image" content="assets/images/og-cover.jpg" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="assets/css/vendor-bootstrap.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="assets/css/animations.css" />
+    <link rel="stylesheet" href="assets/css/contact.css" />
+  </head>
+  <body>
+    <!-- <a class="skip-link" href="#main">Skip to main content</a> -->
+    <!-- header -->
+    <header class="header">
+      <div class="container">
         <div class="header__inner">
-            <!-- ================= Logo ================= -->
-            <a href="index.html" class="brand" aria-label="Scholar Stationery Home">
-                <span class="brand__logo">
-                    <img src="https://www.svgrepo.com/show/492785/book-and-person-summer.svg"
-                         alt="Scholar Stationery Logo">
-                </span>
-                <span class="brand__name">
-                    Scholar<span>Stationery</span>
-                </span>
-            </a>
-            <!-- ================= Navigation ================= -->
-            <nav class="nav" id="primary-nav">
-                <ul class="nav__list">
-                    <!-- Home Dropdown -->
-                    <li class="nav__item mobile-dropdown">
-    <a class="nav__link" href="index.html">
-                            Home
-                        </a>
-    <div class="nav__dropdown">
-        <a href="index.html">Home 1</a>
-        <a href="home2.html">Home 2</a>
-    </div>
-</li>
-                    <li>
-                        <a class="nav__link" href="services.html" >
-                            Services
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav__link" href="about.html" >
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav__link" href="blog.html" >
-                            Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav__link" href="pricing.html" >
-                            Pricing
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav__link" href="contact.html" aria-current="page">
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- ================= Right Side ================= -->
-<nav class="nav">
-            <div class="header__actions">
-                <!-- <button class="icon-btn desktop-only" aria-label="Search">
-                    <svg viewBox="0 0 24 24"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="2">
-
-                        <circle cx="11" cy="11" r="8"></circle>
-
-                        <line x1="21"
-                              y1="21"
-                              x2="16.65"
-                              y2="16.65"></line>
-
-                    </svg>
-
-                </button>
-
-                <button class="icon-btn desktop-only" aria-label="Cart">
-
-                    <svg viewBox="0 0 24 24"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="2">
-
-                        <circle cx="9" cy="21" r="1"></circle>
-
-                        <circle cx="20" cy="21" r="1"></circle>
-
-                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-
-                    </svg>
-
-                </button> -->
-                <button
-                    class="icon-btn"
-                    data-rtl-toggle
-                    aria-label="RTL / LTR">
-                    <svg viewBox="0 0 24 24"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="2">
-                        <polyline points="17 1 21 5 17 9"></polyline>
-                        <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
-                        <polyline points="7 23 3 19 7 15"></polyline>
-                        <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
-                    </svg>
-                </button>
-                <button
-                    class="icon-btn"
-                    data-theme-toggle
-                    aria-label="Dark Mode">
-                    <svg viewBox="0 0 24 24"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="2">
-
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79"></path>
-                    </svg>
-                </button>
-                <!-- <nav class="login"> -->
-            <a href="login.html" class="login-button">Login</a>
-        </nav>
+          <a href="index.html" class="brand">
+            <div class="brand__logo">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/edu-smart-logos-design-template-23b6de7d02972a120e8ad62879fb66f4_screen.jpg?ts=1661512030"
+                alt="EduMart Logo"
+              />
             </div>
-            <!-- ================= Mobile Menu Button ================= -->
-            <button
-                class="nav-toggle"
-                id="mobile-menu-toggle"
-                aria-label="Open Menu"
-                aria-controls="primary-nav"
-                aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </div>
-    <!-- Overlay -->
-    <div class="mobile-overlay"></div>
-</header>
 
-  <main id="main">
-    <!-- 1. Hero -->
-    <section class="hero">
-      <div class="container">
-        
-        <div class="hero__inner" style="grid-template-columns:1fr;min-height:auto;padding-block:var(--space-7)">
-          <div class="hero__content reveal" style="text-align:center;max-width:760px;margin-inline:auto">
-            <span class="eyebrow">We'd love to help</span>
-            <h1 class="hero__title" style="font-size:clamp(2rem,4vw,var(--fs-3xl))">Get in touch with our team</h1>
-            <p class="hero__desc lead mx-auto">Questions about an order, a school bulk quote or just finding the right supplies? Reach out — we usually reply within one business day.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 2. Contact form + info -->
-    <section class="section">
-      <div class="container">
-        <div class="row" style="align-items:flex-start">
-          <div class="col-lg-7 reveal">
-            <h2>Send us a message</h2>
-            <p class="text-muted">Fill in the form and our school orders desk will get back to you. Fields marked with * are required.</p>
-            <form action="#" method="post" novalidate>
-              <div class="row row-tight">
-                <div class="col-md-6"><div class="form-group"><label class="form-label" for="name">Full name *</label><input class="form-control" id="name" type="text" required /></div></div>
-                <div class="col-md-6"><div class="form-group"><label class="form-label" for="email">Email *</label><input class="form-control" id="email" type="email" required /></div></div>
-              </div>
-              <div class="row row-tight">
-                <div class="col-md-6"><div class="form-group"><label class="form-label" for="phone">Phone</label><input class="form-control" id="phone" type="tel" /></div></div>
-                <div class="col-md-6"><div class="form-group"><label class="form-label" for="topic">Topic</label><select class="form-select" id="topic"><option>General question</option><option>School bulk quote</option><option>Order status</option><option>Partnership</option></select></div></div>
-              </div>
-              <div class="form-group"><label class="form-label" for="message">Message *</label><textarea class="form-control" id="message" required></textarea></div>
-              <div class="form-check mb-4"><input type="checkbox" id="consent"><label for="consent">I agree to be contacted about my enquiry.</label></div>
-              <button class="btn btn-primary btn-lg" type="submit">Send Message</button>
-            </form>
-          </div>
-
-          <div class="col-lg-5 reveal reveal-2">
-            <div class="filter-sidebar">
-              <div class="filter-group"><h4>Visit our store</h4><p class="card__text"><svg style="width:18px;height:18px;display:inline-block;vertical-align:-4px;margin-inline-end:6px;color:var(--color-secondary)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>503 CY-Techies, Madhapur, Hyderabad</p></div>
-              <div class="filter-group"><h4>Call us</h4><p class="card__text mb-2"><svg style="width:18px;height:18px;display:inline-block;vertical-align:-4px;margin-inline-end:6px;color:var(--color-secondary)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>+91 98765 43210</p><p class="card__text mb-0"><svg style="width:18px;height:18px;display:inline-block;vertical-align:-4px;margin-inline-end:6px;color:var(--color-secondary)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>hello@scholarstationery.com</p></div>
-              <div class="filter-group" style="border:none"><h4>School orders desk</h4><p class="card__text mb-0">Mon–Fri, 9am–5pm. Bulk quotes within one business day.</p></div>
+            <div class="brand__text">
+              <h2>Edu<span>Mart</span></h2>
+              <p>Books & School Supplies</p>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- 3. Map placeholder -->
-    <section class="section-tight">
-    <div class="container">
-
-        <div class="card reveal overflow-hidden">
-
-            <iframe
-                src="https://www.google.com/maps?q=CY+Techies,+Capital+Park,+VIP+Hills,+Madhapur,+Hyderabad&output=embed"
-                width="100%"
-                height="500"
-                style="border:0;"
-                loading="lazy"
-                allowfullscreen
-                referrerpolicy="no-referrer-when-downgrade">
-            </iframe>
-
-        </div>
-
-    </div>
-</section>
-
-    <!-- 4. Hours & locations -->
-    <!-- <section class="section section-alt">
-      <div class="container">
-        <div class="section-head reveal"><span class="eyebrow">When we're open</span><h2>Store hours</h2></div>
-        <div class="row row-tight">
-          <div class="col-md-6 reveal reveal-1"><div class="card"><div class="card__body"><h3 class="card__title">Riverton flagship</h3><ul class="footer__links" style="color:var(--color-text)"><li class="d-flex justify-between" style="margin-bottom:var(--space-2)"><span>Monday–Friday</span><strong>9:00 – 18:00</strong></li><li class="d-flex justify-between" style="margin-bottom:var(--space-2)"><span>Saturday</span><strong>10:00 – 16:00</strong></li><li class="d-flex justify-between" style="margin-bottom:0"><span>Sunday</span><strong>Closed</strong></li></ul></div></div></div>
-          <div class="col-md-6 reveal reveal-2"><div class="card"><div class="card__body"><h3 class="card__title">Northside branch</h3><ul class="footer__links" style="color:var(--color-text)"><li class="d-flex justify-between" style="margin-bottom:var(--space-2)"><span>Monday–Friday</span><strong>9:00 – 17:00</strong></li><li class="d-flex justify-between" style="margin-bottom:var(--space-2)"><span>Saturday</span><strong>10:00 – 14:00</strong></li><li class="d-flex justify-between" style="margin-bottom:0"><span>Sunday</span><strong>Closed</strong></li></ul></div></div></div>
-        </div>
-      </div>
-    </section> -->
-
-    <!-- 5. FAQ snippet -->
-    <section class="section">
-      <div class="container"><div class="section-head reveal"><span class="eyebrow">Quick answers</span><h2>Contact FAQ</h2></div>
-        <div style="max-width:760px;margin-inline:auto">
-          <details class="faq-item reveal reveal-1"><summary>How fast do you reply? <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></summary><div class="faq-item__body">Most enquiries are answered within one business day. School bulk quotes may take up to two business days during peak season.</div></details>
-          <details class="faq-item reveal reveal-2"><summary>Can I pick up an online order in store? <span class="icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg></span></summary><div class="faq-item__body">Yes — choose "store pickup" at checkout and we'll email you when it's ready, usually same day for in-stock items.</div></details>
-        </div>
-      </div>
-    </section>
-
-    <!-- 6. Bulk CTA -->
-    <!-- <section class="section section-alt"><div class="container"><div class="bulk-notice reveal" style="max-width:760px;margin-inline:auto"><span class="bulk-notice__icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 3h5v5"/><path d="M8 3H3v5"/><path d="M3 16v5h5"/><path d="M16 21h5v-5"/><line x1="3" y1="3" x2="21" y2="21"/></svg></span><div><h4>Ordering for a school?</h4><p>Mention it in your message and we'll route you to our school orders desk for tiered bulk pricing and invoice billing.</p></div></div></div></section> -->
-
-    <!-- 7. CTA -->
-    <section class="section"><div class="container"><div class="cta reveal"><div class="cta__inner"><h2>Prefer to browse first?</h2><p>Explore the full catalog of textbooks, notebooks, pens and art supplies.</p><div class="hero__actions" style="justify-content:center"><a class="btn btn-primary btn-lg" href="services.html">Shop Products</a><a class="btn btn-outline btn-lg" href="faq.html">Read FAQ</a></div></div></div></div></section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__top">
-        <div class="footer__brand">
-          <a href="index.html" class="brand" aria-label="Scholar Stationery home">
-            <span class="brand__logo">
-    <img src="https://www.svgrepo.com/show/492785/book-and-person-summer.svg" alt="Scholar Stationery Logo">
-</span>
-            <span class="brand__name" style="color:#fff">Scholar<span>Stationery</span></span>
           </a>
-          <p class="footer__about">Your neighborhood school supply and book shop since 2009. Quality textbooks, notebooks, pens and art supplies for every grade — with bulk pricing built for schools.</p>
-          <div class="footer__social">
-            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
-            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"/></svg></a>
-            <a href="#" aria-label="X"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h3l-7 8 8 12h-6l-5-7-6 7H2l8-9L2 2h6l4 6z"/></svg></a>
+
+          <nav class="navigation" id="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item navigation__item--dropdown">
+                <button class="navigation__link navigation__dropdown-toggle">
+                  <span
+                    ><a
+                      href="index.html"
+                      class="navigation__link"
+                      aria-current="page"
+                      >Home</a
+                    ></span
+                  >
+
+                  <svg
+                    class="navigation__arrow"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+
+                <ul class="navigation__dropdown">
+                  <li>
+                    <a href="index.html">Home 01</a>
+                  </li>
+
+                  <li>
+                    <a href="home-2.html">Home 02</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navigation__item">
+                <a href="about.html" class="navigation__link">About</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="products.html" class="navigation__link">Products</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="services.html" class="navigation__link">Services</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="blog.html" class="navigation__link">Blog</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="contact.html" class="navigation__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__actions">
+            <button class="header-icon-button rtl-toggle" title="RTL Mode">
+              RTL
+
+              <!-- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+
+<path d="M21 5H10"></path>
+
+<path d="M21 12H7"></path>
+
+<path d="M21 19H10"></path>
+
+<path d="M7 5L3 9L7 13"></path>
+
+</svg> -->
+            </button>
+
+            <button class="header-icon-button theme-toggle" title="Dark Mode">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M21 12.79A9 9 0 1 1 11.21 3A7 7 0 0 0 21 12.79Z"
+                ></path>
+              </svg>
+            </button>
+
+            <a href="login.html" class="login-button">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M20 21V19A4 4 0 0 0 16 15H8A4 4 0 0 0 4 19V21"></path>
+
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+
+              <span>Login</span>
+            </a>
+
+            <button class="mobile-menu-button" id="mobileMenuButton">
+              <span></span>
+
+              <span></span>
+
+              <span></span>
+            </button>
           </div>
         </div>
-        <div>
-          <h4>Quick Links</h4>
-          <ul class="footer__links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="pricing.html">Pricing</a></li>
-            <li><a href="contact.html">Contacts</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Company</h4>
-          <ul class="footer__links">
-            
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="404.html">404 page</a></li>
-            <li><a href="coming-soon.html">Coming Soon</a></li>
-            <li><a href="maintenance.html">Maintenance</a></li>
+      </div>
+    </header>
+   <main id="main">
+    <main>
 
-          </ul>
+<section class="contact-hero">
+
+<div class="container">
+
+<div class="contact-hero-content reveal">
+
+<span class="contact-tag">Contact Us</span>
+
+<h1>Let's Start A Conversation</h1>
+
+<p>Whether you have questions about our products, need a bulk quotation or want to discuss your institution's requirements, our team is ready to help.</p>
+
+<div class="contact-hero-buttons">
+
+<a href="#contact-form" class="button button-primary">Send Message</a>
+
+<a href="tel:+919876543210" class="button button-outline">Call Now</a>
+
+</div>
+
+</div>
+
+<div class="contact-hero-cards">
+<div class="contact-info-card reveal">
+<div class="contact-info-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M22 16.92V20A2 2 0 0 1 20 22A19.79 19.79 0 0 1 2 4A2 2 0 0 1 4 2H7.09A2 2 0 0 1 9.08 3.75L10 8A2 2 0 0 1 9.45 9.89L8.09 11.26A16 16 0 0 0 12.74 15.91L14.11 14.55A2 2 0 0 1 16 14L20.25 14.92A2 2 0 0 1 22 16.92Z"/>
+</svg>
+</div>
+<div class="contact-info-content">
+<h3>Call Us</h3>
+<p>+91 98765 43210</p>
+</div>
+</div>
+
+<div class="contact-info-card reveal">
+<div class="contact-info-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M4 4H20V20H4Z"/>
+<path d="M4 7L12 13L20 7"/>
+</svg>
+</div>
+<div class="contact-info-content">
+<h3>Email Us</h3>
+<p>support@edumart.com</p>
+</div>
+</div>
+
+<div class="contact-info-card reveal">
+<div class="contact-info-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M21 10C21 17 12 22 12 22S3 17 3 10A9 9 0 1 1 21 10Z"/>
+<circle cx="12" cy="10" r="3"/>
+</svg>
+</div>
+<div class="contact-info-content">
+<h3>Visit Us</h3>
+<p>Hyderabad, Telangana</p>
+</div>
+</div>
+</div>
+
+</section>
+<section class="contact-form-section" id="contact-form">
+<div class="container">
+<div class="contact-wrapper">
+<div class="contact-details reveal">
+<span class="contact-subtitle">Get In Touch</span>
+<h2>We're Here To Help You</h2>
+<p>Have questions about our products or need a customized quotation? Contact our team and we'll get back to you as soon as possible.</p>
+<div class="contact-detail-item">
+<div class="contact-detail-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M22 16.92V20A2 2 0 0 1 20 22A19.79 19.79 0 0 1 2 4A2 2 0 0 1 4 2H7.09A2 2 0 0 1 9.08 3.75L10 8A2 2 0 0 1 9.45 9.89L8.09 11.26A16 16 0 0 0 12.74 15.91L14.11 14.55A2 2 0 0 1 16 14L20.25 14.92A2 2 0 0 1 22 16.92Z"/>
+</svg>
+</div>
+<div>
+<h4>Phone Number</h4>
+<p>+91 98765 43210</p>
+</div>
+</div>
+<div class="contact-detail-item">
+<div class="contact-detail-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M4 4H20V20H4Z"/>
+<path d="M4 7L12 13L20 7"/>
+</svg>
+</div>
+<div>
+<h4>Email Address</h4>
+<p>support@edumart.com</p>
+</div>
+</div>
+<div class="contact-detail-item">
+<div class="contact-detail-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M21 10C21 17 12 22 12 22S3 17 3 10A9 9 0 1 1 21 10Z"/>
+<circle cx="12" cy="10" r="3"/>
+</svg>
+</div>
+<div>
+<h4>Office Address</h4>
+<p>Hyderabad, Telangana, India</p>
+</div>
+</div>
+<div class="contact-detail-item">
+<div class="contact-detail-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<circle cx="12" cy="12" r="10"/>
+<path d="M12 6V12L16 14"/>
+</svg>
+</div>
+<div>
+<h4>Working Hours</h4>
+<p>Mon - Sat : 9:00 AM - 7:00 PM</p>
+</div>
+</div>
+</div>
+
+<div class="contact-form-card reveal">
+<h3>Send Us A Message</h3>
+<form class="contact-form">
+<div class="form-grid">
+<div class="form-group">
+<label>Full Name</label>
+<input type="text" placeholder="Enter your name" required>
+</div>
+<div class="form-group">
+<label>Email Address</label>
+<input type="email" placeholder="Enter your email" required>
+</div>
+<div class="form-group">
+<label>Phone Number</label>
+<input type="tel" placeholder="Enter your phone number">
+</div>
+<div class="form-group">
+<label>Subject</label>
+<input type="text" placeholder="Enter subject">
+</div>
+</div>
+<div class="form-group">
+<label>Service Required</label>
+<select>
+<option>Select a Service</option>
+<option>School Supplies</option>
+<option>Bulk Orders</option>
+<option>Office Supplies</option>
+<option>Printing & Binding</option>
+<option>Custom School Kits</option>
+</select>
+</div>
+<div class="form-group">
+<label>Your Message</label>
+<textarea rows="6" placeholder="Write your message..."></textarea>
+</div>
+<button type="submit" class="button button-primary">Send Message</button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<section class="business-info-section">
+<div class="container">
+<div class="section-head reveal">
+<span class="eyebrow">Business Information</span>
+<h2>We're Always Ready To Assist You</h2>
+<p>Our dedicated team is committed to providing quick responses and reliable support for every enquiry.</p>
+</div>
+<div class="business-info-grid">
+<div class="business-info-card reveal">
+<div class="business-info-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<circle cx="12" cy="12" r="10"/>
+<path d="M12 6V12L16 14"/>
+</svg>
+</div>
+<h3>Working Hours</h3>
+<p>Monday - Saturday</p>
+<span>9:00 AM - 7:00 PM</span>
+</div>
+<div class="business-info-card reveal">
+<div class="business-info-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M22 16.92V20A2 2 0 0 1 20 22A19.79 19.79 0 0 1 2 4A2 2 0 0 1 4 2H7.09A2 2 0 0 1 9.08 3.75L10 8A2 2 0 0 1 9.45 9.89L8.09 11.26A16 16 0 0 0 12.74 15.91L14.11 14.55A2 2 0 0 1 16 14L20.25 14.92A2 2 0 0 1 22 16.92Z"/>
+</svg>
+</div>
+<h3>Customer Support</h3>
+<p>Dedicated Assistance</p>
+<span>Within Business Hours</span>
+</div>
+<div class="business-info-card reveal">
+<div class="business-info-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M21 10C21 17 12 22 12 22S3 17 3 10A9 9 0 1 1 21 10Z"/>
+<circle cx="12" cy="10" r="3"/>
+</svg>
+</div>
+<h3>Service Area</h3>
+<p>Across India</p>
+<span>Schools • Colleges • Offices</span>
+</div>
+<div class="business-info-card reveal">
+<div class="business-info-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M4 4H20V20H4Z"/>
+<path d="M4 7L12 13L20 7"/>
+</svg>
+</div>
+<h3>Response Time</h3>
+<p>Quick Replies</p>
+<span>Within 24 Hours</span>
+</div>
+</div>
+</div>
+</section>
+<section class="contact-map-section">
+<div class="container">
+<div class="section-head reveal">
+<span class="eyebrow">Find Us</span>
+<h2>Visit Our Store</h2>
+<p>We welcome you to visit our store for personalized assistance and to explore our wide range of educational products.</p>
+</div>
+<div class="contact-map-wrapper reveal">
+<iframe src="https://www.google.com/maps?q=Hyderabad,Telangana&output=embed" loading="lazy" allowfullscreen="" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</section>
+<section class="contact-newsletter-section">
+<div class="container">
+<div class="contact-newsletter reveal">
+<div class="contact-newsletter-content">
+<span class="contact-newsletter-tag">Stay Connected</span>
+<h2>Get The Latest Updates</h2>
+<p>Subscribe to receive educational news, new arrivals, exclusive offers and bulk supply updates directly in your inbox.</p>
+</div>
+<form class="contact-newsletter-form">
+<div class="contact-newsletter-input">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M4 4H20V20H4Z"/>
+<path d="M4 7L12 13L20 7"/>
+</svg>
+<input type="email" placeholder="Enter your email address" required>
+</div>
+<button type="submit" class="button button-primary">Subscribe Now</button>
+</form>
+</div>
+</div>
+</section>
+</main>
+
+   </main>
+    <!-- ============== FOOTER ============== -->
+    <footer class="footer">
+      <div class="footer__shape footer__shape--one"></div>
+      <div class="footer__shape footer__shape--two"></div>
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__brand reveal reveal-left">
+            <a href="index.html" class="footer-brand">
+              <div class="footer-brand__logo">
+                <img
+                  src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/edu-smart-logos-design-template-23b6de7d02972a120e8ad62879fb66f4_screen.jpg?ts=1661512030"
+                  alt="Edu Mart Logo"
+                />
+              </div>
+              <div class="footer-brand__text">
+                <h2>Edu<span>Mart</span></h2>
+                <p>Books & School Supplies</p>
+              </div>
+            </a>
+            <p class="footer__description">
+              Edu Mart is your trusted destination for premium books,
+              stationery, backpacks, office supplies and educational essentials.
+              We proudly serve students, parents, teachers and institutions with
+              quality products at affordable prices.
+            </p>
+            <div class="footer__social">
+              <a href="#" aria-label="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                  />
+                </svg>
+              </a>
+              <a href="#" aria-label="Instagram">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="2" width="20" height="20" rx="5"></rect>
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <circle cx="17.5" cy="6.5" r="1"></circle>
+                </svg>
+              </a>
+              <a href="#" aria-label="X">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M18 2H22L14 11L23 22H16L10.5 15.3L4.8 22H1L9.5 12L1 2H8L13 8.3L18 2Z"
+                  ></path>
+                </svg>
+              </a>
+              <a href="#" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor">
+                  <path
+                    d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5S1.12 1 2.48 1S4.98 2.12 4.98 3.5ZM0 8H5V24H0V8ZM8 8H12.8V10.2H12.9C13.6 8.9 15.3 7.6 17.9 7.6C23.1 7.6 24 10.9 24 15.2V24H19V16.1C19 14.2 19 11.7 16.3 11.7C13.5 11.7 13.1 13.8 13.1 15.9V24H8V8Z"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__links-column reveal reveal-up">
+            <h3>Quick Links</h3>
+            <ul class="footer__links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="products.html">Producys</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer__links-column reveal reveal-right">
+            <h3>Support</h3>
+            <ul class="footer__links">
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="privacy.html">Privacy Policy</a></li>
+              <li><a href="terms.html">Terms & Conditions</a></li>
+              <li><a href="login.html">Login</a></li>
+              <li><a href="register.html">Register</a></li>
+              <li><a href="forgot-password.html">Forgot Password</a></li>
+            </ul>
+          </div>
+          <div class="footer__contact-column reveal reveal-right">
+            <h3>Contact Info</h3>
+            <ul class="footer__contact">
+              <li>
+                <div class="footer__contact-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M21 10C21 16 12 22 12 22S3 16 3 10A9 9 0 1 1 21 10Z"
+                    ></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Address</h4>
+                  <p>Hyderabad, Telangana, India</p>
+                </div>
+              </li>
+              <li>
+                <div class="footer__contact-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path
+                      d="M22 16.92V19.92A2 2 0 0 1 20 22A19.86 19.86 0 0 1 2 4A2 2 0 0 1 4 2H7A2 2 0 0 1 9 3.72L10 8A2 2 0 0 1 9.45 9.91L8.09 11.27A16 16 0 0 0 12.73 15.91L14.09 14.55A2 2 0 0 1 16 14L20.28 15A2 2 0 0 1 22 16.92Z"
+                    ></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Phone</h4>
+                  <p>+91 98765 43210</p>
+                </div>
+              </li>
+              <li>
+                <div class="footer__contact-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <path d="M4 4H20V20H4Z"></path>
+                    <path d="M22 6L12 13L2 6"></path>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Email</h4>
+                  <p>support@edumart.com</p>
+                </div>
+              </li>
+              <li>
+                <div class="footer__contact-icon">
+                  <svg
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <div>
+                  <h4>Working Hours</h4>
+                  <p>Mon - Sat : 9:00 AM - 8:00 PM</p>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div>
-          <h4>Reach us</h4>
-          <ul class="footer__contact">
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg> 42 Maple Avenue, Riverton</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> (555) 018-2200</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> hello@scholarstationery.com</li>
+        <div class="footer__bottom">
+          <div class="footer__copyright">
+            <p>
+              &copy; <span id="currentYear">2026</span> Edu Mart. All Rights
+              Reserved.
+            </p>
+          </div>
+          <ul class="footer__bottom-links">
+            <li>
+              <a href="privacy.html">Privacy Policy</a>
+            </li>
+            <li>
+              <a href="terms.html">Terms & Conditions</a>
+            </li>
+            <li>
+              <a href="faq.html">FAQ</a>
+            </li>
           </ul>
+          <div class="footer__payments">
+            <span>Secure Payments</span>
+            <div class="footer__payment-icons">
+              <div class="footer__payment-card">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                  <line x1="2" y1="10" x2="22" y2="10"></line>
+                </svg>
+              </div>
+              <div class="footer__payment-card">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <circle cx="9" cy="12" r="4"></circle>
+                  <circle cx="15" cy="12" r="4"></circle>
+                </svg>
+              </div>
+              <div class="footer__payment-card">
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M2 12H22"></path>
+                  <path d="M12 2V22"></path>
+                  <circle cx="12" cy="12" r="9"></circle>
+                </svg>
+              </div>
+            </div>
+          </div>
         </div>
+        <button
+          class="scroll-top-button"
+          id="scrollTopButton"
+          aria-label="Back To Top"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <polyline points="18 15 12 9 6 15"></polyline>
+          </svg>
+        </button>
       </div>
-      <div class="footer__bottom">
-        <p class="mb-0">&copy; 2025 Scholar Stationery. All rights reserved.</p>
-        <ul class="footer__bottom-links">
-          <li><a href="privacy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms &amp; Conditions</a></li>
-          <li><a href="faq.html">FAQ</a></li>
-        </ul>
-      </div>
-    </div>
-  </footer>
-  <!-- Back To Top Button -->
-<button id="backToTop" class="back-to-top" aria-label="Back to Top">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-        <path d="M12 19V5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-        <path d="M6 11L12 5L18 11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-</button>
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/toggles.js" defer></script>
-</body>
+    </footer>
+    <!-- Back To Top Button -->
+    <button id="backToTop" class="back-to-top" aria-label="Back to Top">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+        <path
+          d="M12 19V5"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+        />
+        <path
+          d="M6 11L12 5L18 11"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+    </button>
+    <script src="assets/js/toggles.js" defer></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/counter.js"></script>
+  </body>
 </html>
