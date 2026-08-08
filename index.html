@@ -27,11 +27,13 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap"
       rel="stylesheet"
     />
-
+<link rel="icon" type="image/png" sizes="184x184" href="logo.png">
     <!-- Styles -->
     <link rel="stylesheet" href="assets/css/vendor-bootstrap.css" />
     <link rel="stylesheet" href="assets/css/styles.css" />
     <link rel="stylesheet" href="assets/css/animations.css" />
+    <link rel="stylesheet" href="assets/css/rtl.css">
+    <!-- <link rel="stylesheet" href="assets/css/responsive.css"> -->
   </head>
   <body>
     <!-- <a class="skip-link" href="#main">Skip to main content</a> -->
@@ -49,7 +51,7 @@
 
             <div class="brand__text">
               <h2>Edu<span>Mart</span></h2>
-              <p>Books & School Supplies</p>
+              <!-- <p>Books & School Supplies</p> -->
             </div>
           </a>
 
@@ -60,7 +62,7 @@
                   <span
                     ><a
                       href="index.html"
-                      class="navigation__link"
+                      class="navigation__link" class="active"
                       aria-current="page"
                       >Home</a
                     ></span
@@ -111,23 +113,11 @@
           </nav>
 
           <div class="header__actions">
-            <button class="header-icon-button rtl-toggle" title="RTL Mode">
+            <button class="header-icon-button rtl-toggle" data-rtl-toggle title="RTL Mode">
               RTL
-
-              <!-- <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-
-<path d="M21 5H10"></path>
-
-<path d="M21 12H7"></path>
-
-<path d="M21 19H10"></path>
-
-<path d="M7 5L3 9L7 13"></path>
-
-</svg> -->
             </button>
 
-            <button class="header-icon-button theme-toggle" title="Dark Mode">
+            <button class="header-icon-button theme-toggle" data-theme-toggle title="Dark Mode">
               <svg
                 viewBox="0 0 24 24"
                 fill="none"
@@ -608,7 +598,7 @@
             <div class="product-card reveal reveal-1" data-category="books">
               <span class="product-card__badge sale">-20%</span>
 
-              <button class="product-card__wishlist" aria-label="Wishlist">
+              <!-- <button class="product-card__wishlist" aria-label="Wishlist">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -619,7 +609,7 @@
                     d="M20.84 4.61A5.5 5.5 0 0 0 13 4.5L12 5.5L11 4.5A5.5 5.5 0 0 0 3.16 4.61A5.5 5.5 0 0 0 3 12.28L12 21L21 12.28A5.5 5.5 0 0 0 20.84 4.61Z"
                   ></path>
                 </svg>
-              </button>
+              </button> -->
 
               <div class="product-card__image">
                 <img
@@ -654,7 +644,7 @@ Order
             >
               <span class="product-card__badge new">New</span>
 
-              <button class="product-card__wishlist" aria-label="Wishlist">
+              <!-- <button class="product-card__wishlist" aria-label="Wishlist">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -665,7 +655,7 @@ Order
                     d="M20.84 4.61A5.5 5.5 0 0 0 13 4.5L12 5.5L11 4.5A5.5 5.5 0 0 0 3.16 4.61A5.5 5.5 0 0 0 3 12.28L12 21L21 12.28A5.5 5.5 0 0 0 20.84 4.61Z"
                   ></path>
                 </svg>
-              </button>
+              </button> -->
 
               <div class="product-card__image">
                 <img
@@ -698,7 +688,7 @@ Order
               data-category="stationery"
             >
               <span class="product-card__badge bestseller">Best Seller</span>
-              <button class="product-card__wishlist" aria-label="Wishlist">
+              <!-- <button class="product-card__wishlist" aria-label="Wishlist">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -709,7 +699,7 @@ Order
                     d="M20.84 4.61A5.5 5.5 0 0 0 13 4.5L12 5.5L11 4.5A5.5 5.5 0 0 0 3.16 4.61A5.5 5.5 0 0 0 3 12.28L12 21L21 12.28A5.5 5.5 0 0 0 20.84 4.61Z"
                   ></path>
                 </svg>
-              </button>
+              </button> -->
               <div class="product-card__image">
                 <img
                   src="https://m.media-amazon.com/images/I/71Z6xD3L3qL.jpg"
@@ -734,7 +724,7 @@ Order
 
             <div class="product-card reveal reveal-4" data-category="bags">
               <span class="product-card__badge sale">-15%</span>
-              <button class="product-card__wishlist" aria-label="Wishlist">
+              <!-- <button class="product-card__wishlist" aria-label="Wishlist">
                 <svg
                   viewBox="0 0 24 24"
                   fill="none"
@@ -745,7 +735,7 @@ Order
                     d="M20.84 4.61A5.5 5.5 0 0 0 13 4.5L12 5.5L11 4.5A5.5 5.5 0 0 0 3.16 4.61A5.5 5.5 0 0 0 3 12.28L12 21L21 12.28A5.5 5.5 0 0 0 20.84 4.61Z"
                   ></path>
                 </svg>
-              </button>
+              </button> -->
               <div class="product-card__image">
                 <img
                   src="https://myneemoe.in/cdn/shop/files/007_b9be38e1-392d-4877-98af-a14be58eb47e.jpg?v=1784135765&width=3000"
@@ -1337,7 +1327,7 @@ Order
               </div>
               <div class="footer-brand__text">
                 <h2>Edu<span>Mart</span></h2>
-                <p>Books & School Supplies</p>
+                <!-- <p>Books & School Supplies</p> -->
               </div>
             </a>
             <p class="footer__description">
@@ -1387,7 +1377,7 @@ Order
             <ul class="footer__links">
               <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
-              <li><a href="products.html">Producys</a></li>
+              <li><a href="products.html">Products</a></li>
               <li><a href="services.html">Services</a></li>
               <li><a href="blog.html">Blog</a></li>
               <li><a href="contact.html">Contact</a></li>
@@ -1423,7 +1413,7 @@ Order
                 </div>
                 <div>
                   <h4>Address</h4>
-                  <p>Hyderabad, Telangana, India</p>
+                  <p><span dir="ltr">Hyderabad, Telangana, India</span></p>
                 </div>
               </li>
               <li>
@@ -1441,7 +1431,7 @@ Order
                 </div>
                 <div>
                   <h4>Phone</h4>
-                  <p>+91 98765 43210</p>
+                  <p><span dir="ltr">+91 98765 43210</span></p>
                 </div>
               </li>
               <li>
@@ -1458,7 +1448,7 @@ Order
                 </div>
                 <div>
                   <h4>Email</h4>
-                  <p>support@edumart.com</p>
+                  <p><span dir="ltr">support@edumart.com</span></p>
                 </div>
               </li>
               <li>

@@ -30,7 +30,7 @@
 
             <div class="brand__text">
               <h2>Edu<span>Mart</span></h2>
-              <p>Books & School Supplies</p>
+              <!-- <p>Books & School Supplies</p> -->
             </div>
           </a>
 
@@ -70,7 +70,7 @@
               </li>
 
               <li class="navigation__item">
-                <a href="about.html" class="navigation__link">About</a>
+                <a href="about.html" class="navigation__link" class="active" aria-current="page">About</a>
               </li>
 
               <li class="navigation__item">
@@ -81,9 +81,9 @@
                 <a href="services.html" class="navigation__link">Services</a>
               </li>
 
-              <li class="navigation__item">
+              <!-- <li class="navigation__item">
                 <a href="blog.html" class="navigation__link">Blog</a>
-              </li>
+              </li> -->
 
               <li class="navigation__item">
                 <a href="contact.html" class="navigation__link">Contact</a>
@@ -374,7 +374,7 @@
     <section class="section"><div class="container"><div class="cta reveal"><div class="cta__inner"><h2>Ready to stock up?</h2><p>Browse the catalog or reach out to our school orders desk for a tailored bulk quote.</p><div class="hero__actions" style="justify-content:center"><a class="btn btn-primary btn-lg" href="services.html">Shop Products</a><a class="btn btn-outline btn-lg" href="contact.html">Contact Us</a></div></div></div></div></section>
   </main>
 
-   <footer class="footer">
+  <footer class="footer">
       <div class="footer__shape footer__shape--one"></div>
       <div class="footer__shape footer__shape--two"></div>
       <div class="container">
@@ -389,7 +389,7 @@
               </div>
               <div class="footer-brand__text">
                 <h2>Edu<span>Mart</span></h2>
-                <p>Books & School Supplies</p>
+                <!-- <p>Books & School Supplies</p> -->
               </div>
             </a>
             <p class="footer__description">
@@ -445,7 +445,7 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
-          <div class="footer__links-column reveal reveal-right">
+          <!-- <div class="footer__links-column reveal reveal-right">
             <h3>Support</h3>
             <ul class="footer__links">
               <li><a href="faq.html">FAQ</a></li>
@@ -455,7 +455,7 @@
               <li><a href="register.html">Register</a></li>
               <li><a href="forgot-password.html">Forgot Password</a></li>
             </ul>
-          </div>
+          </div> -->
           <div class="footer__contact-column reveal reveal-right">
             <h3>Contact Info</h3>
             <ul class="footer__contact">
@@ -475,7 +475,7 @@
                 </div>
                 <div>
                   <h4>Address</h4>
-                  <p>Hyderabad, Telangana, India</p>
+                  <p><span dir="ltr">Hyderabad, Telangana, India</span></p>
                 </div>
               </li>
               <li>
@@ -493,7 +493,7 @@
                 </div>
                 <div>
                   <h4>Phone</h4>
-                  <p>+91 98765 43210</p>
+                  <p><span dir="ltr">+91 98765 43210</span></p>
                 </div>
               </li>
               <li>
@@ -510,7 +510,7 @@
                 </div>
                 <div>
                   <h4>Email</h4>
-                  <p>support@edumart.com</p>
+                  <p><span dir="ltr">support@edumart.com</span></p>
                 </div>
               </li>
               <li>
@@ -614,73 +614,7 @@
         <path d="M6 11L12 5L18 11" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>
 </button>
-<script>
-  /*=========================================
-COUNTER ANIMATION
-=========================================*/
-
-const counters=document.querySelectorAll(".num");
-
-let started=false;
-
-const counterObserver=new IntersectionObserver((entries)=>{
-
-entries.forEach(entry=>{
-
-if(entry.isIntersecting && !started){
-
-started=true;
-
-counters.forEach(counter=>{
-
-const target=Number(counter.dataset.count);
-
-const suffix=counter.dataset.suffix || "";
-
-const duration=2000;
-
-let start=0;
-
-const increment=target/(duration/16);
-
-function updateCounter(){
-
-start+=increment;
-
-if(start<target){
-
-counter.textContent=Math.floor(start).toLocaleString()+suffix;
-
-requestAnimationFrame(updateCounter);
-
-}else{
-
-counter.textContent=target.toLocaleString()+suffix;
-
-}
-
-}
-
-updateCounter();
-
-});
-
-}
-
-});
-
-},{
-threshold:.4
-});
-
-const counterSection=document.querySelector(".counter-section");
-
-if(counterSection){
-
-counterObserver.observe(counterSection);
-
-}
-</script>
+  <script src="assets/js/about.js"></script>
   <script src="assets/js/main.js"></script>
   <script src="assets/js/toggles.js" defer></script>
 </body>

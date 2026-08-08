@@ -23,27 +23,37 @@ const rtlButton=document.getElementById("rtlButton");
 SHOW / HIDE PASSWORD
 ==================================================*/
 
-if(passwordButton){
+const password=document.getElementById("password");
+const toggle=document.getElementById("togglePassword");
 
-passwordButton.addEventListener("click",function(){
+toggle.addEventListener("click",()=>{
 
-if(passwordInput.type==="password"){
+if(password.type==="password"){
 
-passwordInput.type="text";
+password.type="text";
 
-passwordButton.textContent="🙈";
+toggle.innerHTML=`
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M17.94 17.94A10.94 10.94 0 0 1 12 19C5 19 1 12 1 12A21.76 21.76 0 0 1 6.06 6.06"></path>
+<path d="M1 1L23 23"></path>
+<path d="M9.9 4.24A10.94 10.94 0 0 1 12 5C19 5 23 12 23 12A21.76 21.76 0 0 1 17.94 17.94"></path>
+</svg>
+`;
 
 }else{
 
-passwordInput.type="password";
+password.type="password";
 
-passwordButton.textContent="👁";
+toggle.innerHTML=`
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+<path d="M1 12S5 5 12 5S23 12 23 12S19 19 12 19S1 12 1 12Z"></path>
+<circle cx="12" cy="12" r="3"></circle>
+</svg>
+`;
 
 }
 
 });
-
-}
 
 /*==================================================
 LOGIN FORM

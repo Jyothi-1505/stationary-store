@@ -166,11 +166,11 @@ letter-spacing:.08em;
 text-transform:uppercase;
 color:var(--color-text-muted);
 }
-.card-actions{
+.header__actions{
 display:flex;
-justify-content:flex-end;
-gap:10px;
-margin-bottom:18px;
+align-items:center;
+gap:12px;
+margin-left:24px;
 }
 
 .circle-button{
@@ -311,9 +311,9 @@ font-size:14px;
 transition:all .3s ease;
 }
 
-/* .password-wrapper input{
+.password-wrapper input{
 padding-right:48px;
-} */
+}
 
 .form-field input:hover{
 border-color:rgba(0, 0, 0, 0.836);
@@ -543,50 +543,6 @@ transform:translateY(0) scale(1);
 
 }
 
-/*==================================================
-RESPONSIVE
-==================================================*/
-
-@media (max-width:576px){
-
-.login-page{
-padding:16px;
-}
-
-.login-card{
-max-width:100%;
-padding:24px;
-border-radius:18px;
-}
-
-.brand-logo{
-width:40px;
-height:40px;
-}
-
-.brand-name{
-font-size:20px;
-}
-
-.login-title{
-font-size:28px;
-}
-
-.login-description{
-font-size:13px;
-}
-
-.social-login{
-grid-template-columns:1fr;
-}
-
-.form-options{
-flex-direction:column;
-align-items:flex-start;
-gap:12px;
-}
-
-}
 
 /*==================================================
 DARK MODE
@@ -634,38 +590,53 @@ color:var(--color-secondary);
 RTL
 ==================================================*/
 
-html[dir="rtl"] .password-button{
-right:auto;
-left:12px;
+html[dir="rtl"]{
+direction:rtl;
 }
 
-html[dir="rtl"] .password-wrapper input{
-padding-right:16px;
-padding-left:48px;
+html[dir="rtl"] .login-card{
+text-align:right;
 }
 
-html[dir="rtl"] .button-arrow{
-transform:rotate(180deg);
+html[dir="rtl"] .form-field label{
+text-align:right;
+}
+
+html[dir="rtl"] .brand{
+flex-direction:row-reverse;
 }
 
 html[dir="rtl"] .form-options{
 flex-direction:row-reverse;
 }
 
-html[dir="rtl"] .signup-link a{
-margin-left:0;
-margin-right:4px;
+html[dir="rtl"] .social-login{
+direction:rtl;
+}
+
+html[dir="rtl"] .button-arrow{
+transform:rotate(180deg);
+}
+
+html[dir="rtl"] .password-button{
+left:14px;
+right:auto;
+}
+
+html[dir="rtl"] .password-wrapper input{
+padding-left:50px;
+padding-right:18px;
 }
 /*==================================================
 DARK MODE
 ==================================================*/
 
-body.dark-mode{
-background:#0f172a;
-color:#f8fafc;
+html[data-theme="dark"] body{
+background:var(--color-background);
+color:var(--color-heading);
 }
 
-body.dark-mode .login-card,
+html[data-theme="dark"] .login-card,
 body.dark-mode .register-card{
 background:#1b2430;
 border:1px solid #2d3748;
@@ -695,17 +666,17 @@ body.dark-mode .terms-checkbox a{
 color:#60a5fa;
 }
 
-body.dark-mode .form-field input{
+html[data-theme="dark"] .form-field input{
 background:#111827;
 border:1px solid #374151;
 color:#ffffff;
 }
 
-body.dark-mode .form-field input::placeholder{
+html[data-theme="dark"] .form-field input::placeholder{
 color:#9ca3af;
 }
 
-body.dark-mode .form-field input:focus{
+html[data-theme="dark"] .form-field input:focus{
 border-color:#3b82f6;
 box-shadow:0 0 0 4px rgba(59,130,246,.18);
 }

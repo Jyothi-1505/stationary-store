@@ -23,15 +23,16 @@
 
   <body>
     <main class="login-page">
+      
       <div class="login-card">
         <div class="card-top">
-           <div class="card-actions">
-            <button
-              class="circle-button"
-              id="darkModeButton"
-              aria-label="Dark Mode"
-            >
-            <svg
+           <div class=".header__actions">
+            <button class="header-icon-button rtl-toggle" data-rtl-toggle title="RTL Mode">
+              RTL
+            </button>
+
+            <button class="header-icon-button theme-toggle" data-theme-toggle title="Dark Mode">
+              <svg
                 viewBox="0 0 24 24"
                 fill="none"
                 stroke="currentColor"
@@ -41,10 +42,6 @@
                   d="M21 12.79A9 9 0 1 1 11.21 3A7 7 0 0 0 21 12.79Z"
                 ></path>
               </svg>
-            </button>
-
-            <button class="circle-button" id="rtlButton" aria-label="RTL">
-              RTL
             </button>
           </div>
 
@@ -58,7 +55,7 @@
 
             <div class="brand__text">
               <h2>Edu<span>Mart</span></h2>
-              <p>Books & School Supplies</p>
+              <!-- <p>Books & School Supplies</p> -->
             </div>
           </a>
 
@@ -91,10 +88,20 @@
                 placeholder="Enter your password"
                 required
               />
+<button type="button" class="password-button" id="togglePassword">
 
-              <button type="button" class="password-button" id="togglePassword">
+<svg id="eyeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+
+<path d="M1 12S5 5 12 5S23 12 23 12S19 19 12 19S1 12 1 12Z"></path>
+
+<circle cx="12" cy="12" r="3"></circle>
+
+</svg>
+
+</button>
+              <!-- <button type="button" class="password-button" id="togglePassword">
                 👁
-              </button>
+              </button> -->
             </div>
           </div>
 
@@ -165,7 +172,7 @@
         </form>
       </div>
     </main>
-    <script src="assets/js/login.js"></script>
+    <!-- <script src="assets/js/login.js"></script> -->
     <script src="assets/js/login.js"></script>
   </body>
 </html>
