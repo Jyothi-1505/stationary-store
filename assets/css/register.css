@@ -55,10 +55,17 @@ scroll-behavior:smooth;
 }
 
 body{
-font-family:var(--font-family);
-background:var(--color-background);
-color:var(--color-heading);
-/* overflow:hidden; */
+font-family:"Inter",sans-serif;
+background:#f4f8fc;
+color:#142033;
+}
+.register-page{
+min-height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+padding:20px 20px;
+background:linear-gradient(135deg,#eef7ff 0%,#f7fafc 50%,#eef3f7 100%);
 }
 
 a{
@@ -653,4 +660,115 @@ transform:rotate(180deg) translateX(-5px);
 html[dir="rtl"] .signin-link a{
 margin-left:0;
 margin-right:4px;
+}
+.register-page-controls{
+position:fixed;
+top:20px;
+right:20px;
+z-index:1000;
+display:flex;
+align-items:center;
+gap:10px;
+}
+.register-control-button{
+width:44px;
+height:44px;
+display:flex;
+align-items:center;
+justify-content:center;
+border:1px solid #dce3eb;
+border-radius:50%;
+background:#fff;
+color:#142033;
+cursor:pointer;
+box-shadow:0 6px 18px rgba(15,45,75,.10);
+transition:all .25s ease;
+}
+.register-control-button svg{
+width:20px;
+height:20px;
+}
+.register-control-button:hover{
+transform:translateY(-2px);
+box-shadow:0 10px 24px rgba(15,45,75,.15);
+}
+body.dark-mode{
+background:#0b1728;
+color:#f1f5f9;
+}
+body.dark-mode .register-page{
+background:linear-gradient(135deg,#0b1728 0%,#101f33 50%,#0b1728 100%);
+}
+body.dark-mode .register-card{
+background:#122238;
+border-color:#263b53;
+box-shadow:0 20px 55px rgba(0,0,0,.35);
+}
+body.dark-mode .register-title,
+body.dark-mode .form-field label{
+color:#f1f5f9;
+}
+body.dark-mode .form-field input{
+background:#0d1b2d;
+border-color:#30465e;
+color:#f1f5f9;
+}
+body.dark-mode .form-field input::placeholder{
+color:#71849a;
+}
+body.dark-mode .terms-checkbox{
+color:#a9b8c9;
+}
+body.dark-mode .social-button{
+background:#0d1b2d;
+border-color:#30465e;
+color:#f1f5f9;
+}
+body.dark-mode .social-button:hover{
+background:#142940;
+border-color:#087ff5;
+}
+body.dark-mode .divider{
+color:#8192a5;
+}
+body.dark-mode .divider::before,
+body.dark-mode .divider::after{
+background:#30465e;
+}
+body.dark-mode .signin-link p{
+color:#9aabba;
+}
+body.dark-mode .register-control-button{
+background:#122238;
+border-color:#30465e;
+color:#f1f5f9;
+}
+@media(max-width:768px){
+.register-page-controls{
+top:15px;
+right:15px;
+}
+.register-control-button{
+width:40px;
+height:40px;
+}
+.register-control-button svg{
+width:18px;
+height:18px;
+}
+}
+@media(max-width:360px){
+.register-page-controls{
+top:10px;
+right:10px;
+gap:7px;
+}
+.register-control-button{
+width:36px;
+height:36px;
+}
+.register-control-button svg{
+width:17px;
+height:17px;
+}
 }
