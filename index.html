@@ -58,37 +58,19 @@
           <nav class="navigation" id="navigation">
             <ul class="navigation__list">
               <li class="navigation__item navigation__item--dropdown">
-                <button class="navigation__link navigation__dropdown-toggle">
-                  <span
-                    ><a
-                      href="index.html"
-                      class="navigation__link" class="active"
-                      aria-current="page"
-                      >Home</a
-                    ></span
-                  >
-
-                  <svg
-                    class="navigation__arrow"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    stroke-width="2"
-                  >
-                    <polyline points="6 9 12 15 18 9"></polyline>
-                  </svg>
-                </button>
-
-                <ul class="navigation__dropdown">
-                  <li>
-                    <a href="index.html">Home 01</a>
-                  </li>
-
-                  <li>
-                    <a href="home-2.html">Home 02</a>
-                  </li>
-                </ul>
-              </li>
+  <div class="navigation__home-row">
+    <a href="index.html" class="navigation__link active" aria-current="page">Home</a>
+    <button type="button" class="navigation__dropdown-toggle" aria-label="Open Home menu" aria-expanded="false">
+      <svg class="navigation__arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <polyline points="6 9 12 15 18 9"></polyline>
+      </svg>
+    </button>
+  </div>
+  <ul class="navigation__dropdown">
+    <li><a href="index.html">Home 01</a></li>
+    <li><a href="home-2.html">Home 02</a></li>
+  </ul>
+</li>
 
               <li class="navigation__item">
                 <a href="about.html" class="navigation__link">About</a>

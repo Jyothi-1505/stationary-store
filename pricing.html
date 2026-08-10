@@ -14,147 +14,131 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="assets/css/vendor-bootstrap.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/pricing.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
+  <!-- <a class="skip-link" href="#main">Skip to main content</a>
 
-  
+   -->
 
-<header class="header">
-    <div class="container">
+    <header class="header">
+      <div class="container">
         <div class="header__inner">
-            <!-- ================= Logo ================= -->
-            <a href="index.html" class="brand" aria-label="Scholar Stationery Home">
-                <span class="brand__logo">
-                    <img src="https://www.svgrepo.com/show/492785/book-and-person-summer.svg"
-                         alt="Scholar Stationery Logo">
-                </span>
-                <span class="brand__name">
-                    Scholar<span>Stationery</span>
-                </span>
-            </a>
-            <!-- ================= Navigation ================= -->
-            <nav class="nav" id="primary-nav">
-                <ul class="nav__list">
-                    <!-- Home Dropdown -->
-                    <li class="nav__item mobile-dropdown">
-    <a class="nav__link" href="index.html">
-                            Home
-                        </a>
-    <div class="nav__dropdown">
-        <a href="index.html">Home 1</a>
-        <a href="home2.html">Home 2</a>
-    </div>
-</li>
-                    <li>
-                        <a class="nav__link" href="services.html">
-                            Services
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav__link" href="about.html">
-                            About
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav__link" href="blog.html">
-                            Blog
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav__link" href="pricing.html" aria-current="page">
-                            Pricing
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav__link" href="contact.html" >
-                            Contact
-                        </a>
-                    </li>
-                </ul>
-            </nav>
-            <!-- ================= Right Side ================= -->
-<nav class="nav">
-            <div class="header__actions">
-                <!-- <button class="icon-btn desktop-only" aria-label="Search">
-                    <svg viewBox="0 0 24 24"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="2">
-
-                        <circle cx="11" cy="11" r="8"></circle>
-
-                        <line x1="21"
-                              y1="21"
-                              x2="16.65"
-                              y2="16.65"></line>
-
-                    </svg>
-
-                </button>
-
-                <button class="icon-btn desktop-only" aria-label="Cart">
-
-                    <svg viewBox="0 0 24 24"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="2">
-
-                        <circle cx="9" cy="21" r="1"></circle>
-
-                        <circle cx="20" cy="21" r="1"></circle>
-
-                        <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
-
-                    </svg>
-
-                </button> -->
-                <button
-                    class="icon-btn"
-                    data-rtl-toggle
-                    aria-label="RTL / LTR">
-                    <svg viewBox="0 0 24 24"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="2">
-                        <polyline points="17 1 21 5 17 9"></polyline>
-                        <path d="M3 11V9a4 4 0 0 1 4-4h14"></path>
-                        <polyline points="7 23 3 19 7 15"></polyline>
-                        <path d="M21 13v2a4 4 0 0 1-4 4H3"></path>
-                    </svg>
-                </button>
-                <button
-                    class="icon-btn"
-                    data-theme-toggle
-                    aria-label="Dark Mode">
-                    <svg viewBox="0 0 24 24"
-                         fill="none"
-                         stroke="currentColor"
-                         stroke-width="2">
-
-                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79"></path>
-                    </svg>
-                </button>
-                <!-- <nav class="login"> -->
-            <a href="login.html" class="login-button">Login</a>
-        </nav>
+          <a href="index.html" class="brand">
+            <div class="brand__logo">
+              <img
+                src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/edu-smart-logos-design-template-23b6de7d02972a120e8ad62879fb66f4_screen.jpg?ts=1661512030"
+                alt="EduMart Logo"
+              />
             </div>
-            <!-- ================= Mobile Menu Button ================= -->
-            <button
-                class="nav-toggle"
-                id="mobile-menu-toggle"
-                aria-label="Open Menu"
-                aria-controls="primary-nav"
-                aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
+
+            <div class="brand__text">
+              <h2>Edu<span>Mart</span></h2>
+              <!-- <p>Books & School Supplies</p> -->
+            </div>
+          </a>
+
+          <nav class="navigation" id="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item navigation__item--dropdown">
+                <button class="navigation__link navigation__dropdown-toggle">
+                  <span
+                    ><a
+                      href="index.html"
+                      class="navigation__link" class="active"
+                      aria-current="page"
+                      >Home</a
+                    ></span
+                  >
+
+                  <svg
+                    class="navigation__arrow"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                  >
+                    <polyline points="6 9 12 15 18 9"></polyline>
+                  </svg>
+                </button>
+
+                <ul class="navigation__dropdown">
+                  <li>
+                    <a href="index.html">Home 01</a>
+                  </li>
+
+                  <li>
+                    <a href="home-2.html">Home 02</a>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="navigation__item">
+                <a href="about.html" class="navigation__link">About</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="products.html" class="navigation__link">Products</a>
+              </li>
+
+              <li class="navigation__item">
+                <a href="services.html" class="navigation__link">Services</a>
+              </li>
+
+              <!-- <li class="navigation__item">
+                <a href="blog.html" class="navigation__link">Blog</a>
+              </li> -->
+
+              <li class="navigation__item">
+                <a href="contact.html" class="navigation__link">Contact</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="header__actions">
+            <button class="header-icon-button rtl-toggle" data-rtl-toggle title="RTL Mode">
+              RTL
             </button>
+
+            <button class="header-icon-button theme-toggle" data-theme-toggle title="Dark Mode">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M21 12.79A9 9 0 1 1 11.21 3A7 7 0 0 0 21 12.79Z"
+                ></path>
+              </svg>
+            </button>
+
+            <a href="login.html" class="login-button">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M20 21V19A4 4 0 0 0 16 15H8A4 4 0 0 0 4 19V21"></path>
+
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+
+              <span>Login</span>
+            </a>
+
+            <button class="mobile-menu-button" id="mobileMenuButton">
+              <span></span>
+
+              <span></span>
+
+              <span></span>
+            </button>
+          </div>
         </div>
-    </div>
-    <!-- Overlay -->
-    <div class="mobile-overlay"></div>
-</header>
+      </div>
+    </header>
 
   <main id="main">
     <!-- 1. Hero -->
@@ -255,7 +239,7 @@
     <section class="section"><div class="container"><div class="cta reveal"><div class="cta__inner"><h2>Not sure which plan fits?</h2><p>Tell us about your school or district and we'll recommend the most cost-effective option.</p><div class="hero__actions" style="justify-content:center"><a class="btn btn-primary btn-lg" href="contact.html">Talk to Us</a><a class="btn btn-outline btn-lg" href="services.html">Browse Products</a></div></div></div></div></section>
   </main>
 
-   <footer class="footer">
+<footer class="footer">
       <div class="footer__shape footer__shape--one"></div>
       <div class="footer__shape footer__shape--two"></div>
       <div class="container">
